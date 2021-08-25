@@ -22,9 +22,9 @@ html{
 }
 .header-franja img {
     position: absolute;
-    top:-2rem;
-    left: -2.3rem;
-    width: 30%;
+    top:0;
+    left: 0;
+    width: 20%;
     height: 110%;
     z-index: 1;
 }
