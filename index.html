@@ -7,8 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- iconos -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Estilos -->
     <link rel="stylesheet" href="./css/styles.css">
@@ -25,19 +31,21 @@
         <div class="header-nav">
             <input type="checkbox" id="nav_checkbox" class="nav_checkbox">
             <label for="nav_checkbox" class="nav__toggle">
-                <img src="./assets/menu.svg" alt="menu" class="menu">
-                <img src="./assets/cerrar.svg" alt="cerrar" class="close">
+                <i class="fas fa-bars fa-3x menu" id="menu"></i>
+                <i class="fas fa-times fa-3x close"></i>
+                
             </label>
             
             <ul class="nav__menu">
-                <li><a href="clienteAdm.html">HOME</a></li>
-                <li><a href="proveedoresAdm.html">GALERIA</a></li>
-                <li><a href="productosAdministrador.html">HABLEMOS</a></li>
-                <li><a href="cotizacionesAdm.html">NOSOTROS</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#galery">GALERIA</a></li>
+                <li><a href="#">HABLEMOS</a></li>
+                <li><a href="#">NOSOTROS</a></li>
             </ul>
         </div>
         <div class="header-video">
-            <iframe src="./assets/akasha_HOME_30sg_H264.mp4" frameborder="0" allow="autoplay; fullscreen" allowfullscreen loop></iframe>
+            <iframe src="./assets/akasha_HOME_30sg_H264.mp4" frameborder="0" allow="autoplay; fullscreen" allowfullscreen loop="1" aria-controls="none"></iframe>
+            <!-- <iframe src="https://www.youtube.com/embed/mcWXvFC45hc?autoplay=1&controls=0&loop=1&rel=0" frameborder="0"></iframe> -->
         </div>
         
     </header>
@@ -46,10 +54,12 @@
         <img src="./assets/FranjaVertical.svg" alt="franja-vertical">
     </div>
 
+    <div id="galery">
+        <h1>Galeria</h1>
+    </div>
 
     
 
-    
 
 </body>
 </html>
