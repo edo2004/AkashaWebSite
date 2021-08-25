@@ -48,7 +48,7 @@ html{
     position: absolute;
     top:0;
     right: 0;
-    width: 19.7%;
+    width: 29.7%;
     z-index: 1;
     /* transform: translate(24%) rotate(-2deg); */
 }
@@ -95,7 +95,7 @@ html{
     display: none;
     outline: none;
     z-index: 1;
-    color: white;
+    color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
@@ -105,11 +105,11 @@ html{
     color: inherit;
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    border: white solid 0.1rem;
+    border: black solid 0.1rem;
     border-radius: 1px;
 }
 .nav__menu a:hover {
-    color: white;
+    color: black;
     background-color: rgba(197, 197, 197,0.2);
 }
 .nav__menu h1 {
