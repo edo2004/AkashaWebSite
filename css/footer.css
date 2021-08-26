@@ -6,7 +6,106 @@
 html{
     font-size: 62.5%;
 }
-.footer{
-    background-color: blue;
+footer {
+    background-color: #0B0055;
+    color: white;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    
 
+}
+.footer-description{
+    justify-content: flex-start;
+    width: 80%;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.footer-description p{
+    padding: 0.2rem;
+    text-align: center;
+}
+
+.footer-img{
+    margin-top: 2rem;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-Socia-Media{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-social_Media_Logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-Socia-Media p{
+    padding: 2rem 0rem;
+}
+.footer-social_Media_Logos img{
+    width: 7%;
+    
+}
+.footer-copyright{
+    padding: 1rem 0rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+@media only screen and (min-width:560px ) and (max-width:1000px){
+    .footer-content{
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .footer-description{
+        width: 25%;
+    }
+    .footer-description p{
+        text-align: left;
+    }
+    .footer-img{
+        width: 10%;
+    }
+    .footer-Socia-Media{
+        width: 25%;
+    }
+
+}
+
+@media only screen and (min-width:1001px){
+    .footer-content{
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .footer-description{
+        width: 25%;
+    }
+    .footer-description p{
+        text-align: left;
+    }
+    .footer-img{
+        width: 10%;
+    }
+    .footer-Socia-Media{
+        width: 25%;
+    }
 }
