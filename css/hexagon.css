@@ -11,17 +11,18 @@ body{
 }
 
 .honey{
-    height: 40vh;
-    background: red;
+    height: 35vh;
+    background: rgb(61, 56, 56);
     position: absolute;
     bottom: 0;
 
 }
 .item{
-    width: 9rem;
-    height: 9rem;
+    width: 12rem;
+    height: 10rem;
     background-color: #fff;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    cursor: pointer;
     
 }
 
@@ -29,7 +30,7 @@ body{
     display: grid;
     justify-content: center;
     grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem  ;
-    grid-gap: 0rem 20rem;
+    grid-gap: 0rem 9rem;
     position: absolute;
 
 }
@@ -37,8 +38,8 @@ body{
     display: grid;
     justify-content: center;
     grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem  ;
-    grid-gap: 0rem 20rem;
-    /* margin: -9rem 0 0 30rem ; */
+    grid-gap: 0rem 9rem;
+    margin: 5rem 0 0 9.5rem ;
     position: absolute;
 }
 
@@ -46,15 +47,18 @@ body{
     display: grid;
     justify-content: center;
     grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem  ;
-    grid-gap: 0 20rem;
-    /* margin: -9rem 0 0 0; */
+    grid-gap: 0 9rem;
+    margin: 10.1rem 0 0 0;
     position: absolute;
 }
 .comb_4{
     display: grid;
     justify-content: center;
     grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem  ;
-    grid-gap: 0 20rem;
-    /* margin: -9rem 0 0 30rem ; */
+    grid-gap: 0 9rem;
+    margin: 15.2rem 0 0 9.5rem ;
     position: absolute;
+}
+.item:hover {
+    background: #848484;
 }
