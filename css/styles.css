@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+body {
+    overflow-x: hidden;
+}
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -12,6 +15,7 @@ html{
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
+    z-index: 2;
 }
 .header-video iframe {
     position: absolute;
@@ -44,14 +48,20 @@ html{
 }
 
 /* Franja derecha */
-
+.franja-derecha {
+    width: 15%;
+}
 .franja-derecha img {
     position: absolute;
     top:0;
     right: 0;
     width: 29.7%;
-    z-index: 1;
+    z-index: 6;
     transform: translate(30%) rotate(-2.5deg);
+}
+
+.franja-derecha > img {
+    object-fit: cover;
 }
 
 /* menú */
@@ -155,6 +165,72 @@ html{
 .to-top:hover {
     background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
     border: white solid 3px;
+}
+
+/* Galery */
+
+.figura {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.figura > img{
+	object-fit: cover;
+}
+.fondo1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.fondo2 {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(1.3);
+    transition: 2s;
+}
+
+.fondo3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255,0.2);
+}
+.button {
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    bottom: 0;
+    background-color: black;
+    cursor: pointer;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+.button:hover {
+    background-color: white;
+    transition: 1s;
+
+}
+.fondo1.scaleFondo {
+    transform: scale(1.3);
+    transition: 2s;
+}
+.fondo2.traslate {
+    transform: scale(1);
+    transition: all 2s linear;
+}
+.email-section {
+    position: relative;
+    width: 100%;
+}
+.email-section img {
+    width: 100%;
 }
 
 
