@@ -1,0 +1,23 @@
+[
+    {
+        "id":"1",
+        "image":"https://as01.epimg.net/betech/imagenes/2016/10/20/portada/1476917621_605512_1476917718_noticia_normal.jpg",
+        "video":"https://player.vimeo.com/video/583627240"
+    },
+    {
+        "id":"2",
+        "image":"./assets/35152.jpg",
+        "video":"https://player.vimeo.com/video/592507386"
+    },
+    {
+        "id":"3",
+        "image":"https://fondosmil.com/fondo/35152.jpg",
+        "video":"https://player.vimeo.com/video/584592206"
+    },
+    {
+        "id":"4",
+        "image":"https://as01.epimg.net/betech/imagenes/2016/10/20/portada/1476917621_605512_1476917718_noticia_normal.jpg",
+        "video":"https://player.vimeo.com/video/592508162"
+    }
+    
+]

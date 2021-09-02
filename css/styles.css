@@ -51,7 +51,7 @@ html{
     right: 0;
     width: 29.7%;
     z-index: 1;
-    /* transform: translate(24%) rotate(-2deg); */
+    transform: translate(30%) rotate(-2.5deg);
 }
 
 /* menú */
@@ -172,7 +172,7 @@ html{
         padding: 0.5rem 1rem;
         border: white solid 0.1rem;
         border-radius: 3px;
-        background-color: rgba(214, 214, 214,0.5);
+        background-color: rgba(9, 9, 9, 0.5);
     }
     .nav__menu li {
         display: block;
@@ -191,7 +191,7 @@ html{
         padding: 0.5rem 2rem;
         border: white solid 0.1rem;
         border-radius: 3px;
-        background-color: rgba(214, 214, 214,0.5);
+        background-color: rgba(14, 12, 12, 0.5);
     }
     .nav__menu li {
         display: block;
