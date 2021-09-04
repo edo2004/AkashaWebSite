@@ -2,7 +2,7 @@ const fondo1 = document.querySelector('.fondo1')
 const fondo2 = document.querySelector('.fondo2')
 const fondo3 = document.querySelector('.fondo3')
 const video = document.querySelector('.video-galery')
-const button = document.querySelector('.item-image')
+const button = document.querySelectorAll('.item-image')
 const items = document.querySelector('.honey')
 
 
@@ -87,5 +87,7 @@ function parallax(e){
         const x = (window.innerWidth - e.pageX*speed)/10
 
         button.style.transform = `translateX(${x}px)`
+
     })
 }
+
