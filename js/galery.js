@@ -2,9 +2,7 @@ const items = document.querySelector('.items')
 const video = document.querySelector('.video')
 const imagenFondo = document.querySelector('.image-fondo')
 const templateVideo = document.querySelector('#template-video').content;
-const templateImage = document.querySelector('#template-image-galery').content;
 const fragment = document.createDocumentFragment();
-const fragment1 = document.createDocumentFragment();
 video.innerHTML = ""
 
 console.log(video.innerHTML)
@@ -31,17 +29,12 @@ function traerDatos(data) {
                     let imagen = item.image
                     console.log(urlVideo)
                     templateVideo.querySelector('iframe').setAttribute("src", urlVideo);
-                    templateImage.querySelector('img').setAttribute("src", imagen)
-                    // templateImage.querySelector('img').setAttribute("class", "imagen")
                     
                     const clonar = templateVideo.cloneNode(true);
-                    const clone = templateImage.cloneNode(true);
                     fragment.appendChild(clonar);
-                    fragment1.appendChild(clone);
                 }
             });
             video.appendChild(fragment)
-            imagenFondo.appendChild(fragment1)
             
         }
     }

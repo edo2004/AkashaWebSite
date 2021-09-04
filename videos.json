@@ -11,12 +11,12 @@
     },
     {
         "id":"3",
-        "image":"https://fondosmil.com/fondo/35152.jpg",
+        "image":"./assets/Galeria/paso_x_ti.png",
         "video":"https://player.vimeo.com/video/584592206"
     },
     {
         "id":"4",
-        "image":"https://as01.epimg.net/betech/imagenes/2016/10/20/portada/1476917621_605512_1476917718_noticia_normal.jpg",
+        "image":"./assets/Galeria/melissa_Wild.png",
         "video":"https://player.vimeo.com/video/592508162"
     }
     
