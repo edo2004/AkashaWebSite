@@ -15,15 +15,34 @@ body{
     background: rgb(61, 56, 56);
     position: absolute;
     bottom: 0;
+    z-index: 1;
 
 }
 .item{
     width: 12rem;
     height: 10rem;
-    background-color: #fff;
+    background-color: white;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     cursor: pointer;
-    
+}
+
+.item-image{
+    background: red;
+    cursor: pointer;
+    transition: 450ms all;
+
+}
+.item-image:hover{
+    opacity: 1;
+    z-index: 2;
+}
+
+.honey:hover .item-image{
+    opacity: 0.3;
+}
+.honey:hover .item-image:hover{
+    transform: scale(1.3);
+    opacity: 1;
 }
 
 .comb_1{
@@ -58,7 +77,4 @@ body{
     grid-gap: 0 9rem;
     margin: 15.2rem 0 0 9.5rem ;
     position: absolute;
-}
-.item:hover {
-    background: #848484;
 }
