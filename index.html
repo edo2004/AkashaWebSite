@@ -23,32 +23,34 @@
 </head>
 <body>
 
-    <header class="header">
+    <header class="header" id="home">
         <div class="header-franja">
-            <img src="./assets/Franja.svg" alt="Franja">
+            <img id="franja" src="./assets/Franja.svg" alt="Franja">
             <img id="logo" src="./assets/logo.svg" alt="Logo">
         </div>
-        <div class="header-nav">
-            <input type="checkbox" id="nav_checkbox" class="nav_checkbox">
-            <label for="nav_checkbox" class="nav__toggle">
-                <i class="fas fa-bars fa-3x menu" id="menu"></i>
-                <i class="fas fa-times fa-3x close"></i>
-                
-            </label>
-            
-            <ul class="nav__menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#galery">GALERIA</a></li>
-                <li><a href="#">HABLEMOS</a></li>
-                <li><a href="#">NOSOTROS</a></li>
-            </ul>
-        </div>
+        
         <div class="header-video">
             <iframe src="./assets/akasha_HOME_30sg_H264.mp4" frameborder="0" allow="autoplay; fullscreen" allowfullscreen loop="1" aria-controls="none"></iframe>
-            <!-- <iframe src="https://www.youtube.com/embed/mcWXvFC45hc?autoplay=1&controls=0&loop=1&rel=0" frameborder="0"></iframe> -->
+            <!-- <iframe src="https://player.vimeo.com/video/583627240?title=0&dnt=0&byline=0&autoplay=1&muted=1&controls=0&loop=1&quality=240p&background=1&transparent=0" frameborder="0" allow="autoplay"; fullscreen" allowfullscreen></iframe> -->
         </div>
         
     </header>
+
+    <div class="header-nav">
+        <input type="checkbox" id="nav_checkbox" class="nav_checkbox">
+        <label for="nav_checkbox" class="nav__toggle">
+            <i class="fas fa-bars fa-3x menu" id="menu" onclick="addBackground()"></i>
+            <i class="fas fa-times fa-3x close" onclick="removeBackground()"></i>
+            
+        </label>
+        
+        <ul class="nav__menu">
+            <li><a href="#home" >HOME</a></li>
+            <li><a href="#galery-template" ">GALERIA</a></li>
+            <li><a href="#" >HABLEMOS</a></li>
+            <li><a href="#" >NOSOTROS</a></li>
+        </ul>
+    </div>
 
     <div class="franja-derecha">
         <img src="./assets/FranjaVertical.svg" alt="franja-vertical">
@@ -60,8 +62,8 @@
 
     <!-- galery -->
 
-    <div class="galery">
-        <img class="fondo1" src="./assets/Galeria/Corporative_Video.png" alt="">
+    <div class="galery" id="galery-template">
+        <img class="fondo1" src="./assets/Galeria/Shinzo_Coffee.png" alt="">
         <img class="fondo2" src="./assets/Galeria/akasha_soda.png" alt="">
         <div class="fondo3"></div>
         
@@ -79,51 +81,54 @@
         <div class="honey">
             <!-- col div-->
             <div class="comb_1">
-                <div class="item item-image" onclick="traerDatos(this)" data-id="1" data-speed="4"></div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="2" data-speed="4"></div>
-                <div class="item item-transparent"></div>
-                <div class="item item-transparent"></div>
-                <div class="item item-transparent"></div>
-                <div class="item item-transparent"></div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="3" data-speed="4"></div>
-                <div class="item"></div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="1" data-speed="4">
+                <img src="./assets/Galeria/Shinzo_Coffee.png" alt="Shinzo"></div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="2" data-speed="4">
+                <img src="./assets/Galeria/ShutUp.png" alt="silence"></div>
+                <div class="item item-transparent" data-id="1" data-speed="4"></div>
+                <div class="item item-transparent" data-id="1" data-speed="4"></div>
+                <div class="item item-transparent" data-id="1" data-speed="4"></div>
+                <div class="item item-transparent" data-speed="4"></div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="3" data-speed="4">
+                <img src="./assets/Galeria/break_dance.png" alt="break_dance"></div>
+                <div class="item" data-speed="4"></div>
             </div>
 
             <!-- col div-->
             <div class="comb_2">
-                <div class="item item-transparent"></div>
+                <div class="item item-transparent" data-speed="4"></div>
                 <div class="item item-image" onclick="traerDatos(this)" data-id="4" data-speed="4"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item item item-image"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item item item-image" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
             </div>
 
             <!-- col div-->
             <div class="comb_3">
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
             </div>
 
             <!-- col div-->
             <div class="comb_4">
                 
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
+                <div class="item" data-speed="4"></div>
             </div>
 
         </div>
@@ -131,13 +136,13 @@
     </div>
     <div class="email-section">
         <img class="fondoEmail" src="./assets/Galeria/cyberpunk_Persecution.png" alt="">
-        <h1>Hola victor deja de borrar los avances, así nunca terminaremos :v</h1>
+        <h1>Hola victor deja de borrar los avances, así nunca terminaremos :v5</h1>
     </div>
 
 
     <!-- Templates -->
     <template id="template-video">
-        <iframe class="video-galery" src="" width="640" height="564" frameborder="0" allow="autoplay"; fullscreen" allowfullscreen></iframe>
+        <iframe class="video-galery" src=""  frameborder="0" allow="autoplay"; fullscreen" allowfullscreen></iframe>
     </template>
 
     <script src="./js/index.js"></script>

@@ -1,23 +1,98 @@
 [
     {
         "id":"1",
-        "image":"https://as01.epimg.net/betech/imagenes/2016/10/20/portada/1476917621_605512_1476917718_noticia_normal.jpg",
-        "video":"https://player.vimeo.com/video/583627240"
+        "image":"./assets/Galeria/Shinzo_Coffee.png",
+        "video":"https://player.vimeo.com/video/583625565?autoplay=1"
     },
     {
         "id":"2",
-        "image":"./assets/35152.jpg",
-        "video":"https://player.vimeo.com/video/592507386"
+        "image":"./assets/Galeria/ShutUp.png",
+        "video":"https://player.vimeo.com/video/584592206?autoplay=1"
     },
     {
         "id":"3",
-        "image":"./assets/Galeria/paso_x_ti.png",
-        "video":"https://player.vimeo.com/video/584592206"
+        "image":"./assets/Galeria/break_dance.png",
+        "video":"https://player.vimeo.com/video/594309553?autoplay=1"
     },
     {
         "id":"4",
         "image":"./assets/Galeria/melissa_Wild.png",
-        "video":"https://player.vimeo.com/video/592508162"
+        "video":"https://player.vimeo.com/video/592508162?autoplay=1"
+    },
+    {
+        "id":"5",
+        "image":"./assets/Galeria/paso_x_ti.png",
+        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
+    },
+    {
+        "id":"6",
+        "image":"./assets/Galeria/paso_x_ti.png",
+        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
+    },
+    {
+        "id":"7",
+        "image":"./assets/Galeria/paso_x_ti.png",
+        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
+    },
+    {
+        "id":"8",
+        "image":"./assets/Galeria/paso_x_ti.png",
+        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
+    },
+    {
+        "id":"9",
+        "image":"./assets/Galeria/paso_x_ti.png",
+        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
+    },
+    {
+        "id":"10",
+        "image":"./assets/Galeria/paso_x_ti.png",
+        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
+    },
+    {
+        "id":"11",
+        "image":"./assets/Galeria/paso_x_ti.png",
+        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
+    },
+    {
+        "id":"12",
+        "image":"./assets/Galeria/paso_x_ti.png",
+        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
+    },
+    {
+        "id":"13",
+        "image":"./assets/Galeria/paso_x_ti.png",
+        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
+    },
+    {
+        "id":"14",
+        "image":"./assets/Galeria/paso_x_ti.png",
+        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
+    },
+    {
+        "id":"15",
+        "image":"./assets/Galeria/paso_x_ti.png",
+        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
+    },
+    {
+        "id":"16",
+        "image":"./assets/Galeria/paso_x_ti.png",
+        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
+    },
+    {
+        "id":"17",
+        "image":"./assets/Galeria/paso_x_ti.png",
+        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
+    },
+    {
+        "id":"18",
+        "image":"./assets/Galeria/paso_x_ti.png",
+        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
+    },
+    {
+        "id":"19",
+        "image":"./assets/Galeria/paso_x_ti.png",
+        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
     }
     
 ]

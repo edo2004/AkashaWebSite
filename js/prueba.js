@@ -4,6 +4,10 @@ const fondo3 = document.querySelector('.fondo3')
 const video = document.querySelector('.video-galery')
 const button = document.querySelectorAll('.item-image')
 const items = document.querySelector('.honey')
+const navegador = document.querySelector('.header-nav')
+// const navMenu = document.querySelectorAll('.nav__menu')
+// const menu = document.querySelector('.menu')
+// const closeMenu = document.querySelector('.close')
 
 
 const templateVideo = document.querySelector('#template-video').content;
@@ -13,8 +17,12 @@ var images = ["./assets/Galeria/Corporative_Video.png"];
 fondo3.style.display = "none"
 console.log(video.innerHTML)
 if (video.innerHTML == '') {
-    video.innerHTML = `<iframe class="video-galery" src="https://player.vimeo.com/video/583627240" width="640" height="564" frameborder="0" allow="autoplay"; fullscreen" allowfullscreen></iframe>`
+    video.innerHTML = `<iframe class="video-galery" src="https://player.vimeo.com/video/583625565?title=0&dnt=0&byline=0&playsinline=0" frameborder="0" allow="autoplay"; fullscreen" allowfullscreen></iframe>`
 }
+setTimeout(function () {
+    fondo3.style.display = ""
+    fondo1.style.filter = "grayscale(100%)"
+},3000)
 
 
 function traerDatos(data) {
@@ -74,7 +82,7 @@ function transicionImagen(imagen) {
         fondo1.setAttribute("src", images[tamaño-1])
         fondo3.style.display = ""
         fondo1.style.filter = "grayscale(100%)"
-    },3000)  
+    },4000)  
     
 }
 
@@ -91,3 +99,19 @@ function parallax(e){
     })
 }
 
+// Fondo menú navegacion
+
+function addBackground() {
+    navegador.style.background = "rgba(136, 78, 207, 0.8)"
+    // navMenu.style.display = "block"
+    // menu.style.display = "none"
+    // closeMenu.style.display = "block"
+}
+
+function removeBackground() {
+    navegador.style.background = "none"
+    // navMenu.style.display = "none"
+    // closeMenu.style.display = "none"
+    // menu.style.display = "block"
+
+}
