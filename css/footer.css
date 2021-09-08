@@ -30,7 +30,7 @@ footer {
     justify-content: flex-start;
     width: 80%;
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 .footer-description p{
     padding: 0.2rem;
@@ -74,7 +74,7 @@ footer {
 @media only screen and (min-width:560px ) and (max-width:1000px){
     .footer-content{
         flex-direction: row;
-        align-items: flex-end;
+        align-items: center;
     }
     .footer-description{
         width: 25%;
@@ -94,7 +94,7 @@ footer {
 @media only screen and (min-width:1001px){
     .footer-content{
         flex-direction: row;
-        align-items: flex-end;
+        align-items: center;
     }
     .footer-description{
         width: 25%;
