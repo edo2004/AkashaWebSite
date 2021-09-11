@@ -17,7 +17,7 @@ var images = ["./assets/Galeria/Corporative_Video.png"];
 fondo3.style.display = "none"
 console.log(video.innerHTML)
 if (video.innerHTML == '') {
-    video.innerHTML = `<iframe class="video-galery" src="https://player.vimeo.com/video/583625565?title=0&dnt=0&byline=0&playsinline=0" frameborder="0" allow="autoplay"; fullscreen" allowfullscreen></iframe>`
+    video.innerHTML = `<iframe class="video-galery" src="https://player.vimeo.com/video/583627240?title=0&dnt=0&byline=0&playsinline=0" frameborder="0" allow="autoplay"; fullscreen" allowfullscreen></iframe>`
 }
 setTimeout(function () {
     fondo3.style.display = ""
