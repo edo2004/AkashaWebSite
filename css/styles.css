@@ -275,7 +275,6 @@ html{
     height: 14vh;
     background-color: #fff;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    cursor: pointer;
     transition: 450ms all;
     
 }
