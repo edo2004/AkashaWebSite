@@ -1,0 +1,27 @@
+[
+    {
+        "id":"1",
+        "image":"./assets/gifs/gif_Motion_graphics.gif",
+        "description":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia eum ut laudantium. Reiciendis, repellendus delectus! Autem sint officia perspiciatis pariatur harum commodi, reiciendis eveniet nesciunt nostrum, saepe aspernatur sapiente fuga."
+    },
+    {
+        "id":"2",
+        "image":"./assets/gifs/gif_Cinematics.gif",
+        "description":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia eum ut laudantium. Reiciendis, repellendus delectus! Autem sint officia perspiciatis pariatur harum commodi, reiciendis eveniet nesciunt nostrum, saepe aspernatur sapiente fuga."
+    },
+    {
+        "id":"3",
+        "image":"",
+        "description":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia eum ut laudantium. Reiciendis, repellendus delectus! Autem sint officia perspiciatis pariatur harum commodi, reiciendis eveniet nesciunt nostrum, saepe aspernatur sapiente fuga."
+    },
+    {
+        "id":"4",
+        "image":"./assets/gifs/gif_Animacion2D.gif",
+        "description":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia eum ut laudantium. Reiciendis, repellendus delectus! Autem sint officia perspiciatis pariatur harum commodi, reiciendis eveniet nesciunt nostrum, saepe aspernatur sapiente fuga."
+    },
+    {
+        "id":"5",
+        "image":"./assets/gifs/gif_Animacion3D.gif",
+        "description":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia eum ut laudantium. Reiciendis, repellendus delectus! Autem sint officia perspiciatis pariatur harum commodi, reiciendis eveniet nesciunt nostrum, saepe aspernatur sapiente fuga."
+    }
+]

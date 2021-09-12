@@ -9,16 +9,47 @@
 </head>
 <body>
     <div class="container-nosotros">
-        <div class="fondo-nosotros"></div>
+        <div class="fondo-nosotros">
+            <!-- <img src="./WhatsApp Image 2021-09-10 at 10.34.22 PM.jpeg" alt=""> -->
+        </div>
         <div class="content-nosotros">
             <div class="image-nosotros">
                 <div class="graphics">
+                    <img src="./assets/2.svg" alt="graphics" onclick="cargarGifs(this)" data-id="1">
+                </div>
+                <div class="cinematics-home">
+                    <div class="cinematics">
+                        <img src="./assets/1.svg" alt="cinematics" onclick="cargarGifs(this)" data-id="2">
+                    </div>
+                    <div class="home-item">
+                        <img src="./assets/3.svg" alt="home-item" onclick="cargarHome()" data-id="3">
+                    </div>
+                    
+                </div>
+                <div class="animation-2d-3d">
+                    <div class="animation-2d">
+                        <img src="./assets/4.svg" alt="animation-2d" onclick="cargarGifs(this)" data-id="4">
+                    </div>
+                    <div class="animation-3d">
+                        <img src="./assets/5.svg" alt="animation-3d" onclick="cargarGifs(this)" data-id="5">
+                    </div>
                     
                 </div>
             </div>
-            <div class="text-nosotros"></div>
+            <div class="text-nosotros">
+                <div class="text-description">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia eum ut laudantium. Reiciendis, repellendus delectus! Autem sint officia perspiciatis pariatur harum commodi, reiciendis eveniet nesciunt nostrum, saepe aspernatur sapiente fuga.</p>
+                </div>
+            </div>
         </div>
 
     </div>
+
+    <template id="template-nosotros">
+        <p></p>
+        <img src="" alt="gif">
+    </template>
+
+    <script src="./js/nosotros.js"></script>
 </body>
 </html>
