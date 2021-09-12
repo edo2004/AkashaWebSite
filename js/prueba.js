@@ -14,15 +14,16 @@ const templateVideo = document.querySelector('#template-video').content;
 const fragment = document.createDocumentFragment();
 video.innerHTML = ""
 var images = ["./assets/Galeria/Corporative_Video.png"];
-fondo3.style.display = "none"
+fondo3.style.opacity = "0"
 console.log(video.innerHTML)
 if (video.innerHTML == '') {
     video.innerHTML = `<iframe class="video-galery" src="https://player.vimeo.com/video/583627240?title=0&dnt=0&byline=0&playsinline=0" frameborder="0" allow="autoplay"; fullscreen" allowfullscreen></iframe>`
 }
 setTimeout(function () {
-    fondo3.style.display = ""
+    fondo3.style.opacity = "1"
+    fondo3.style.transition = "2s"
     fondo1.style.filter = "grayscale(100%)"
-},3000)
+},2000)
 
 
 function traerDatos(data) {
@@ -62,7 +63,7 @@ function transicionImagen(imagen) {
     var tamaño = images.length
 
     setTimeout(function() {
-        fondo3.style.display = "none"
+        fondo3.style.opacity = "0"
         fondo2.style.display = "none"
         fondo1.style.filter = ""
         fondo2.style.display = ""
@@ -80,13 +81,20 @@ function transicionImagen(imagen) {
         fondo2.style.width = "0%"
         fondo2.style.transition = "none"
         fondo1.setAttribute("src", images[tamaño-1])
-        fondo3.style.display = ""
+        fondo3.style.opacity = "1"
+        fondo3.style.transition = "2s"
         fondo1.style.filter = "grayscale(100%)"
-    },4000)  
+        fondo1.style.transition= "filter 2s"
+    },2000)  
     
 }
 
-items.addEventListener('mousemove', parallax);
+window.addEventListener("scroll", () => {
+    if(window.screen.width > 700){
+        console.log(screen.width)
+        items.addEventListener('mousemove', parallax);
+    }
+})
 
 function parallax(e){
     this.querySelectorAll('.item').forEach(button => {
