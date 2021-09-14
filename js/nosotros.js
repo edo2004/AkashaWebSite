@@ -29,6 +29,7 @@ function cargarGifs(data) {
                     
                     templateNosotros.querySelector('p').textContent = description
                     templateNosotros.querySelector('img').setAttribute("src", imagen);
+                    templateNosotros.querySelector('img').style.opacity = "1";
                     
                     const clonar = templateNosotros.cloneNode(true);
                     fragment1.appendChild(clonar);
