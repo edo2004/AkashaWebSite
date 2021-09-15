@@ -1,5 +1,5 @@
 const textDescription = document.querySelector('.text-description')
-
+const fondoNosotros = document.querySelector('.fondo-nosotros')
 const templateNosotros = document.querySelector('#template-nosotros').content;
 const fragment1 = document.createDocumentFragment();
 
@@ -44,3 +44,32 @@ function cargarHome() {
     textDescription.innerHTML = "";
     textDescription.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia eum ut laudantium. Reiciendis, repellendus delectus! Autem sint officia perspiciatis pariatur harum commodi, reiciendis eveniet nesciunt nostrum, saepe aspernatur sapiente fuga.</p>`
 }
+
+// efecto parallax
+
+document.addEventListener('mousemove', parallax);
+
+function parallax(e){
+    this.querySelectorAll('.fondo-item').forEach(button => {
+        const speed = button.getAttribute('data-speed')
+
+
+        const x = (window.innerWidth - e.pageX*speed)/100
+        const y = (window.innerHeight - e.pageY*speed)/100
+
+        button.style.transform = `translateX(${x}px) translateY(${y}px)`
+
+    })
+}
+
+// Todo iba bien hasta cuando...xD
+
+// let Semana = ['Lunes', 'Martes', 'Jueves', 'Viernes','Sabado', 'Domingo'];
+// Semana.forEach(dia => {
+//     if(dia === "Miercoles") {
+//         console.log("Veo a mi novia")
+//     }else {
+//         console.log(`Voy a tomar el: ${dia}`)
+//     }
+// }) 
+

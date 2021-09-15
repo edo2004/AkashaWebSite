@@ -99,7 +99,7 @@ window.addEventListener("scroll", () => {
 function parallax(e){
     this.querySelectorAll('.item').forEach(button => {
         const speed = button.getAttribute('data-speed')
-
+        console.log(button)
         const x = (window.innerWidth - e.pageX*speed)/10
 
         button.style.transform = `translateX(${x}px)`

@@ -3,13 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .container-nosotros {
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
+    overflow: hidden;
+    /* background: cadetblue; */
 }
+
+/* Fondo en CSS */
 .fondo-nosotros {
     width: 100%;
     height: 100%;
@@ -17,10 +20,40 @@
     top: 0;
     left: 0;
 }
-.fondo-nosotros img {
+.fondo-nosotros_1 {
     width: 100%;
-    height: 100%;
-    opacity: 0.3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 8%);
+    grid-auto-rows: 14vh;
+    gap:0 10%;
+    margin: -5% auto auto -5%;
+    position: absolute;
+}
+.fondo-item {
+    grid-column: span 2;
+}
+.fondo-item:nth-of-type(3) {
+    grid-column: 2 / span 2;
+}
+.fondo-item:nth-of-type(5) {
+    grid-column: 3 / span 2;
+}
+.fondo-item:nth-of-type(6) {
+    grid-column: 2 / span 2;
+}
+.fondo-item:nth-of-type(8) {
+    grid-column: 1 / span 2;
+}
+.fondo-item:nth-of-type(9) {
+    grid-column: 2 / span 2;
+}
+.fondo-item:nth-of-type(11) {
+    grid-column: 4 / span 2;
+}
+.fondo-nosotros .fondo-nosotros_1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 .content-nosotros {
     width: 100%;
@@ -130,6 +163,9 @@
     .content-nosotros {
         flex-direction: row;
     }
+    .fondo-nosotros_1 {
+        width: 50%;
+    }
     .image-nosotros {
         width: 48%;
         height: 100%;
@@ -145,7 +181,7 @@
         /* background: rgb(150, 93, 150,0.4); */
     }
     .graphics img {
-        height: 90%;
+        height: 100%;
     }
     .cinematics-home {
         padding: 3% 3%;
@@ -156,10 +192,10 @@
         align-items: flex-end;
     }
     .cinematics img {
-        height: 90%;
+        height: 100%;
     }
     .home-item {
-        height: 65%;
+        height: 75%;
         justify-content: flex-start;
         padding-left: 2%;
     }
@@ -175,7 +211,7 @@
         justify-content: center;
     }
     .animation-2d img {
-        height: 85%;
+        height: 100%;
     }
     .animation-3d {
         width:57%;
@@ -185,7 +221,7 @@
         
     }
     .animation-3d img {
-        height: 65%;
+        height: 85%;
     }
     .text-nosotros {
         width: 52%;
@@ -207,6 +243,9 @@
     .content-nosotros {
         flex-direction: row;
     }
+    .fondo-nosotros_1 {
+        width: 50%;
+    }
     .image-nosotros {
         width: 48%;
         height: 100%;
@@ -222,7 +261,7 @@
         /* background: rgb(150, 93, 150,0.4); */
     }
     .graphics img {
-        height: 90%;
+        height: 100%;
     }
     .cinematics-home {
         padding: 3% 3%;
@@ -233,10 +272,10 @@
         align-items: flex-end;
     }
     .cinematics img {
-        height: 90%;
+        height: 100%;
     }
     .home-item {
-        height: 65%;
+        height: 75%;
         justify-content: flex-start;
         padding-left: 2%;
     }
@@ -252,7 +291,7 @@
         justify-content: center;
     }
     .animation-2d img {
-        height: 85%;
+        height: 100%;
     }
     .animation-3d {
         width:57%;
@@ -262,7 +301,7 @@
         
     }
     .animation-3d img {
-        height: 65%;
+        height: 85%;
     }
     .text-nosotros {
         width: 52%;
@@ -278,4 +317,5 @@
         height: auto;
         max-width: 90%;
     }  
+    
 }
