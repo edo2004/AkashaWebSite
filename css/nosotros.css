@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    overflow-x: hidden;
+    font-family: Helvetica, Sans-Serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 2vh;  
+}
 .container-nosotros {
     position: relative;
     width: 100%;
@@ -141,29 +148,29 @@
 }
 .text-description {
     width: 100%;
-    padding: 1rem;
-    font-size: 2.5vh;
+    padding: 1rem 1rem 0 1rem;
     text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     transition: 0.5s all ease;
     transform: none;
     
 }
 .text-description.visible {
     opacity: 0;
-    transform: translateY(-20%);
+    /* transform: translateY(-20%); */
+    transform: scale(0);
 }
 .text-description img{
+    align-self: center;
     height: auto;
-    width: 50%;
+    width: 25%;
 }
 li {
     
-    font-size: 2.5vh;
-    transform: translateX(10%);
+    transform: translateX(5%);
     list-style: none;
     /* list-style-image: url("../assets/LogoFooter.svg"); */
 }
@@ -172,8 +179,8 @@ ul li::before {
     display: inline-block; 
     padding-right: 20px;
     font-size: 50px;
-    line-height: 25px;
-    vertical-align: -11px;
+    line-height: 1rem;
+    vertical-align: -5px;
     width: 2vh;
 }
 
@@ -248,7 +255,8 @@ ul li::before {
     }
     .text-description img{
         height: auto;
-        max-width: 90%;
+        width: 80%;
+        max-width: 100%;
     } 
     
 }
@@ -318,7 +326,8 @@ ul li::before {
     }
     .text-description img{
         height: auto;
-        max-width: 90%;
+        width: 50%;
+        max-width: 100%;
     }  
     
 }
