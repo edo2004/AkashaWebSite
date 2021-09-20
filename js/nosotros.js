@@ -5,7 +5,35 @@ const fragment1 = document.createDocumentFragment();
 
 // textDescription.innerHTML = ""
 
+const ContentGifs = [
+    {
+        description:`<h1>Nosotros</h1>
+        <p class="hola-mundo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia eum ut laudantium. Reiciendis, repellendus delectus! Autem sint officia perspiciatis pariatur harum commodi, reiciendis eveniet nesciunt nostrum, saepe aspernatur sapiente fuga.</p>
+        <img src="./assets/LogoFooter.svg" alt="LogoFooter">`
+    },
+    {
+        description:`<h1>Nosotros</h1>
+        <p class="hola-mundo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia eum ut laudantium. Reiciendis, repellendus delectus! Autem sint officia perspiciatis pariatur harum commodi, reiciendis eveniet nesciunt nostrum, saepe aspernatur sapiente fuga.</p>
+        <img src="./assets/LogoFooter.svg" alt="LogoFooter">`
+    },
+    {
+        description:`<h1>Nosotros</h1>
+        <p class="hola-mundo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia eum ut laudantium. Reiciendis, repellendus delectus! Autem sint officia perspiciatis pariatur harum commodi, reiciendis eveniet nesciunt nostrum, saepe aspernatur sapiente fuga.</p>
+        <img src="./assets/LogoFooter.svg" alt="LogoFooter">`
+    },
+    {
+        description:`<h1>Nosotros</h1>
+        <p class="hola-mundo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia eum ut laudantium. Reiciendis, repellendus delectus! Autem sint officia perspiciatis pariatur harum commodi, reiciendis eveniet nesciunt nostrum, saepe aspernatur sapiente fuga.</p>
+        <img src="./assets/LogoFooter.svg" alt="LogoFooter">`
+    },
+    {
+        description:`<h1>Nosotros</h1>
+        <p class="hola-mundo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia eum ut laudantium. Reiciendis, repellendus delectus! Autem sint officia perspiciatis pariatur harum commodi, reiciendis eveniet nesciunt nostrum, saepe aspernatur sapiente fuga.</p>
+        <img src="./assets/LogoFooter.svg" alt="LogoFooter">`
+    }
+]
 
+console.log(ContentGifs[0])
 // if (textDescription.innerHTML == '') {
 //     textDescription.innerHTML = `<iframe class="video-galery" src="https://player.vimeo.com/video/583627240?title=0&dnt=0&byline=0&playsinline=0" frameborder="0" allow="autoplay"; fullscreen" allowfullscreen></iframe>`
 // }
@@ -31,16 +59,9 @@ function cargarGifs(data) {
                     console.log(imagen)
                     setTimeout(function () {
 
-                        if(item.id === "1")
+                        if(item.id === "2")
 
-                        textDescription.innerHTML = `<h1>${item.title}</h1>
-                                                        <ul>
-                                                        <li>Hola cabros</li>
-                                                        <li>Wenas</li>
-                                                        <li></li>
-                                                        <li></li>
-                                                        <li></li>
-                                                        </ul>`
+                        textDescription.innerHTML =  ContentGifs[0].description
                         textDescription.classList.remove("visible")
                     },500)
                     // templateNosotros.querySelector('p').textContent = description
