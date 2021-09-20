@@ -3,13 +3,27 @@
     padding: 0;
     margin: 0;
 }
+/* @font-face {
+    font-family: Helvetica, Sans-Serif;
+    src: url('./fonts/HelveticaNeueLTStd-Bd.otf') format('otf');
+    font-style: italic;
+    font-weight: bold;
+  } */
 body {
     overflow-x: hidden;
+    font-family: Helvetica, Sans-Serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 3rem;
+    
 }
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    
 }
+
+
 body::-webkit-scrollbar {
     width: 10px;     /* Tamaño del scroll en vertical */
     height: 20px;    /* Tamaño del scroll en horizontal */
