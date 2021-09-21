@@ -143,3 +143,15 @@ window.addEventListener("scroll", (e) => {
     e.stopPropagation();
 })
 
+
+
+
+// Todo iba bien hasta cuando...xD
+// let Semana = ['Lunes', 'Martes', 'Jueves', 'Viernes','Sabado', 'Domingo'];
+// Semana.forEach(dia => {
+//     if(dia === "Miercoles") {
+//         console.log("Veo a mi novia")
+//     }else {
+//         console.log(`Voy a tomar el: ${dia}`)
+//     }
+// }) 
