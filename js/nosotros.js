@@ -86,9 +86,9 @@ function cargarGifs(data) {
 
 // efecto parallax
 
-document.addEventListener('mousemove', parallax);
+document.addEventListener('mousemove', parallaxNosotros);
 
-function parallax(e){
+function parallaxNosotros(e){
     this.querySelectorAll('.fondo-item').forEach(button => {
         const speed = button.getAttribute('data-speed')
 

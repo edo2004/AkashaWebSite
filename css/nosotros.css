@@ -168,13 +168,13 @@ body {
     height: auto;
     width: 25%;
 }
-li {
+.text-description li {
     
     transform: translateX(5%);
     list-style: none;
     /* list-style-image: url("../assets/LogoFooter.svg"); */
 }
-ul li::before {
+.text-description ul li::before {
     content: url("../assets/LogoFooter.svg");  
     display: inline-block; 
     padding-right: 20px;

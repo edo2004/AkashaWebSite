@@ -3,12 +3,7 @@
     padding: 0;
     margin: 0;
 }
-/* @font-face {
-    font-family: Helvetica, Sans-Serif;
-    src: url('./fonts/HelveticaNeueLTStd-Bd.otf') format('otf');
-    font-style: italic;
-    font-weight: bold;
-  } */
+
 body {
     overflow-x: hidden;
     font-family: Helvetica, Sans-Serif;
@@ -68,7 +63,7 @@ body::-webkit-scrollbar-thumb:hover {
     overflow: hidden;
     z-index: 2;
 }
-.header-video iframe {
+.header-video video {
     position: absolute;
     top:0;
     left: 0;
@@ -78,7 +73,7 @@ body::-webkit-scrollbar-thumb:hover {
     overflow-x: hidden;
     /* display: none; */
 }
-.header-video > iframe {
+.header-video > video {
     object-fit: cover;
 }
 .header-franja img {
@@ -106,16 +101,24 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Franja derecha */
 .franja-derecha {
-    width: 15%;
+    width: 6%;
+    /* background: #fc00ff; */
+    position: absolute;
+    padding-bottom: 84.375%;
+    overflow: hidden;
+    top:0;
+    right: 0;
+    z-index: 6;
 }
 .franja-derecha img {
     position: absolute;
     top:0;
     right: 0;
-    width: 29.7%;
-    z-index: 6;
+    height: 100%;
+    /* width: 14.36%; */
     /* transform: translate(30%) rotate(-2.5deg); */
-    transform: translate(35%) scaleX(0.3);
+    transform: translate(30%) scaleX(0.4);
+    /* display: none; */
 }
 
 .franja-derecha > img {
@@ -238,15 +241,16 @@ body::-webkit-scrollbar-thumb:hover {
     height: 100vh;
     display: flex;
 }
-.galery > img{
+/* .galery > img{
 	object-fit: cover;
-}
+} */
 .fondo1 {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+    object-fit: cover;
 }
 .fondo2 {
     width: 0;
@@ -256,6 +260,7 @@ body::-webkit-scrollbar-thumb:hover {
     right: 0;
     transform: scale(1.3);
     transition: 2s;
+    object-fit: cover;
 }
 
 .fondo3 {
@@ -401,6 +406,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .email-section img {
     width: 100%;
+    height: 100vh;
 }
 
 
@@ -521,9 +527,9 @@ body::-webkit-scrollbar-thumb:hover {
     
 }
 
-#bgvid{
+/* #bgvid{
     position: fixed;
-    z-index: -3;
+    z-index: -2;
 }
 
 @media (min-aspect-ratio: 16/9){
@@ -540,4 +546,4 @@ body::-webkit-scrollbar-thumb:hover {
         width: auto;
         height: 100%;
     }
-}
+} */

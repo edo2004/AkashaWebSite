@@ -5,6 +5,8 @@ const video = document.querySelector('.video-galery')
 const button = document.querySelectorAll('.item-image')
 const items = document.querySelector('.honey')
 const navegador = document.querySelector('.header-nav')
+const videoHeader = document.querySelector('#bgvid')
+const franjaDerecha = document.querySelector('.franja-derecha')
 // const navMenu = document.querySelectorAll('.nav__menu')
 // const menu = document.querySelector('.menu')
 // const closeMenu = document.querySelector('.close')
@@ -73,10 +75,14 @@ function transicionImagen(imagen) {
         fondo2.classList.add('traslate')
         fondo2.style.width = "100%"
         fondo2.style.transition = "2s"
-        fondo1.classList.add('scaleFondo')
-    },5)
+        // fondo1.classList.add('scaleFondo')
+        fondo1.style.transform = `scale(1.3)`
+        fondo1.style.transition = "2s"
+    },20)
     setTimeout(function () {
-        fondo1.classList.remove('scaleFondo')
+        // fondo1.classList.remove('scaleFondo')
+        fondo1.style.transform = `scale(1)`
+        fondo1.style.transition = "none"
         fondo2.classList.remove('traslate')
         fondo2.style.width = "0%"
         fondo2.style.transition = "none"
@@ -90,8 +96,8 @@ function transicionImagen(imagen) {
 }
 
 window.addEventListener("scroll", () => {
-    if(window.screen.width > 700){
-        console.log(screen.width)
+    if(window.screen.width > 640){
+        // console.log(screen.width)
         items.addEventListener('mousemove', parallax);
     }
 })
@@ -99,7 +105,7 @@ window.addEventListener("scroll", () => {
 function parallax(e){
     this.querySelectorAll('.item').forEach(button => {
         const speed = button.getAttribute('data-speed')
-        console.log(button)
+        // console.log(button)
         const x = (window.innerWidth - e.pageX*speed)/10
 
         button.style.transform = `translateX(${x}px)`
@@ -123,3 +129,15 @@ function removeBackground() {
     // menu.style.display = "block"
 
 }
+
+window.addEventListener("scroll", (e) => {
+    let tAncho = fondo1.width
+    let tAlto = fondo1.height
+
+    let tamañofranja = Math.round(tAncho/1.7778 + 3*tAlto)
+    franjaDerecha.style.height = `${tamañofranja}px`
+    // console.log(tamañofranja)
+
+    e.stopPropagation();
+})
+
