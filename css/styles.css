@@ -115,6 +115,7 @@ body::-webkit-scrollbar-thumb:hover {
     top:0;
     right: 0;
     height: 100%;
+    min-height: 1000px;
     /* width: 14.36%; */
     /* transform: translate(30%) rotate(-2.5deg); */
     transform: translate(30%) scaleX(0.4);
@@ -207,13 +208,13 @@ body::-webkit-scrollbar-thumb:hover {
     position: fixed;
     bottom: 16px;
     right: 32px;
-    width: 58px;
-    height: 50px;
+    width: 10vh;
+    height: 8vh;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 32px;
+    font-size: 3vh;
     color: #1f1f1f;
     text-decoration: none;
     opacity: 0;
@@ -310,30 +311,49 @@ body::-webkit-scrollbar-thumb:hover {
 
 .honey{
     width: 100%;
-    padding: 1rem;
-    height: 20rem;
-    /* background: rgb(116, 30, 30); */
+    height: 33vh;
+    /* background: rgba(43, 42, 42,0.5); */
     position: absolute;
     bottom: 0;
     left: 0;
-    /* transform: translateX(4rem); */
     overflow-x: scroll;
     overflow-y: hidden;
 }
+
+.content_honey{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(20, 4vh);
+    grid-auto-rows: 8.5vh;
+    grid-gap: 0rem 11vh;
+    position: absolute;
+
+}
 .item{
-    width: 11rem;
-    height: 9rem;
     background-color: #fff;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     transition: 450ms all;
+    grid-column: span 2;
+    height: 16vh;
     
 }
+.item:nth-of-type(11) {
+    grid-column: 2 / span 2;
+}
+.item:nth-of-type(20) {
+    grid-column: 1 / span 2;
+}
+.item:nth-of-type(30) {
+    grid-column: 2 / span 2;
+}
+
 .item img {
     width: 100%;
     height: 100%;
 }
 .item-transparent {
-    opacity: 0.01;
+    opacity: 0.3;
 }
 .item-image{
     background: rgb(96, 95, 95);
@@ -353,120 +373,6 @@ body::-webkit-scrollbar-thumb:hover {
     transform: scale(1.1);
     opacity: 1;
 }
-.comb_1{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem  ;
-    grid-gap: 0rem 7.5rem;
-    /* grid-gap: 0rem 6rem; */
-    position: absolute;
-
-}
-.comb_2{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem  ;
-    grid-gap: 0rem 7.5rem;
-    margin: 4.9rem 0 0 8.7rem ;
-    /* grid-gap: 0rem 6rem; */
-    /* margin: 4rem 0 0 8rem ; */
-    position: absolute;
-}
-
-.comb_3{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem  ;
-    grid-gap: 0 7.5rem;
-    margin: 9.8rem 0 0 0;
-    /* grid-gap: 0 6rem; */
-    /* margin: 8.1rem 0 0 0; */
-    position: absolute;
-}
-.comb_4{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem  ;
-    grid-gap: 0 7.5rem;
-    margin: 14.5rem 0 0 8.7rem ;
-    /* grid-gap: 0 6rem; */
-    /* margin: 12.2rem 0 0 8rem ; */
-    position: absolute;
-}
-
-
-
-
-
-
-/* email */
-.email-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
-.fondo-email {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
-.fondo-email img {
-    height: 80%;
-    max-width: 80%;
-}
-.content-email {
-    z-index: 2;
-    position: absolute;
-    max-width: 80%;
-    height: 80%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgba(181, 160, 160,0.4);
-
-}
-.content-email form {
-    transform: translateX(30%) translateY(-30%);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.content-email form input {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid gray;
-    font-size: 1.5vh;
-    background: transparent;
-    padding: 0.2%;
-    outline: none;
-}
-.content-email form textarea {
-    border: none;
-    padding: 0.2%;
-    outline: none;
-}
-.content-email form .btn-enviar {
-    border: none;
-    align-self: center;
-    margin: 20% 0 0 40%;
-    background: gray;
-    padding: 0.5rem;
-}
-.gif-email {
-    z-index: 3;
-}
-
 
 
 /* responsive */
@@ -560,27 +466,6 @@ body::-webkit-scrollbar-thumb:hover {
     .honey {
         overflow-x: hidden;
         padding-left: 3rem;
-    }
-    .item {
-        width: 11rem;
-        height: 9rem;
-    }
-    .comb_1{
-        grid-gap: 0rem 7.5rem;
-    
-    }
-    .comb_2{
-        grid-gap: 0rem 7.5rem;
-        margin: 4.9rem 0 0 8.7rem ;
-    }
-    
-    .comb_3{
-        grid-gap: 0 7.5rem;
-        margin: 9.8rem 0 0 0;
-    }
-    .comb_4{
-        grid-gap: 0 7.5rem;
-        margin: 14.5rem 0 0 8.7rem ;
     }
     
 }

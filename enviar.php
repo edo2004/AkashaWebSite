@@ -15,10 +15,10 @@ $message .= "Teléfono de contacto: " . $phone . " \r\n";
 $message .= "Mensaje: " . $_POST['message'] . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
-$para = 'vidahoro@gmail.com';
+$para = 'edoleddemo@gmail.com';
 $asunto = 'Correo mediatico';
 
 mail($para, $asunto, $message, $header);
 
-header("Location:index.html");
+header("Location:index.html#email_section");
 ?>

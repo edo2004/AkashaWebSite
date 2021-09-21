@@ -93,8 +93,8 @@ function parallaxNosotros(e){
         const speed = button.getAttribute('data-speed')
 
 
-        const x = (window.innerWidth - e.pageX*speed)/50
-        const y = (window.innerHeight - e.pageY*speed)/50
+        const x = (window.innerWidth - e.pageX*speed)/40
+        const y = (window.innerHeight - e.pageY*speed)/40
 
         window.addEventListener("scroll", () => {
             if(window.screen.width < 640){

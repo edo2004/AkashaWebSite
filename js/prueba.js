@@ -7,10 +7,6 @@ const items = document.querySelector('.honey')
 const navegador = document.querySelector('.header-nav')
 const videoHeader = document.querySelector('#bgvid')
 const franjaDerecha = document.querySelector('.franja-derecha')
-// const navMenu = document.querySelectorAll('.nav__menu')
-// const menu = document.querySelector('.menu')
-// const closeMenu = document.querySelector('.close')
-
 
 const templateVideo = document.querySelector('#template-video').content;
 const fragment = document.createDocumentFragment();
@@ -95,7 +91,7 @@ function transicionImagen(imagen) {
     
 }
 
-window.addEventListener("scroll", () => {
+window.addEventListener("mousemove", () => {
     if(window.screen.width > 640){
         // console.log(screen.width)
         items.addEventListener('mousemove', parallax);
@@ -134,8 +130,14 @@ window.addEventListener("scroll", (e) => {
     let tAncho = fondo1.width
     let tAlto = fondo1.height
 
-    let tamañofranja = Math.round(tAncho/1.7778 + 3*tAlto)
-    franjaDerecha.style.height = `${tamañofranja}px`
+    if(fondo1.width>=640){
+        let tamañofranja = Math.round(tAncho/1.7778 + 3*tAlto)
+        franjaDerecha.style.height = `${tamañofranja}px`
+    }else{
+        let tamañofranja = Math.round(tAncho/1.185185 + 3*tAlto)
+        franjaDerecha.style.height = `${tamañofranja}px`
+    }
+
     // console.log(tamañofranja)
 
     e.stopPropagation();
