@@ -235,8 +235,27 @@
 
 
     <div class="email-section" id="email_section">
-        <img class="fondoEmail" src="./assets/Galeria/cyberpunk_Persecution.png" alt="">
+        <div class="fondo-email">
+            <img class="fondoEmail" src="./assets/Email.svg" alt="">
+        </div>
+        <div class="content-email">
+            <form action="enviar.php" method="post">
+                <input type="text" name="name" id="name" class="name" placeholder="Nombre">
+                <input type="email" name="mail" id="mail" class="email" placeholder="Correo">
+                <input type="number" name="phone" id="subject" class="subject" placeholder="Telefono">
+                <textarea name="message" class="message" placeholder="Mensaje... " id="message"></textarea>
+                <div class="clear"></div>
+                <button type="submit" class="btn-enviar">ENVIAR </button>
+            </form>
+        </div>
+        <div class="gif-email">
+
+        </div>
     </div>
+
+
+
+<!-- Footer -->
 
 
     <footer>

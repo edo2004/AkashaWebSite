@@ -16,7 +16,8 @@ body {
     height: 100vh;
     display: flex;
     overflow: hidden;
-    /* background: cadetblue; */
+    z-index: 3;
+    background: white;
 }
 
 /* Fondo en CSS */
@@ -167,6 +168,9 @@ body {
     align-self: center;
     height: auto;
     width: 25%;
+}
+.text-description p {
+    padding-right: 8%;
 }
 .text-description li {
     

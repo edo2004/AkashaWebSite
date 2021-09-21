@@ -403,10 +403,68 @@ body::-webkit-scrollbar-thumb:hover {
 .email-section {
     position: relative;
     width: 100%;
-}
-.email-section img {
-    width: 100%;
     height: 100vh;
+}
+.fondo-email {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.fondo-email img {
+    height: 80%;
+    max-width: 80%;
+}
+.content-email {
+    z-index: 2;
+    position: absolute;
+    max-width: 80%;
+    height: 80%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(181, 160, 160,0.4);
+
+}
+.content-email form {
+    transform: translateX(30%) translateY(-30%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.content-email form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 1.5vh;
+    background: transparent;
+    padding: 0.2%;
+    outline: none;
+}
+.content-email form textarea {
+    border: none;
+    padding: 0.2%;
+    outline: none;
+}
+.content-email form .btn-enviar {
+    border: none;
+    align-self: center;
+    margin: 20% 0 0 40%;
+    background: gray;
+    padding: 0.5rem;
+}
+.gif-email {
+    z-index: 3;
 }
 
 
