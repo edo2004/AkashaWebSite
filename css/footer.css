@@ -16,23 +16,21 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 12;
   }
 .footer-content{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     justify-items: center;
     align-items: center;
-    z-index: 12;   
 
 }
 .footer-description{
     justify-content: flex-start;
     width: 80%;
     padding: 1rem;
-    font-size: 1.5rem;
-    z-index: 12;
+    font-size: 2vh;
 }
 .footer-description p{
     padding: 0.2rem;
@@ -67,13 +65,13 @@ footer {
     
 }
 .footer-copyright{
-    padding: 1rem 0rem;
-    font-size: 0.9rem;
+    padding: 2vh 0;
+    font-size: 1.5vh;
     text-align: center;
 }
 
 
-@media only screen and (min-width:560px ) and (max-width:1000px){
+@media only screen and (min-width:640px ) and (max-width:992px){
     .footer-content{
         flex-direction: row;
         align-items: center;
@@ -89,11 +87,15 @@ footer {
     }
     .footer-Socia-Media{
         width: 25%;
+    }
+    .footer-social_Media_Logos img{
+        width: 12%;
+        
     }
 
 }
 
-@media only screen and (min-width:1001px){
+@media only screen and (min-width:993px){
     .footer-content{
         flex-direction: row;
         align-items: center;
@@ -109,5 +111,9 @@ footer {
     }
     .footer-Socia-Media{
         width: 25%;
+    }
+    .footer-social_Media_Logos img{
+        width: 10%;
+        
     }
 }

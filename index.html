@@ -22,6 +22,7 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/nosotros.css">
+    <link rel="stylesheet" href="./css/email.css">
     <link rel="stylesheet" href="./css/footer.css">
 
     <title>Akasha</title>
@@ -87,45 +88,37 @@
 
         <div class="honey">
             <!-- col div-->
-            <div class="comb_1">
+            <div class="content_honey">
                 <div class="item item-image" onclick="traerDatos(this)" data-id="1" data-speed="4">
                 <img src="./assets/Galeria_hex/AKASHA_Reel.png" alt="AKASHA_Reel"></div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="2" data-speed="4">
-                <img src="./assets/Galeria_hex/ShutUp.png" alt="silence"></div>
-                <div class="item item-transparent" data-id="1" data-speed="4"></div>
-                <div class="item item-transparent" data-id="1" data-speed="4"></div>
-                <div class="item item-transparent" data-id="1" data-speed="4"></div>
-                <div class="item " data-speed="4"></div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="3" data-speed="4">
-                <img src="./assets/Galeria_hex/break_dance.png" alt="break_dance"></div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="4" data-speed="4">
-                    <img src="./assets/Galeria_hex/melissa_Wild.png" alt="melissa_Wild">
-                </div>
-            </div>
-
-            <!-- col div-->
-            <div class="comb_2">
-                <div class="item " data-speed="4"></div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="5" data-speed="4">
-                    <img src="./assets/Galeria_hex/paso_x_ti.png" alt="paso_x_ti"></div>
                 <div class="item item-image" onclick="traerDatos(this)" data-id="6" data-speed="4">
                     <img src="./assets/Galeria_hex/Shinzo_Coffee.png" alt="Shinzo_Coffee">
                 </div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="2" data-speed="4">
+                <img src="./assets/Galeria_hex/ShutUp.png" alt="silence"></div>
+                <div class="item item-transparent" data-id="1" data-speed="4"></div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="3" data-speed="4">
+                    <img src="./assets/Galeria_hex/break_dance.png" alt="break_dance"></div>
+                <div class="item " data-speed="4"></div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="4" data-speed="4">
+                    <img src="./assets/Galeria_hex/melissa_Wild.png" alt="melissa_Wild">
+                </div>
+                <div class="item item-transparent" data-id="1" data-speed="4"></div>    
+                <div class="item item-image" onclick="traerDatos(this)" data-id="5" data-speed="4">
+                    <img src="./assets/Galeria_hex/paso_x_ti.png" alt="paso_x_ti"></div>
                 <div class="item " data-speed="4"></div>
                 <div class="item item-image" onclick="traerDatos(this)" data-id="7" data-speed="4">
                     <img src="./assets/Galeria_hex/akasha_soda.png" alt="akasha_soda">                    
                 </div>
+                <div class="item item-transparent" data-id="1" data-speed="4"></div>                        
                 <div class="item item-image" onclick="traerDatos(this)" data-id="8" data-speed="4">
                     <img src="./assets/Galeria_hex/cyberpunk_Persecution.png" alt="">
                 </div>
+                <div class="item " data-speed="4"></div>
                 <div class="item item-transparent" data-speed="4"></div>
                 <div class="item item-image" onclick="traerDatos(this)" data-id="9" data-speed="4">
                 <img src="./assets/Galeria_hex/candy_ad.png" alt="">
                 </div>
-            </div>
-
-            <!-- col div-->
-            <div class="comb_3">
                 <div class="item item-image" onclick="traerDatos(this)" data-id="10" data-speed="4">
                     <img src="./assets/Galeria_hex/life_Academy.png" alt="life_Academy">
                 </div>
@@ -144,11 +137,6 @@
                 <div class="item item-image" onclick="traerDatos(this)" data-id="14" data-speed="4">
                     <img src="./assets/Galeria_hex/Corporative_Video.png" alt="Corporative_Video">
                 </div>
-            </div>
-
-            <!-- col div-->
-            <div class="comb_4">
-                
                 <div class="item item-image" onclick="traerDatos(this)" data-id="15" data-speed="4">
                     <img src="./assets/Galeria_hex/Naked_Fruit.png" alt="Naked_Fruit">
                 </div>
@@ -167,6 +155,12 @@
                 <div class="item item-image" onclick="traerDatos(this)" data-id="19" data-speed="4">
                     <img src="./assets/Galeria_hex/fresh_Cheese.png" alt="fresh_Cheese">
                 </div>
+                <div class="item " data-speed="4"></div>
+                <div class="item " data-speed="4"></div>
+                <div class="item " data-speed="4"></div>
+                <div class="item " data-speed="4"></div>
+                <div class="item " data-speed="4"></div>
+                <div class="item " data-speed="4"></div>
             </div>
 
         </div>
@@ -235,8 +229,25 @@
 
 
     <div class="email-section" id="email_section">
-        <img class="fondoEmail" src="./assets/Galeria/cyberpunk_Persecution.png" alt="">
+        <div class="content-email">
+            <img class="fondoEmail" src="./assets/Email.svg" alt="">
+            <form action="enviar.php" method="post">
+                <input type="text" name="name" id="name" class="name" placeholder="Nombre">
+                <input type="email" name="mail" id="mail" class="email" placeholder="Correo">
+                <input type="number" name="phone" id="subject" class="subject" placeholder="Telefono">
+                <textarea name="message" class="message" placeholder="Mensaje... " id="message"></textarea>
+                <div class="clear"></div>
+                <button type="submit" class="btn-enviar">ENVIAR </button>
+            </form>
+        </div>
+        <div class="gif-email">
+
+        </div>
     </div>
+
+
+
+<!-- Footer -->
 
 
     <footer>
@@ -274,7 +285,6 @@
     </template>
 
     <script src="./js/index.js"></script>
-    <script src="./js/prueba.js"></script>
     <script src="./js/nosotros.js"></script>
 </body>
 </html>
