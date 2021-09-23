@@ -16,6 +16,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
 .footer-content{
     width: 100%;
@@ -51,17 +52,17 @@ footer {
     align-items: center;
 }
 
+.footer-Socia-Media p{
+    padding: 2rem 0rem;
+}
 .footer-social_Media_Logos{
+    padding: 0 6vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-
-.footer-Socia-Media p{
-    padding: 2rem 0rem;
-}
 .footer-social_Media_Logos img{
-    width: 7%;
+    width: 10%;
     
 }
 .footer-copyright{

@@ -7,7 +7,7 @@
 body {
     overflow-x: hidden;
     font-family: Helvetica, Sans-Serif;
-    font-style: italic;
+    font-style: normal;
     font-weight: normal;
     font-size: 1rem;
     
@@ -97,6 +97,27 @@ body::-webkit-scrollbar-thumb:hover {
     left: 6%;
     width: 10%;
     height: 20%;
+}
+.footer-social_video{
+    position: absolute;
+    bottom: 3vh;
+    right: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 5vh;
+    z-index: 3;
+}
+.footer-social_video a {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+}
+.footer-social_video img{
+    width: 80%;
+    
 }
 
 /* Franja derecha */
@@ -323,7 +344,7 @@ body::-webkit-scrollbar-thumb:hover {
 .content_honey{
     width: 100%;
     display: grid;
-    justify-content: center;
+    justify-content: flex-start;
     grid-template-columns: repeat(20, 4vh);
     grid-auto-rows: 8.5vh;
     grid-gap: 0rem 11vh;
@@ -367,7 +388,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .honey:hover .item-image{
-    opacity: 0.3;
+    opacity: 0.5;
 }
 .honey:hover .item-image:hover{
     transform: scale(1.1);
@@ -411,10 +432,20 @@ body::-webkit-scrollbar-thumb:hover {
     .header {
         padding-bottom: 56.25%;
     }
-    .header-video iframe {
+    .header-video video {
         width: 100%;
         height: 100%;
         transform: none;
+    }
+    .footer-social_video{
+        bottom: 5vh;
+        right: 5%;
+        width: 25%;
+        height: 5vh;
+    }
+    .footer-social_video img{
+        width: 80%;
+        
     }
     
 }
@@ -450,10 +481,19 @@ body::-webkit-scrollbar-thumb:hover {
     .header {
         padding-bottom: 56.25%;
     }
-    .header-video iframe {
+    .header-video video {
         width: 100%;
         height: 100%;
         transform: none;
+    }
+    .footer-social_video{
+        bottom: 30vh;
+        right: 5%;
+        width: 15%;
+        height: 5vh;
+    }
+    .footer-social_video img{
+        width: 80%;
     }
     .video-titulo {
         flex-direction: row;
@@ -465,28 +505,6 @@ body::-webkit-scrollbar-thumb:hover {
     }
     .honey {
         overflow-x: hidden;
-        padding-left: 3rem;
     }
     
 }
-
-/* #bgvid{
-    position: fixed;
-    z-index: -2;
-}
-
-@media (min-aspect-ratio: 16/9){
-
-    #bgvid{
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9){
-
-    #bgvid{
-        width: auto;
-        height: 100%;
-    }
-} */
