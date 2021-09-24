@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("./fonts/MYRIADPRO-BOLD.OTF");
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -202,7 +207,7 @@ body::-webkit-scrollbar-thumb:hover {
 .nav__menu a {
     text-decoration: none;
     color: inherit;
-    font-size: 1rem;
+    font-size: 1.8vh;
     width: 6rem;
 }
 .nav__menu a:hover {
@@ -352,7 +357,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 }
 .item{
-    background-color: #fff;
+    background-color:black;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     transition: 450ms all;
     grid-column: span 2;
@@ -374,7 +379,7 @@ body::-webkit-scrollbar-thumb:hover {
     height: 100%;
 }
 .item-transparent {
-    opacity: 0.3;
+    opacity: 0.6;
 }
 .item-image{
     background: rgb(96, 95, 95);

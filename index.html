@@ -62,9 +62,9 @@
         
         <ul class="nav__menu">
             <li><a href="#home" >HOME</a></li>
-            <li><a href="#galery-template" ">GALERIA</a></li>
-            <li><a href="#email_section" >HABLEMOS</a></li>
-            <li><a href="#cont_nosotros" >NOSOTROS</a></li>
+            <li><a href="#galery-template" ">WORK</a></li>
+            <li><a href="#cont_nosotros" >ABOUT</a></li>
+            <li><a href="#email_section" >CONTACT</a></li>
         </ul>
     </div>
 
@@ -104,14 +104,14 @@
                 <div class="item item-transparent" data-id="1" data-speed="4"></div>
                 <div class="item item-image" onclick="traerDatos(this)" data-id="3" data-speed="4">
                     <img src="./assets/Galeria_hex/break_dance.png" alt="break_dance"></div>
-                <div class="item " data-speed="4"></div>
+                <div class="item item-transparent" data-speed="4"></div>
                 <div class="item item-image" onclick="traerDatos(this)" data-id="4" data-speed="4">
                     <img src="./assets/Galeria_hex/melissa_Wild.png" alt="melissa_Wild">
                 </div>
                 <div class="item item-transparent" data-id="1" data-speed="4"></div>    
                 <div class="item item-image" onclick="traerDatos(this)" data-id="5" data-speed="4">
                     <img src="./assets/Galeria_hex/paso_x_ti.png" alt="paso_x_ti"></div>
-                <div class="item " data-speed="4"></div>
+                <div class="item item-transparent" data-speed="4"></div>
                 <div class="item item-image" onclick="traerDatos(this)" data-id="7" data-speed="4">
                     <img src="./assets/Galeria_hex/akasha_soda.png" alt="akasha_soda">                    
                 </div>
@@ -119,7 +119,7 @@
                 <div class="item item-image" onclick="traerDatos(this)" data-id="8" data-speed="4">
                     <img src="./assets/Galeria_hex/cyberpunk_Persecution.png" alt="">
                 </div>
-                <div class="item " data-speed="4"></div>
+                <div class="item item-transparent" data-speed="4"></div>
                 <div class="item item-transparent" data-speed="4"></div>
                 <div class="item item-image" onclick="traerDatos(this)" data-id="9" data-speed="4">
                 <img src="./assets/Galeria_hex/candy_ad.png" alt="">
@@ -128,7 +128,7 @@
                     <img src="./assets/Galeria_hex/life_Academy.png" alt="life_Academy">
                 </div>
                 <div class="item item-transparent" data-speed="4"></div>
-                <div class="item " data-speed="4"></div>
+                <div class="item item-transparent" data-speed="4"></div>
                 <div class="item item-image" onclick="traerDatos(this)" data-id="11" data-speed="4">
                     <img src="./assets/Galeria_hex/graffity.png" alt="graffity">
                 </div>
@@ -155,17 +155,17 @@
                 <div class="item item-image" onclick="traerDatos(this)" data-id="18" data-speed="4">
                     <img src="./assets/Galeria_hex/wine_Cup.png" alt="wine_Cup">
                 </div>
-                <div class="item " data-speed="4"></div>
-                <div class="item " data-speed="4"></div>
+                <div class="item item-transparent" data-speed="4"></div>
+                <div class="item item-transparent" data-speed="4"></div>
                 <div class="item item-image" onclick="traerDatos(this)" data-id="19" data-speed="4">
                     <img src="./assets/Galeria_hex/fresh_Cheese.png" alt="fresh_Cheese">
                 </div>
-                <div class="item " data-speed="4"></div>
-                <div class="item " data-speed="4"></div>
-                <div class="item " data-speed="4"></div>
-                <div class="item " data-speed="4"></div>
-                <div class="item " data-speed="4"></div>
-                <div class="item " data-speed="4"></div>
+                <div class="item item-transparent" data-speed="4"></div>
+                <div class="item item-transparent" data-speed="4"></div>
+                <div class="item item-transparent" data-speed="4"></div>
+                <div class="item item-transparent" data-speed="4"></div>
+                <div class="item item-transparent" data-speed="4"></div>
+                <div class="item item-transparent" data-speed="4"></div>
             </div>
 
         </div>
@@ -176,6 +176,7 @@
     <!-- Nosotros -->
     <div class="container-nosotros">
         <div class="fondo-nosotros">
+            <!-- <img src="./assets/FondoAboutUs.svg" alt="fondo-nosotros"> -->
             <div class="fondo-nosotros_1">
                 <div class="fondo-item" data-speed="-20"><img src="./assets/S1.svg" alt=""></div>
                 <div class="fondo-item" data-speed="5"><img src="./assets/S1.svg" alt="" ></div>
@@ -234,16 +235,30 @@
 
 
     <div class="email-section" id="email_section">
+        <div class="fondo-email">
+            <img src="./assets/FondoCorreo.svg" alt="FondoCorreo">
+        </div>
         <div class="content-email">
-            <img class="fondoEmail" src="./assets/Email.svg" alt="">
-            <form action="enviar.php" method="post">
-                <input type="text" name="name" id="name" class="name" placeholder="Nombre">
-                <input type="email" name="mail" id="mail" class="email" placeholder="Correo">
-                <input type="number" name="phone" id="subject" class="subject" placeholder="Telefono">
-                <textarea name="message" class="message" placeholder="Mensaje... " id="message"></textarea>
-                <div class="clear"></div>
-                <button type="submit" class="btn-enviar">ENVIAR </button>
-            </form>
+            <div class="icon-email">
+                <img class="fondoEmail" src="./assets/Email.svg" alt="">
+            </div>
+            
+            <div class="form-email">
+                <div class="info-email">
+                    <h1>Contact Us</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <form action="enviar.php" method="post">
+                    <div class="datos-personales-form">
+                        <input type="text" name="name" id="name" class="name" placeholder="Name/Company">
+                        <input type="number" name="phone" id="subject" class="subject" placeholder="Telephone">
+                    </div>
+                    <input type="email" name="mail" id="mail" class="email" placeholder="Email address">
+                    <textarea name="message" class="message" placeholder="Message" id="message"></textarea>
+                    <div class="clear"></div>
+                    <button type="submit" class="btn-enviar">ENVIAR </button>
+                </form>
+            </div>
         </div>
         <div class="gif-email">
 
