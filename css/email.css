@@ -50,6 +50,7 @@
     align-items: center;
 }
 .info-email {
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -110,6 +111,16 @@
     color: white;
     font-weight: bold;
     cursor: pointer;
+}
+.email-social_Media_Logos{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.email-social_Media_Logos img{
+    width: 5%;
+    
 }
 .gif-email {
     z-index: 3;

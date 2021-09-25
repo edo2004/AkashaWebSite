@@ -106,6 +106,8 @@ body {
 .graphics img {
     height: 100%;
     max-width: 50%;
+    -webkit-filter:drop-shadow(10px -1px 6px rgba(0,0,0,0.85));
+    filter:drop-shadow(10px -1px 6px rgba(0,0,0,0.85))
 }
 .cinematics-home {
     width: 100%; 
