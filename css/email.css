@@ -18,6 +18,8 @@
 }
 .fondo-email img {
     min-height: 100vh;
+    min-width: 100%;
+    transform: translateX(-15%);
 }
 .content-email {
     width: 100%;
@@ -59,6 +61,8 @@
 }
 .info-email h1 {
     color: white;
+    font-size: 5vh;
+    padding: 1vh;
 }
 .info-email p {
     color: white;
@@ -84,10 +88,10 @@
 .form-email form input {
     border: none;
     background: white;
-    border-radius: 1.5vh;
+    border-radius: 1vh;
     margin: 1vh;
     font-size: 1.7vh;
-    padding: 1vh;
+    padding: 0.8vh;
     outline: none;
 }
 ::placeholder {
@@ -98,23 +102,28 @@
 }
 .form-email form textarea {
     border: none;
-    border-radius: 2vh;
+    border-radius: 1vh;
     margin: 1vh;
     padding: 1vh;
     outline: none;
-    height: 25vw;
+    height: 20vw;
     font-size: 1.7vh;
 }
 .form-email form .btn-enviar {
     border: none;
     border-radius: 2vh;
     margin: 1vh 1vh 0.2vh 1vh;
-    background: rgb(210, 8, 102);
+    background: #fbfbfb;
     padding: 1vh;
     font-size: 1.8vh;
-    color: white;
+    color: rgb(210, 8, 102);
     font-weight: bold;
     cursor: pointer;
+}
+.form-email form .btn-enviar:hover {
+    background: rgb(210, 8, 102);
+    border: 1px solid white;
+    color: white;
 }
 .email-social_Media_Logos{
     width: 90%;
@@ -137,40 +146,78 @@
 
 
 /* responsive */
-@media only screen and (min-width:640px ) and (max-width:1024px){
-    .content-email img {
-        width: 70vw;
+@media only screen and (min-width:640px ) and (max-width:992px){
+    .fondo-email img {
+        transform: none;
     }
-    .content-email form .btn-enviar {
-        margin: 5% 0 15% 0;
-        padding: 0.5rem;
+    .content-email {
+        padding-right: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        /* background: rgba(181, 160, 160,0.4); */
+    
     }
-    .content-email form input {
-        font-size: 1.8vh;
-        padding: 0.3%;
+    .icon-email {
+        width: 50%;
+        transform: none;
     }
-    .content-email form textarea {
-        font-size: 1.8vh;
+    .icon-email img {
+        width: 100%;
+    }
+    .form-email {
+        width: 40%;
+        height: 50%;
+        display: flex;
+    }
+    .info-email {
+        width: 90%;
+    }
+    .form-email form {
+        width: 90%;
+    }
+    .form-email form textarea {
+        height: 8vw;
     }
     
     
 }
-@media only screen and (min-width:1024px){
-    .content-email img {
-        width: 60vw;
+@media only screen and (min-width:993px){
+    .fondo-email img {
+        transform: none;
     }
-    .content-email form {
-        top: 8%;
+    .content-email {
+        padding-right: 10%;
+        padding-top: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        /* background: rgba(181, 160, 160,0.4); */
+    
     }
-    .content-email form input {
-        font-size: 2vh;
-        padding: 0.4%;
+    .icon-email {
+        width: 50%;
+        height: 100%;
+        transform: none;
     }
-    .content-email form textarea {
-        font-size: 2vh;
+    .icon-email img {
+        width: 90%;
     }
-    .content-email form .btn-enviar {
-        margin: 5% 0 18% 0;
-        padding: 1vh;
+    .form-email {
+        width: 40%;
+        height: 50%;
+        display: flex;
+    }
+    .info-email {
+        width: 75%;
+        padding-left: 2.5%;
+    }
+    .form-email form {
+        width: 80%;
+    }
+    .form-email form textarea {
+        height: 8vw;
     }
 }
