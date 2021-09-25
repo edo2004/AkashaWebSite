@@ -113,7 +113,7 @@
     cursor: pointer;
 }
 .email-social_Media_Logos{
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
