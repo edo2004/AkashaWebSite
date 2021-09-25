@@ -125,10 +125,11 @@
     align-self: center;
 }
 .email-social_Media_Logos img{
-    width: 5%;  
+    width: 7%;  
 }
 .email-social_Media_Logos span{
     color: white; 
+    font-size: 2.3vh;
 }
 .gif-email {
     z-index: 3;
