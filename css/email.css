@@ -50,13 +50,17 @@
     align-items: center;
 }
 .info-email {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 1vh;
 }
 .info-email h1 {
+    color: white;
+}
+.info-email p {
     color: white;
 }
 
@@ -104,7 +108,7 @@
 .form-email form .btn-enviar {
     border: none;
     border-radius: 2vh;
-    margin: 1vh;
+    margin: 1vh 1vh 0.2vh 1vh;
     background: rgb(210, 8, 102);
     padding: 1vh;
     font-size: 1.8vh;
@@ -113,14 +117,18 @@
     cursor: pointer;
 }
 .email-social_Media_Logos{
-    width: 70%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
 }
 .email-social_Media_Logos img{
-    width: 5%;
-    
+    width: 5%;  
+}
+.email-social_Media_Logos span{
+    color: white; 
 }
 .gif-email {
     z-index: 3;
