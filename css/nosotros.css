@@ -3,13 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    overflow-x: hidden;
-    font-family: Helvetica, Sans-Serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2vh;  
-}
+
 .container-nosotros {
     position: relative;
     width: 100%;
@@ -200,6 +194,9 @@ body {
 }
 .text-description p {
     padding-right: 8%;
+    
+    font-size: 2.5vh;
+    
 }
 .text-description li {
     
