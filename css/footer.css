@@ -58,13 +58,13 @@ footer {
     padding: 2rem 0rem;
 }
 .footer-social_Media_Logos{
-    padding: 0 6vh;
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 .footer-social_Media_Logos img{
-    width: 10%;
+    width: 12%;
     
 }
 .footer-copyright{
@@ -93,7 +93,7 @@ footer {
         width: 25%;
     }
     .footer-social_Media_Logos img{
-        width: 12%;
+        width: 18%;
         
     }
 
@@ -118,7 +118,7 @@ footer {
         width: 25%;
     }
     .footer-social_Media_Logos img{
-        width: 10%;
+        width: 15%;
         
     }
 }
