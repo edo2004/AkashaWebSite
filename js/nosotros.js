@@ -1,4 +1,5 @@
-const textDescription = document.querySelector('.text-description')
+const textGifs = document.querySelector('.text-gifs')
+const gifImage = document.querySelector('.gif-image')
 const fondoNosotros = document.querySelector('.fondo-nosotros')
 const fragment1 = document.createDocumentFragment();
 
@@ -13,8 +14,8 @@ const ContentGifs = [
             <li>Infografías.</li>
             <li>Videos institucionales y Educativos</li>
         </ul>
-        <p>¡Y mucho más!</p>
-        <img src="./assets/gifs/gif_Motion_graphics.gif" alt="LogoFooter">`
+        <p>¡Y mucho más!</p>`,
+        image:`<img src="./assets/gifs/gif_Motion_graphics.gif" alt="LogoFooter">`
     },
     {
         description:`<h1>Animatics y Storyboards</h1>
@@ -24,14 +25,14 @@ const ContentGifs = [
             <li>Cine</li>
             <li>TV</li>
             <li>Videos institucionales y educativos</li>
-        </ul>
-        <img src="./assets/gifs/gif_Cinematics.gif" alt="LogoFooter">`
+        </ul>`,
+        image:`<img src="./assets/gifs/gif_Cinematics.gif" alt="LogoFooter">`
     },
     {
         description:`<h1>Nosotros</h1>
         <p class="hola-mundo">Somos un estudio digital donde creamos productos audiovisuales que cuentan historias, resuelven problemas y dan de qué hablar.</p>
-        <p class="hola-mundo">Buscamos los medios para llegar a hacer realidad diferentes ideas, nuevas formas de hacer reír, emocionar y sorprender. Estamos explorando el universo de la animación para satisfacer el mercado.</p>
-        <img src="./assets/LogoFooter.svg" alt="LogoFooter">`
+        <p class="hola-mundo">Buscamos los medios para llegar a hacer realidad diferentes ideas, nuevas formas de hacer reír, emocionar y sorprender. Estamos explorando el universo de la animación para satisfacer el mercado.</p>`,
+        image: `<img src="./assets/LogoFooter.svg" alt="LogoFooter">`
     },
     {
         description:`<h1>Visualización Arquitectónica</h1>
@@ -40,8 +41,8 @@ const ContentGifs = [
             <li>Imágenes</li>
             <li>Recorridos Animados</li>
             <li>Panoramicas 360</li>
-        </ul>
-        <img src="./assets/LogoFooter.svg" alt="LogoFooter">`
+        </ul>`,
+        image: `<img src="./assets/LogoFooter.svg" alt="LogoFooter">`
     },
     {
         description:`<h1>Animatics y Storyboards</h1>
@@ -51,8 +52,8 @@ const ContentGifs = [
             <li>Personajes</li>
             <li>Redes Sociales</li>
             <li>Textos</li>
-        </ul>
-        <img src="./assets/gifs/gif_Animacion2D.gif" alt="animation-2d">`
+        </ul>`,
+        image:`<img src="./assets/gifs/gif_Animacion2D.gif" alt="animation-2d">`
     },
     {
         description:`<h1>Animatics y Storyboards</h1>
@@ -63,8 +64,8 @@ const ContentGifs = [
             <li>Infografías 3D</li>
             <li>Simulaciones físicas</li>
             <li>Integración Live Action</li>
-        </ul>
-        <img src="./assets/gifs/gif_Animacion3D.gif" alt="LogoFooter">`
+        </ul>`,
+        image:`<img src="./assets/gifs/gif_Animacion3D.gif" alt="LogoFooter">`
     }
 ]
 
@@ -72,13 +73,17 @@ const ContentGifs = [
 function cargarGifs(data) {
 
     var idImagen = data.dataset.id
-    textDescription.innerHTML = "";
-    textDescription.classList.add("visible")
+    textGifs.innerHTML = "";
+    gifImage.innerHTML = "";
+    textGifs.classList.add("visible")
+    gifImage.classList.add("gif-scale")
     
     setTimeout(function () {
 
-        textDescription.innerHTML =  ContentGifs[idImagen-1].description
-        textDescription.classList.remove("visible")
+        textGifs.innerHTML =  ContentGifs[idImagen-1].description
+        gifImage.innerHTML = ContentGifs[idImagen-1].image
+        textGifs.classList.remove("visible")
+        gifImage.classList.remove("gif-scale")
     },500)
             
 }

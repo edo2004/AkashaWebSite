@@ -81,7 +81,8 @@ body {
 }
 .image-nosotros {
     width: 100%;
-    height: 50%;
+    max-width: 320px;
+    height: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,28 +91,32 @@ body {
 }
 .image-nosotros img {
     cursor: pointer;
+    -webkit-filter:drop-shadow(10px 4px 6px rgba(0,0,0,0.5));
+    filter:drop-shadow(10px 4px 6px rgba(0,0,0,0.5))
 }
 .image-nosotros img:hover {
     opacity: 0.7;
-    transform: scale(1.2);
-    transition: 2s transform cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: scale(1.15);
+    transition: 3s transform cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 10;
+    filter: invert(100%) contrast(300%) hue-rotate(90deg)  brightness(2.4);
+    -webkit-filter: invert(100%) contrast(300%) hue-rotate(90deg)  brightness(2.4);
+
 }
 .graphics {
     width: 100%;
-    height: 25%;
+    height: 30%;
     display: flex;
     justify-content: center;
-    transform: translateY(20%);
+    transform: translateY(50%);
 }
 .graphics img {
     height: 100%;
     max-width: 50%;
-    -webkit-filter:drop-shadow(10px -1px 6px rgba(0,0,0,0.85));
-    filter:drop-shadow(10px -1px 6px rgba(0,0,0,0.85))
 }
 .cinematics-home {
     width: 100%; 
-    height: 25%;
+    height: 30%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -121,34 +126,40 @@ body {
     display: flex;
     justify-content: center;
 }
+.cinematics {
+    transform: translateX(30%);
+}
+.arquitect {
+    transform: translateX(-30%);
+}
 .home-item {
-    transform: translateY(20%);
+    transform: translateY(50%);
 }
 .cinematics img, .animation-2d img, .animation-3d img, .home-item img, .arquitect img {
     max-width: 100%;
 }
 .animation-2d-3d {
     width: 100%;
-    height: 25%;
+    height: 30%;
     display: flex;
 }
 .animation-2d {
     width: 50%;
     height: 100%;
-    transform: translateX(30%);
+    transform: translateX(27%);
     display: flex;
     justify-content: flex-start;
 }
 .animation-3d {
     width: 50%;
     height: 100%;
-    transform: translateX(-30%);
+    transform: translateX(-27%);
     display: flex;
     justify-content: flex-end;
 }
 .text-nosotros {
     width: 100%;
-    height: 50%;
+    height: 60%;
     display: flex;
     order: -1;
     /* background: rgba(51, 45, 47,0.3); */
@@ -161,19 +172,31 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    transition: 0.5s transform ease;
     transform: none;
     
 }
-.text-description.visible {
+.text-gifs {
+    transition: 0.5s transform ease;
+}
+.text-gifs.visible {
     opacity: 0;
-    /* transform: translateY(-20%); */
+    transform: translateY(-10%);
+}
+.gif-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s transform ease;
+}
+.gif-image.gif-scale {
+    opacity: 0;
     transform: scale(0);
 }
-.text-description img{
+.gif-image img{
     align-self: center;
     height: auto;
-    width: 25%;
+    width: 50%;
+    max-width: 220px;
 }
 .text-description p {
     padding-right: 8%;
@@ -205,6 +228,7 @@ body {
     }
     .image-nosotros {
         width: 52%;
+        max-width: none;
         height: 100%;
         padding: 0 3%;
     }
@@ -220,6 +244,10 @@ body {
     }
     .cinematics {
         align-items: flex-end;
+        transform: none;
+    }
+    .arquitect {
+        transform: none;
     }
     .cinematics img {
         height: 100%;
@@ -228,6 +256,7 @@ body {
         height: 75%;
         justify-content: flex-start;
         padding-left: 2%;
+        transform: none;
     }
     .animation-2d-3d {
         height: 35%;
@@ -279,6 +308,7 @@ body {
     }
     .image-nosotros {
         width: 48%;
+        max-width: none;
         height: 100%;
         padding: 0 3%;
     }
@@ -296,9 +326,17 @@ body {
         height: 30%;
         /* background: rgb(100, 193, 150,0.4); */
     }
+    .cinematics {
+        align-items: flex-end;
+        transform: none;
+    }
+    .arquitect {
+        transform: none;
+    }
     .home-item {
         height: 75%;
         padding-left: 2%;
+        transform: none;
     }
     .animation-2d-3d {
         height: 35%;
