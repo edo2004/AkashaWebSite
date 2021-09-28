@@ -398,6 +398,8 @@ body::-webkit-scrollbar-thumb:hover {
 .honey:hover .item-image:hover{
     transform: scale(1.1);
     opacity: 1;
+    filter: contrast(100%) brightness(1.2);
+    /* -webkit-filter: contrast(300%) hue-rotate(90deg)  brightness(2.4); */
 }
 
 

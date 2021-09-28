@@ -93,6 +93,11 @@
         "id":"19",
         "image":"./assets/Galeria/fresh_Cheese.png",
         "video":"https://player.vimeo.com/video/583625304?autoplay=1"
+    },
+    {
+        "id":"20",
+        "image":"./assets/Galeria/archvizBG.jpg",
+        "video":"https://player.vimeo.com/video/611736325?autoplay=1"
     }
     
 ]
