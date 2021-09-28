@@ -138,6 +138,7 @@ window.addEventListener("scroll", (e) => {
     }else{
         let tamañofranja = Math.round(tAncho/1.185185 + 3*tAlto)
         franjaDerecha.style.height = `${tamañofranja}px`
+        navegador.style.height = `${tAncho/(1.185185*1.5)}px`
     }
 
     // console.log(tamañofranja)

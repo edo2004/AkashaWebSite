@@ -159,7 +159,7 @@ body::-webkit-scrollbar-thumb:hover {
     top:0;
     right: 0;
     width: 35%;
-    height: 60vh;
+    height: 50vh;
     min-width: 2rem;
     min-height: 2rem;
     z-index: 7;
@@ -445,7 +445,7 @@ body::-webkit-scrollbar-thumb:hover {
         transform: none;
     }
     .footer-social_video{
-        bottom: 5vh;
+        bottom: 3vh;
         right: 5%;
         width: 25%;
         height: 5vh;
@@ -494,7 +494,7 @@ body::-webkit-scrollbar-thumb:hover {
         transform: none;
     }
     .footer-social_video{
-        bottom: 30vh;
+        bottom: 3vh;
         right: 5%;
         width: 15%;
         height: 5vh;
