@@ -20,7 +20,7 @@ const ContentGifs = [
     },
     {
         description:`<h1>Animatics y Storyboards</h1>
-        <p class="hola-mundo">TYou will have a preview draft of your audiovisual idea, so you can offer feedback before it is filmed or animated.</p>
+        <p class="hola-mundo">You will have a preview draft of your audiovisual idea, so you can offer feedback before it is filmed or animated.</p>
         <ul>
             <li>TV Ads</li>
             <li>Films</li>
