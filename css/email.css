@@ -189,7 +189,7 @@
     }
     .content-email {
         padding-right: 10%;
-        padding-top: 10%;
+        /* padding-top: 10%; */
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;

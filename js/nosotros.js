@@ -6,64 +6,65 @@ const fragment1 = document.createDocumentFragment();
 const ContentGifs = [
     {
         description:`<h1>Motion Graphics</h1>
-        <p class="hola-mundo">Damos vida a tus ideas, mezclándolas con gráficos en movimiento para expresarlas de manera dinámica, atractiva y emocionante.</p>
-        <p class="hola-mundo">No hay límites en lo que podamos crear, es la mejor manera de capturar la atención de tu público en:</p>
+        <p class="hola-mundo">We make your ideas come to life by mixing them with motion graphics and show them in a dynamic, attractive and exciting way. </p>
+        <p class="hola-mundo">There is not limit to what we can do, motion graphics is the best choice to catch everyone’s attention through:
+        </p>
         <ul>
-            <li>Redes sociales</li>
-            <li>Comerciales</li>
-            <li>Infografías.</li>
-            <li>Videos institucionales y Educativos</li>
+            <li>Social Media</li>
+            <li>Ads</li>
+            <li>Infographics</li>
+            <li>Institutional & E-learning videos</li>
         </ul>
-        <p>¡Y mucho más!</p>`,
+        <p>And much more!</p>`,
         image:`<img src="./assets/gifs/gif_Motion_graphics.gif" alt="LogoFooter">`
     },
     {
         description:`<h1>Animatics y Storyboards</h1>
-        <p class="hola-mundo">Te damos un primer vistazo de tu idea audiovisual para que puedas revisarla y modificarla antes de que llegue a filmarse o animarse en tus proyectos de:</p>
+        <p class="hola-mundo">TYou will have a preview draft of your audiovisual idea, so you can offer feedback before it is filmed or animated.</p>
         <ul>
-            <li>Comerciales</li>
-            <li>Cine</li>
+            <li>TV Ads</li>
+            <li>Films</li>
             <li>TV</li>
-            <li>Videos institucionales y educativos</li>
+            <li>Institutional Videos</li>
         </ul>`,
         image:`<img src="./assets/gifs/gif_Cinematics.gif" alt="LogoFooter">`
     },
     {
-        description:`<h1>Nosotros</h1>
-        <p class="hola-mundo">Somos un estudio digital donde creamos productos audiovisuales que cuentan historias, resuelven problemas y dan de qué hablar.</p>
-        <p class="hola-mundo">Buscamos los medios para llegar a hacer realidad diferentes ideas, nuevas formas de hacer reír, emocionar y sorprender. Estamos explorando el universo de la animación para satisfacer el mercado.</p>`,
-        image: `<img src="./assets/LogoFooter.svg" alt="LogoFooter">`
+        description:`<h1>About Us</h1>
+        <p class="hola-mundo">We are a Digital Studio that creates audiovisual products which tell stories, resolve problems and help brands position in the market.</p>
+        <p class="hola-mundo">We always find a way to help your ideas come true, new ways to surprise, make people have fun and generate emotions. We are exploring the animation universe to fill a gap in the market.</p>`,
+        image: `<img src="./assets/LogoGIF.svg" alt="LogoGIF">`
     },
     {
-        description:`<h1>Visualización Arquitectónica</h1>
-        <p class="hola-mundo">Proyectamos tus ideas inmobiliarias en imágenes y animaciones digitales para mejorar el marketing y la promoción de tus proyectos.</p>
+        description:`<h1>Archviz</h1>
+        <p class="hola-mundo">We use pictures and digital animation to portray your real-estate ideas and promote your projects the best way.</p>
         <ul>
-            <li>Imágenes</li>
-            <li>Recorridos Animados</li>
-            <li>Panoramicas 360</li>
+            <li>Pictures </li>
+            <li>Virtual tours</li>
+            <li>360° Panoramics</li>
         </ul>`,
-        image: `<img src="./assets/LogoFooter.svg" alt="LogoFooter">`
+        image: `<img src="./assets/gifs/gif_ARCHVIZ.gif" alt="gif_ARCHVIZ">`
     },
     {
-        description:`<h1>Animatics y Storyboards</h1>
-        <p class="hola-mundo">Resuelve lo que creías complicado de expresar con imágenes bidimensionales en movimiento mediante la técnica CutOut digital aplicado a:</p>
+        description:`<h1>2D Animation</h1>
+        <p class="hola-mundo">Do you have no clue how to communicate an idea? <br> Don’t worry, we’ll create bidimensional motion elements and characters to express this idea, by using the CutOut technique, which applies to:</p>
         <ul>
-            <li>Infografías</li>
-            <li>Personajes</li>
-            <li>Redes Sociales</li>
-            <li>Textos</li>
+            <li>Infographics </li>
+            <li>Characters </li>
+            <li>Social Media</li>
+            <li>Text</li>
         </ul>`,
         image:`<img src="./assets/gifs/gif_Animacion2D.gif" alt="animation-2d">`
     },
     {
-        description:`<h1>Animatics y Storyboards</h1>
-        <p class="hola-mundo">Soluciona lo que creías imposible de lograr con un entorno tridimensional desde polígonos sencillos hasta fluidos y dinámicas aplicadas a:</p>
+        description:`<h1>3D Animation</h1>
+        <p class="hola-mundo">We will create a three-dimensional environment, by using from low poly scene to liquid and dynamic simulations, which apply to:</p>
         <ul>
-            <li>Demos 3D</li>
-            <li>Personajes</li>
-            <li>Infografías 3D</li>
-            <li>Simulaciones físicas</li>
-            <li>Integración Live Action</li>
+            <li>3D Demos</li>
+            <li>Characters</li>
+            <li>Motion Graphics</li>
+            <li>Physics simulations</li>
+            <li>Live Action Integration</li>
         </ul>`,
         image:`<img src="./assets/gifs/gif_Animacion3D.gif" alt="LogoFooter">`
     }
