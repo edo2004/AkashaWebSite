@@ -76,8 +76,11 @@ function cargarGifs(data) {
     var idImagen = data.dataset.id
     textGifs.innerHTML = "";
     gifImage.innerHTML = "";
-    textGifs.classList.add("visible")
-    gifImage.classList.add("gif-scale")
+    
+    setTimeout(function () {
+        textGifs.classList.add("visible")
+        gifImage.classList.add("gif-scale")
+    },10)
     
     setTimeout(function () {
 

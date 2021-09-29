@@ -12,6 +12,7 @@
     overflow: hidden;
     z-index: 3;
     background: white;
+    color: white;
 }
 
 /* Fondo en CSS */
@@ -210,7 +211,7 @@
     padding-right: 20px;
     font-size: 50px;
     line-height: 1rem;
-    vertical-align: -5px;
+    vertical-align: -1px;
     width: 2vh;
 }
 

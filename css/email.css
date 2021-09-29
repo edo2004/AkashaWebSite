@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    font-family: "Myriad Pro", bold;
+    font-family: "Myriad Pro light";
 }
 .fondo-email {
     position: absolute;
@@ -43,6 +43,20 @@
 .icon-email img {
     width: 80%;
 }
+.gif-email {
+    z-index: 3;
+    width: 75%; 
+    height: 100%;
+    position: absolute;  
+    bottom: 0; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.gif-email img {
+    width: 70%;
+    height: auto;
+}
 .form-email {
     width: 100%;
     height: 60%;
@@ -50,6 +64,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 4;
 }
 .info-email {
     width: 70%;
@@ -63,10 +78,13 @@
     color: white;
     font-size: 5vh;
     padding: 1vh;
+    font-family: "Myriad Pro", bold;
+    -webkit-filter:drop-shadow(1vh 0.5vh 0.5vh rgba(0,0,0,0.5));
+    filter:drop-shadow(1vhx 0.5vh 0.5vh rgba(0,0,0,0.5))
 }
 .info-email p {
     color: white;
-    font-size: 1.7vh;
+    font-size: 1.8vh;
 }
 
 .form-email form {
@@ -91,14 +109,16 @@
     background: white;
     border-radius: 1vh;
     margin: 1vh;
-    font-size: 1.7vh;
+    font-size: 1.8vh;
     padding: 0.8vh;
     outline: none;
+    color: #E20870;
+    font-family: "Myriad Pro", bold;
 }
 ::placeholder {
-    font-family: Helvetica, Sans-Serif;
+    font-family: "Myriad Pro", bold;
     font-weight: bold;
-    color: rgb(210, 8, 102);
+    color: #E20870;
     font-size: 1.8vh;
 }
 .form-email form textarea {
@@ -108,7 +128,9 @@
     padding: 1vh;
     outline: none;
     height: 20vw;
-    font-size: 1.7vh;
+    font-size: 1.8vh;
+    color: #E20870;
+    font-family: "Myriad Pro", bold;
 }
 .form-email form .btn-enviar {
     border: none;
@@ -117,16 +139,18 @@
     background: #fbfbfb;
     padding: 1vh;
     font-size: 1.8vh;
-    color: rgb(210, 8, 102);
+    color: #E20870;
     font-weight: bold;
     cursor: pointer;
+    font-family: "Myriad Pro", bold;
 }
 .form-email form .btn-enviar:hover {
-    background: rgb(210, 8, 102);
+    background: #E20870;
     border: 1px solid white;
     color: white;
 }
 .email-social_Media_Logos{
+    padding-top: 0.5vhvh;
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -134,16 +158,28 @@
     align-items: center;
     align-self: center;
 }
-.email-social_Media_Logos img{
-    width: 7%;  
+.email-logos {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.email-logos a {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email-logos img{
+    width: 60%;  
 }
 .email-social_Media_Logos span{
     color: white; 
     font-size: 2.3vh;
 }
-.gif-email {
-    z-index: 3;
-}
+
 
 
 /* responsive */
@@ -167,6 +203,18 @@
     .icon-email img {
         width: 100%;
     }
+    .gif-email {
+        z-index: 3;
+        width: 50%; 
+        height: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .gif-email img {
+        width: 70%;
+        height: auto;
+    }
     .form-email {
         width: 40%;
         height: 50%;
@@ -180,6 +228,9 @@
     }
     .form-email form textarea {
         height: 8vw;
+    }
+    .email-social_Media_Logos span{
+        font-size: 2vh;
     }
     
     
@@ -206,6 +257,18 @@
     .icon-email img {
         width: 90%;
     }
+    .gif-email {
+        z-index: 3;
+        width: 50%; 
+        height: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .gif-email img {
+        width: 70%;
+        height: auto;
+    }
     .form-email {
         width: 40%;
         height: 50%;
@@ -220,5 +283,8 @@
     }
     .form-email form textarea {
         height: 8vw;
+    }
+    .email-social_Media_Logos span{
+        font-size: 2.3vh;
     }
 }

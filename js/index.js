@@ -10,6 +10,7 @@ const franjaDerecha = document.querySelector('.franja-derecha')
 const topTop = document.querySelector(".to-top");
 
 
+
 const templateVideo = document.querySelector('#template-video').content;
 const fragment = document.createDocumentFragment();
 video.innerHTML = ""
@@ -104,28 +105,11 @@ function parallax(e){
     this.querySelectorAll('.item').forEach(button => {
         const speed = button.getAttribute('data-speed')
         // console.log(button)
-        const x = (window.innerWidth - e.pageX*speed)/7
+        const x = (window.innerWidth - e.pageX*speed)/5
 
         button.style.transform = `translateX(${x}px)`
 
     })
-}
-
-// Fondo menú navegacion
-
-function addBackground() {
-    navegador.style.background = "rgba(136, 78, 207, 0.8)"
-    // navMenu.style.display = "block"
-    // menu.style.display = "none"
-    // closeMenu.style.display = "block"
-}
-
-function removeBackground() {
-    navegador.style.background = "none"
-    // navMenu.style.display = "none"
-    // closeMenu.style.display = "none"
-    // menu.style.display = "block"
-
 }
 
 window.addEventListener("scroll", (e) => {
@@ -138,6 +122,8 @@ window.addEventListener("scroll", (e) => {
     }else{
         let tamañofranja = Math.round(tAncho/1.185185 + 3*tAlto)
         franjaDerecha.style.height = `${tamañofranja}px`
+        navegador.style.height = `${tAncho/(1.185185*1.2)}px`
+        console.log(tAncho/(1.185185*1.8))
     }
 
     // console.log(tamañofranja)
@@ -153,3 +139,50 @@ window.addEventListener("scroll", () => {
         topTop.classList.remove("active");
     }
 })
+
+
+// Fondo menú navegacion
+const navMenu = document.querySelector('.nav__menu')
+const navCheckbox = document.querySelector('#nav_checkbox')
+const cerrarMenú = document.querySelector('.close')
+const mostrarMenú = document.querySelector('.menu')
+const options = document.querySelectorAll('.options')
+
+
+
+
+
+    function removeBackground() {
+        if(fondo1.width>=640){
+            navegador.style.background = "none"
+        }else{
+            navCheckbox.checked = false
+            navegador.style.background = "none"
+            navMenu.style.opacity = '0'
+            options.forEach(option => {
+                option.style.display = 'none'
+            })
+        }
+    }
+
+function gestionarMenu() {
+    
+    let valorCheck = navCheckbox.checked
+    console.log(valorCheck)
+    if(valorCheck){
+        navegador.style.background = "rgba(136, 78, 207, 0.8)"
+        navMenu.style.opacity = '1'
+        options.forEach(option => {
+            option.style.display = 'block'
+        })
+        
+        
+        // console.log(valorCheck)
+    }else {
+        navegador.style.background = "none"
+        navMenu.style.opacity = '0'
+        options.forEach(option => {
+            option.style.display = 'none'
+        })
+    }
+}
