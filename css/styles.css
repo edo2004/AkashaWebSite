@@ -192,9 +192,10 @@ body::-webkit-scrollbar-thumb:hover {
     margin-right: 5rem;
     margin-top: 4rem;
     flex-wrap: wrap;
+    transition: with 1s;
 }
 
-.nav__menu li {
+.options {
     list-style: none;
     display: none;
     outline: none;
@@ -214,7 +215,7 @@ body::-webkit-scrollbar-thumb:hover {
     color: white;
     background-color: rgba(197, 197, 197,0.6);
 }
-#nav_checkbox:checked ~ ul.nav__menu li{
+/* #nav_checkbox:checked ~ ul.nav__menu li{
     display: block;
 }
 #nav_checkbox:checked ~ label.nav__toggle .close {
@@ -223,8 +224,12 @@ body::-webkit-scrollbar-thumb:hover {
 #nav_checkbox:checked ~ label.nav__toggle .menu {
     display: none;
 }
-.nav__menu li:checked ~ ul.nav__menu li {
+
+#options:focus ~ .options{
     display: none;
+} */
+.options.visible-Menu {
+    display: block;
 }
 
 /* boton back to-top */
@@ -232,10 +237,10 @@ body::-webkit-scrollbar-thumb:hover {
 .to-top {
     background: white;
     position: fixed;
-    bottom: 16px;
-    right: 32px;
-    width: 10vh;
-    height: 8vh;
+    bottom: 2vh;
+    right: 2vh;
+    width: 8vh;
+    height: 7vh;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -249,7 +254,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .to-top.active {
-    bottom: 32px;
+    bottom: 2vh;
     pointer-events: auto;
     opacity: 1;
     z-index: 7;

@@ -4,6 +4,12 @@ $mail = $_POST['mail'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
+if($name === '' || $mail=== '' || $phone=== '' || $message=== ''){
+    echo json_encode('error');
+}else{
+    echo json_encode('Correcto: <br>Usuario:'.$name.'<br>Pass:'.$mail);
+}
+
 $header = 'From: ' . $mail . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
@@ -16,9 +22,8 @@ $message .= "Mensaje: " . $_POST['message'] . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
 $para = 'edoleddemo@gmail.com';
-$asunto = 'Correo mediatico';
+$asunto = 'Ayudame maestro';
 
 mail($para, $asunto, $message, $header);
 
-header("Location:index.html#email_section");
 ?>

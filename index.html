@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="/assets/LogoGIF.svg" />
 
 
     <!-- fuentes -->
@@ -53,18 +54,18 @@
     </header>
 
     <div class="header-nav">
-        <input type="checkbox" id="nav_checkbox" class="nav_checkbox">
+        <input type="checkbox" id="nav_checkbox" class="nav_checkbox" onclick="gestionarMenu()">
         <label for="nav_checkbox" class="nav__toggle">
-            <i class="fas fa-bars fa-3x menu" id="menu" onclick="addBackground()"></i>
-            <i class="fas fa-times fa-3x close" onclick="removeBackground()"></i>
+            <i class="fas fa-bars fa-3x menu" id="menu" ></i>
+            <i class="fas fa-times fa-3x close" ></i>
             
         </label>
         
         <ul class="nav__menu">
-            <li><a href="#home" >HOME</a></li>
-            <li><a href="#galery-template" ">WORK</a></li>
-            <li><a href="#cont_nosotros" >ABOUT</a></li>
-            <li><a href="#email_section" >CONTACT</a></li>
+            <li class="options"><a href="#home" onclick="removeBackground()">HOME</a></li>
+            <li class="options"><a href="#galery-template" onclick="removeBackground()">WORK</a></li>
+            <li class="options"><a href="#cont_nosotros" onclick="removeBackground()">ABOUT</a></li>
+            <li class="options"><a href="#email_section" onclick="removeBackground()">CONTACT</a></li>
         </ul>
     </div>
 
@@ -253,6 +254,9 @@
         <div class="content-email">
             <div class="icon-email">
                 <img class="fondoEmail" src="./assets/Email.svg" alt="">
+                <div class="gif-email">
+                    <!-- <img src="./assets/gifs/mail_Anim.gif" alt="mail_Anim"> -->
+                </div>
             </div>
             
             <div class="form-email">
@@ -260,7 +264,7 @@
                     <h1>Contact Us</h1>
                     <p>Do you have any questions? Send us a message and we ́ll respond as soon as possible.</p>
                 </div>
-                <form action="enviar.php" method="post">
+                <form class="contact-form">
                     <div class="datos-personales-form">
                         <input type="text" name="name" id="name" class="name" placeholder="Name/Company">
                         <input type="number" name="phone" id="subject" class="subject" placeholder="Telephone">
@@ -270,18 +274,17 @@
                     <div class="clear"></div>
                     <button type="submit" class="btn-enviar">SEND </button>
                     <div class="email-social_Media_Logos">
-                        <img src="./assets/FacebookWhite.svg" alt="Facebook">
-                        <img src="./assets/WhastappWhite.svg" alt="WhatsApp">
-                        <img src="./assets/InstagramWhite.svg" alt="Instagram">
-                        <img src="./assets/LinkedInWhite.svg" alt="LinkedIn">
+                        <div class="email-logos">
+                            <a href="https://www.facebook.com/people/Akasha-Studio/100071532923033/"><img src="./assets/FacebookWhite.svg" alt="Facebook"></a>
+                            <a href="https://wa.link/vxnjn8"><img src="./assets/WhastappWhite.svg" alt="WhatsApp"></a>
+                            <a href="https://www.instagram.com/akashastudio_tv/"><img src="./assets/InstagramWhite.svg" alt="Instagram"></a>
+                            <a href="https://www.linkedin.com/company/akasha-animation-studio"><img src="./assets/LinkedInWhite.svg" alt="LinkedIn"></a>
+                        </div>
                         <span id="telefono-wap">+(57) 319 334 4579</span>
                     </div>
                 </form>
                 
             </div>
-        </div>
-        <div class="gif-email">
-
         </div>
     </div>
 
@@ -303,10 +306,10 @@
                 <p>ESTAMOS TAMBIÉN EN</p>
             
                 <div class="footer-social_Media_Logos">
-                    <img src="./assets/Facebook_Logo.svg" alt="Facebook">
-                    <img src="./assets/WhatsApp_Logo.svg" alt="WhatsApp">
-                    <img src="./assets/Instagram_Logo.svg" alt="Instagram">
-                    <img src="./assets/LinkedIn_Logo.svg" alt="LinkedIn">
+                    <a href="https://www.facebook.com/people/Akasha-Studio/100071532923033/"><img src="./assets/Facebook_Logo.svg" alt="Facebook"></a>
+                    <a href="https://wa.link/vxnjn8"><img src="./assets/WhatsApp_Logo.svg" alt="WhatsApp"></a>
+                    <a href="https://www.instagram.com/akashastudio_tv/"><img src="./assets/Instagram_Logo.svg" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/company/akasha-animation-studio"><img src="./assets/LinkedIn_Logo.svg" alt="LinkedIn"></a>
                 </div>
             </div>
     
@@ -326,5 +329,6 @@
 
     <script src="./js/index.js"></script>
     <script src="./js/nosotros.js"></script>
+    <script src="./js/email.js"></script>
 </body>
 </html>

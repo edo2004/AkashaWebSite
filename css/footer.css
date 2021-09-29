@@ -56,6 +56,7 @@ footer {
 
 .footer-Socia-Media p{
     padding: 2rem 0rem;
+    font-size: 1.7vh;
 }
 .footer-social_Media_Logos{
     width: 60%;
@@ -63,8 +64,16 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
 }
+.footer-social_Media_Logos a {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .footer-social_Media_Logos img{
-    width: 12%;
+    width: 70%;
     
 }
 .footer-copyright{
@@ -93,7 +102,7 @@ footer {
         width: 25%;
     }
     .footer-social_Media_Logos img{
-        width: 18%;
+        width: 80%;
         
     }
 
@@ -118,7 +127,7 @@ footer {
         width: 25%;
     }
     .footer-social_Media_Logos img{
-        width: 15%;
+        width: 60%;
         
     }
 }
