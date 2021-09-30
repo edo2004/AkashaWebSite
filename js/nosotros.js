@@ -121,14 +121,14 @@ function cargarGifs(data) {
 
 // efecto parallax
 
-document.addEventListener('mousemove', parallaxNosotros);
+ document.addEventListener('mousemove', parallaxNosotros);
 
 function parallaxNosotros(e){
     this.querySelectorAll('.fondo-item').forEach(button => {
         const speed = button.getAttribute('data-speed')
 
 
-        const x = (window.innerWidth - e.pageX*speed)/40
+        const x = (window.innerWidth - e.pageX*speed)/30
         const y = (window.innerHeight - e.pageY*speed)/40
 
         window.addEventListener("scroll", () => {
