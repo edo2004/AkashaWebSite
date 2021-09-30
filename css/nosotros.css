@@ -72,11 +72,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: none;
 }
 .image-nosotros {
     width: 100%;
     max-width: 320px;
+    max-height: 256px;
     height: 40%;
     display: flex;
     flex-direction: column;
@@ -161,11 +161,11 @@
 }
 .text-description {
     width: 100%;
-    padding: 1rem 1rem 0 1rem;
+    padding: 1% 1rem 0 1rem;
     text-align: justify;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: flex-start;
     transform: none;
     
@@ -174,13 +174,31 @@
     transition: 0.5s transform ease;
 }
 .text-gifs h1 {
-    padding-bottom: 1vh;
-    transition: 0.5s transform ease;
+    transition: 0.5s all ease;
+    margin-bottom: 2vh;
 }
 .title-gif.visible {
     opacity: 0;
-    transform: translateY(-10%);
+    transform: translateY(-15%);
 }
+.desc-gif{
+    padding-bottom: 3vh;
+    transition: 0.5s transform ease;
+}
+.desc-gif.visible {
+    opacity: 0;
+    transform: translateY(-15%);
+}
+.vin-gifs{
+    font-size: 2.5vh;
+    padding-bottom: 2%;
+    transition: 0.5s transform ease;
+}
+.vin-gifs.visible {
+    opacity: 0;
+    transform: translateY(-15%);
+}
+
 .gif-image {
     width: 100%;
     display: flex;
@@ -203,11 +221,14 @@
     font-size: 2.5vh;
     
 }
-.text-description li {
+.text-description li ,.muchmore{
     
     transform: translateX(5%);
     list-style: none;
     /* list-style-image: url("../assets/LogoFooter.svg"); */
+}
+.muchmore {
+    padding: 1vh 0;
 }
 .text-description ul li::before {
     content: url("../assets/Vineta.svg");  
@@ -231,6 +252,7 @@
     .image-nosotros {
         width: 52%;
         max-width: none;
+        max-height: none;
         height: 100%;
         padding: 0 3%;
     }
@@ -293,6 +315,7 @@
     }
     .text-description {
         font-size: 2.25vh;
+        padding: 15% 1vh 0 1vh;
     }
     .text-description img{
         height: auto;
@@ -311,6 +334,7 @@
     .image-nosotros {
         width: 48%;
         max-width: none;
+        max-height: none;
         height: 100%;
         padding: 0 3%;
     }
@@ -373,6 +397,7 @@
     }
     .text-description {
         font-size: 2.25vh;
+        padding: 15% 1vh 0 1vh;
     }
     .text-description img{
         height: auto;

@@ -18,7 +18,7 @@ const ContentGifs = [
                     <li>Infographics</li>
                     <li>Institutional & E-learning videos</li>
                 </ul>
-                <p>And much more!</p>`,
+                <p class="muchmore">And much more!</p>`,
         image:`<img src="./assets/gifs/gif_Motion_graphics.gif" alt="LogoFooter">`
     },
     {
@@ -86,6 +86,7 @@ const ContentGifs = [
 function cargarGifs(data) {
 
     var idImagen = data.dataset.id
+    let conten = ContentGifs[idImagen-1]
     titleGifs.innerHTML = "";
     textGifs.innerHTML = "";
     vinGifs.innerHTML = "";
@@ -93,27 +94,34 @@ function cargarGifs(data) {
     
     setTimeout(function () {
         titleGifs.classList.add("visible")
+        vinGifs.classList.add("visible")
+        textGifs.classList.add("visible")
         gifImage.classList.add("gif-scale")
     },10)
     
     setTimeout(function () {
-
-        let conten = ContentGifs[idImagen-1]
-
         titleGifs.innerHTML = conten.title
-        textGifs.innerHTML =  conten.description
-        vinGifs.innerHTML = conten.items
-        gifImage.innerHTML = conten.image
         titleGifs.classList.remove("visible")
-        gifImage.classList.remove("gif-scale")
     },500)
+    setTimeout(function () {
+        textGifs.innerHTML =  conten.description
+        textGifs.classList.remove("visible")
+    },1000)
+    setTimeout(function () {
+        vinGifs.innerHTML = conten.items
+        vinGifs.classList.remove("visible")
+    },1500)
+    setTimeout(function () {
+        gifImage.innerHTML = conten.image
+        gifImage.classList.remove("gif-scale")
+    },2000)
             
 }
 
 
 // efecto parallax
 
-// document.addEventListener('mousemove', parallaxNosotros);
+document.addEventListener('mousemove', parallaxNosotros);
 
 function parallaxNosotros(e){
     this.querySelectorAll('.fondo-item').forEach(button => {
@@ -128,7 +136,6 @@ function parallaxNosotros(e){
                 button.style.transition = `1s transform`
             }
         })
-        
         button.style.transform = `translateX(${x}px) translateY(${y}px)`
 
         
