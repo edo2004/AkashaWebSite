@@ -34,7 +34,6 @@
     grid-template-columns: repeat(auto-fill, 8%);
     grid-auto-rows: 14vh;
     gap:0 10%;
-    margin: -5% auto auto -5%;
     position: absolute;
 }
 .fondo-item {
@@ -173,7 +172,11 @@
 .text-gifs {
     transition: 0.5s transform ease;
 }
-.text-gifs.visible {
+.text-gifs h1 {
+    padding-bottom: 1vh;
+    transition: 0.5s transform ease;
+}
+.title-gif.visible {
     opacity: 0;
     transform: translateY(-10%);
 }
