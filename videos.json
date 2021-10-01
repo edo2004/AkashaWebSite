@@ -99,5 +99,21 @@
         "image":"./assets/Galeria/archvizBG.jpg",
         "video":"https://player.vimeo.com/video/611736325?autoplay=1"
     }
+    ,
+    {
+        "id":"21",
+        "image":"./assets/Galeria/Metal Tea.jpg",
+        "video":"https://player.vimeo.com/video/618315311?autoplay=1"
+    },
+    {
+        "id":"22",
+        "image":"./assets/Galeria/Kill_bill.jpg",
+        "video":"https://player.vimeo.com/video/619947594?autoplay=1"
+    },
+    {
+        "id":"23",
+        "image":"./assets/Galeria/Inverted Bullet.jpg",
+        "video":"https://player.vimeo.com/video/618319022?autoplay=1"
+    }
     
 ]
