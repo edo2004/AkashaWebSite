@@ -8,6 +8,7 @@ const navegador = document.querySelector('.header-nav')
 const videoHeader = document.querySelector('#bgvid')
 const franjaDerecha = document.querySelector('.franja-derecha')
 const topTop = document.querySelector(".to-top");
+const socialMediaVideo = document.querySelector(".footer-social_video")
 var set2, set3
 
 
@@ -115,6 +116,14 @@ function parallax(e){
     })
 }
 
+function redesHidden(alto){
+    if(window.pageYOffset < (2*alto)){
+        socialMediaVideo.classList.remove("inactive");
+    }else{
+        socialMediaVideo.classList.add("inactive");
+    }
+}
+
 window.addEventListener("scroll", (e) => {
     let tAncho = fondo1.width
     let tAlto = fondo1.height
@@ -128,6 +137,8 @@ window.addEventListener("scroll", (e) => {
         navegador.style.height = `${tAncho/(1.185185*1.2)}px`
         console.log(tAncho/(1.185185*1.8))
     }
+
+    redesHidden(tAlto)
 
     // console.log(tamañofranja)
 

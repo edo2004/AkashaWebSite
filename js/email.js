@@ -1,9 +1,13 @@
 const form = document.querySelector(".contact-form")
 var respuesta = document.querySelector('.gif-email');
+const nameForm = document.querySelector(".name")
+const phoneForm = document.querySelector(".subject")
+const emailForm = document.querySelector(".email")
+const messageForm = document.querySelector(".message")
+
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
-    alert("enviando formulario")
     console.log('Hola guarros')
 
     var datos = new FormData(form);
@@ -30,8 +34,12 @@ form.addEventListener('submit', function(e) {
                 },10)
                 setTimeout(function() {
                     respuesta.innerHTML = ``
-                },2000)
-                
+                },3000)  
             }
         } )
+
+    nameForm.value = ''
+    phoneForm.value = ''
+    emailForm.value = ''
+    messageForm.value = ''
 })
