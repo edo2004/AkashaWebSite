@@ -8,7 +8,8 @@ const navegador = document.querySelector('.header-nav')
 const videoHeader = document.querySelector('#bgvid')
 const franjaDerecha = document.querySelector('.franja-derecha')
 const topTop = document.querySelector(".to-top");
-
+const socialMediaVideo = document.querySelector(".footer-social_video")
+var set2, set3
 
 
 const templateVideo = document.querySelector('#template-video').content;
@@ -63,13 +64,16 @@ function transicionImagen(imagen) {
     images.push(imagen)
     var tamaño = images.length
 
+    clearTimeout(set2)
+    clearTimeout(set3)
+
     setTimeout(function() {
         fondo3.style.opacity = "0"
         fondo2.style.display = "none"
         fondo1.style.filter = ""
         fondo2.style.display = ""
     },5)
-    setTimeout(function() {
+    set2 = setTimeout(function() {
         fondo2.setAttribute("src", imagen)
         fondo2.classList.add('traslate')
         fondo2.style.width = "100%"
@@ -78,7 +82,7 @@ function transicionImagen(imagen) {
         fondo1.style.transform = `scale(1.3)`
         fondo1.style.transition = "2s"
     },20)
-    setTimeout(function () {
+    set3 = setTimeout(function () {
         // fondo1.classList.remove('scaleFondo')
         fondo1.style.transform = `scale(1)`
         fondo1.style.transition = "none"
@@ -90,7 +94,7 @@ function transicionImagen(imagen) {
         fondo3.style.transition = "2s"
         fondo1.style.filter = "grayscale(100%)"
         fondo1.style.transition= "filter 2s"
-    },2000)  
+    },2020)  
     
 }
 
@@ -112,6 +116,14 @@ function parallax(e){
     })
 }
 
+function redesHidden(alto){
+    if(window.pageYOffset < (2*alto)){
+        socialMediaVideo.classList.remove("inactive");
+    }else{
+        socialMediaVideo.classList.add("inactive");
+    }
+}
+
 window.addEventListener("scroll", (e) => {
     let tAncho = fondo1.width
     let tAlto = fondo1.height
@@ -125,6 +137,8 @@ window.addEventListener("scroll", (e) => {
         navegador.style.height = `${tAncho/(1.185185*1.2)}px`
         console.log(tAncho/(1.185185*1.8))
     }
+
+    redesHidden(tAlto)
 
     // console.log(tamañofranja)
 

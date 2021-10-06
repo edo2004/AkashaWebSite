@@ -3,7 +3,7 @@ const textGifs = document.querySelector('.desc-gif')
 const vinGifs = document.querySelector('.vin-gifs')
 const gifImage = document.querySelector('.gif-image')
 const fondoNosotros = document.querySelector('.fondo-nosotros')
-const fragment1 = document.createDocumentFragment();
+const textoGifs = document.querySelector('.text-gifs')
 
 const ContentGifs = [
     {
@@ -82,39 +82,47 @@ const ContentGifs = [
     }
 ]
 
+var set2, set3, set4, set5
 
 function cargarGifs(data) {
 
     var idImagen = data.dataset.id
     let conten = ContentGifs[idImagen-1]
+    
+
+    clearTimeout(set2)
+    clearTimeout(set3)
+    clearTimeout(set4)
+    clearTimeout(set5)
+
     titleGifs.innerHTML = "";
     textGifs.innerHTML = "";
     vinGifs.innerHTML = "";
     gifImage.innerHTML = "";
     
-    setTimeout(function () {
+    set1 = setTimeout(function () {
         titleGifs.classList.add("visible")
         vinGifs.classList.add("visible")
         textGifs.classList.add("visible")
         gifImage.classList.add("gif-scale")
     },10)
     
-    setTimeout(function () {
+    set2 = setTimeout(function () {
         titleGifs.innerHTML = conten.title
         titleGifs.classList.remove("visible")
     },500)
-    setTimeout(function () {
+    set3 = setTimeout(function () {
         textGifs.innerHTML =  conten.description
         textGifs.classList.remove("visible")
-    },1000)
-    setTimeout(function () {
+    },750)
+    set4 = setTimeout(function () {
         vinGifs.innerHTML = conten.items
         vinGifs.classList.remove("visible")
-    },1500)
-    setTimeout(function () {
+    },1000)
+    set5 = setTimeout(function () {
         gifImage.innerHTML = conten.image
         gifImage.classList.remove("gif-scale")
-    },2000)
+    },1000)
             
 }
 
