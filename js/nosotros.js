@@ -4,6 +4,7 @@ const vinGifs = document.querySelector('.vin-gifs')
 const gifImage = document.querySelector('.gif-image')
 const fondoNosotros = document.querySelector('.fondo-nosotros')
 const textoGifs = document.querySelector('.text-gifs')
+const contNosotros = document.querySelector('.container-nosotros')
 
 const ContentGifs = [
     {
@@ -110,33 +111,33 @@ function cargarGifs(data) {
     set2 = setTimeout(function () {
         titleGifs.innerHTML = conten.title
         titleGifs.classList.remove("visible")
-    },500)
+    },250)
     set3 = setTimeout(function () {
         textGifs.innerHTML =  conten.description
         textGifs.classList.remove("visible")
-    },750)
+    },500)
     set4 = setTimeout(function () {
         vinGifs.innerHTML = conten.items
         vinGifs.classList.remove("visible")
-    },1000)
+    },750)
     set5 = setTimeout(function () {
         gifImage.innerHTML = conten.image
         gifImage.classList.remove("gif-scale")
-    },1000)
+    },750)
             
 }
 
 
 // efecto parallax
 
- document.addEventListener('mousemove', parallaxNosotros);
+document.addEventListener('mousemove', parallaxNosotros);
 
 function parallaxNosotros(e){
     this.querySelectorAll('.fondo-item').forEach(button => {
         const speed = button.getAttribute('data-speed')
 
 
-        const x = (window.innerWidth - e.pageX*speed)/30
+        const x = (window.innerWidth + e.pageX*speed)/30
         const y = (window.innerHeight - e.pageY*speed)/40
 
         window.addEventListener("scroll", () => {

@@ -4,6 +4,7 @@ const nameForm = document.querySelector(".name")
 const phoneForm = document.querySelector(".subject")
 const emailForm = document.querySelector(".email")
 const messageForm = document.querySelector(".message")
+const iconEmail = document.querySelector("#icon-Email")
 
 
 form.addEventListener('submit', function(e) {
@@ -28,9 +29,8 @@ form.addEventListener('submit', function(e) {
             }else{
 
                 setTimeout(function() {
-                    respuesta.innerHTML = `
-                <img src="./assets/gifs/mail_Anim.gif" alt="mail_Anim">
-                `
+                    respuesta.innerHTML = `<img src="./assets/gifs/mail_Anim.gif" alt="mail_Anim">`
+                    iconEmail.style.opacity = "0"
                 },10)
                 setTimeout(function() {
                     respuesta.innerHTML = ``
