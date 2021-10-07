@@ -23,7 +23,7 @@ const ContentGifs = [
         image:`<img src="./assets/gifs/gif_Motion_graphics.gif" alt="LogoFooter">`
     },
     {
-        title:'Animatics y Storyboards',
+        title:'Animatics & Storyboards',
         description:`
         <p class="hola-mundo">You will have a preview draft of your audiovisual idea, so you can offer feedback before it is filmed or animated.</p>`,
         items:`<ul>

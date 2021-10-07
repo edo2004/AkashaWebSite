@@ -6,16 +6,13 @@ const emailForm = document.querySelector(".email")
 const messageForm = document.querySelector(".message")
 const iconEmail = document.querySelector("#icon-Email")
 
+respuesta.style.opacity = "0"
+respuesta.innerHTML = `<img src="./assets/gifs/mail_Anim.gif" alt="mail_Anim">`
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
-    console.log('Hola guarros')
-
+    respuesta.innerHTML = ``
     var datos = new FormData(form);
-
-    console.log(datos)
-    console.log(datos.get('name'))
-    console.log(datos.get('mail'))
 
     fetch('enviar.php',{
         method: 'POST',
@@ -23,18 +20,25 @@ form.addEventListener('submit', function(e) {
     })
         .then( res => res.json())
         .then( data => {
-            console.log(data)
             if(data === 'error'){
                 respuesta.innerHTML = ``
             }else{
 
                 setTimeout(function() {
+                    respuesta.style.opacity = "1"
                     respuesta.innerHTML = `<img src="./assets/gifs/mail_Anim.gif" alt="mail_Anim">`
-                    iconEmail.style.opacity = "0"
                 },10)
                 setTimeout(function() {
+                    iconEmail.style.opacity = "0"
+                },500)
+                setTimeout(function() {
                     respuesta.innerHTML = ``
-                },3000)  
+                    respuesta.style.opacity = "0"
+                },3500)  
+                setTimeout(function() {
+                    iconEmail.style.opacity = "1"
+                    iconEmail.style.transition = "opacity 1s "
+                },4500)
             }
         } )
 

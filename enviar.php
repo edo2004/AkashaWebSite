@@ -251,7 +251,7 @@ if($name === '' || $mail=== '' || $phone=== '' || $message=== ''){
     </body>".
     "</html>";
 
-    $para = 'edoleddemo@gmail.com';
+    $para = 'akashastudioinfo@gmail.com';
     $asunto = 'Solicitud de servicios';
 
     mail($para, $asunto, $messageFinal, $header);

@@ -116,8 +116,16 @@ function parallax(e){
     })
 }
 
-function redesHidden(alto){
-    if(window.pageYOffset < (2*alto)){
+function redesHiddenMobile(alto,ancho){
+    if(window.pageYOffset < (alto+(ancho/1.185185))){
+        socialMediaVideo.classList.remove("inactive");
+    }else{
+        socialMediaVideo.classList.add("inactive");
+    }
+}
+
+function redesHiddenDeskop(alto,ancho){
+    if(window.pageYOffset < (alto+(ancho/1.77))){
         socialMediaVideo.classList.remove("inactive");
     }else{
         socialMediaVideo.classList.add("inactive");
@@ -131,14 +139,15 @@ window.addEventListener("scroll", (e) => {
     if(fondo1.width>=640){
         let tamañofranja = Math.round(tAncho/1.7778 + 3*tAlto)
         franjaDerecha.style.height = `${tamañofranja}px`
+        redesHiddenDeskop(tAlto,tAncho)
     }else{
         let tamañofranja = Math.round(tAncho/1.185185 + 3*tAlto)
         franjaDerecha.style.height = `${tamañofranja}px`
         navegador.style.height = `${tAncho/(1.185185*1.2)}px`
         console.log(tAncho/(1.185185*1.8))
+        redesHiddenMobile(tAlto,tAncho)
     }
 
-    redesHidden(tAlto)
 
     // console.log(tamañofranja)
 

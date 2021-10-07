@@ -10,13 +10,17 @@
 </head>
 <body>
 
-    <div class="email-section" id="email_section">
+    <div class="email-section" id="contact">
         <div class="fondo-email">
-            <img src="./assets/FondoCorreo.svg" alt="FondoCorreo">
+            <img src="./assets/FondoCorreo.svg" alt="FondoCorreo" >
         </div>
         <div class="content-email">
             <div class="icon-email">
-                <img class="fondoEmail" src="./assets/Email.svg" alt="">
+                <div class="lines-icon">
+                    <img class="fondoEmail" src="./assets/LinesLetter.svg" alt="" id="lines-Email">
+                    <img class="fondoEmail" src="./assets/Letter.svg" alt="" id="icon-Email">
+                </div>
+                <!-- <img class="fondoEmail" src="./assets/Email.svg" alt="" id="icon-Email"> -->
                 <div class="gif-email">
                     <!-- <img src="./assets/gifs/mail_Anim.gif" alt="mail_Anim"> -->
                 </div>
@@ -29,21 +33,21 @@
                 </div>
                 <form class="contact-form">
                     <div class="datos-personales-form">
-                        <input type="text" name="name" id="name" class="name" placeholder="Name/Company" required>
-                        <input type="number" name="phone" id="subject" class="subject" placeholder="Telephone" required>
+                        <input type="text" name="name" id="name" class="name" placeholder="Name/Company" autocomplete="off">
+                        <input type="number" name="phone" id="subject" class="subject" placeholder="Telephone" autocomplete="off">
                     </div>
-                    <input type="email" name="mail" id="mail" class="email" placeholder="Email address" required>
-                    <textarea name="message" class="message" placeholder="Message" id="message" required></textarea>
+                    <input type="email" name="mail" id="mail" class="email" placeholder="Email address" autocomplete="off">
+                    <textarea name="message" class="message" placeholder="Message" id="message"></textarea>
                     <div class="clear"></div>
-                    <button type="submit" class="btn-enviar" value="SEND"> SEND</button>
+                    <button type="submit" class="btn-enviar">SEND </button>
                     <div class="email-social_Media_Logos">
                         <div class="email-logos">
-                            <a href="https://www.facebook.com/people/Akasha-Studio/100071532923033/"><img src="./assets/FacebookWhite.svg" alt="Facebook"></a>
-                            <a href="https://wa.link/vxnjn8"><img src="./assets/WhastappWhite.svg" alt="WhatsApp"></a>
-                            <a href="https://www.instagram.com/akashastudio_tv/"><img src="./assets/InstagramWhite.svg" alt="Instagram"></a>
-                            <a href="https://www.linkedin.com/company/akasha-animation-studio"><img src="./assets/LinkedInWhite.svg" alt="LinkedIn"></a>
+                            <a href="https://www.facebook.com/people/Akasha-Studio/100071532923033/" target="_blank"><img src="./assets/FacebookWhite.svg" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/akashastudio_tv/" target="_blank"><img src="./assets/InstagramWhite.svg" alt="Instagram"></a>
+                            <a href="https://www.linkedin.com/company/akasha-animation-studio" target="_blank"><img src="./assets/LinkedInWhite.svg" alt="LinkedIn"></a>
+                            <a href="https://wa.link/vxnjn8" target="_blank"><img src="./assets/WhastappWhite.svg" alt="WhatsApp"></a>
                         </div>
-                        <span id="telefono-wap">+(57) 319 334 4579</span>
+                        <span id="telefono-wap">+(57) 305 373 9927</span>
                     </div>
                 </form>
                 

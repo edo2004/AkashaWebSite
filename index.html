@@ -56,9 +56,9 @@
         
         <ul class="nav__menu">
             <li class="options"><a href="#home" onclick="removeBackground()">HOME</a></li>
-            <li class="options"><a href="#galery-template" onclick="removeBackground()">WORK</a></li>
-            <li class="options"><a href="#cont_nosotros" onclick="removeBackground()">ABOUT</a></li>
-            <li class="options"><a href="#email_section" onclick="removeBackground()">CONTACT</a></li>
+            <li class="options"><a href="#work" onclick="removeBackground()">WORK</a></li>
+            <li class="options"><a href="#about-us" onclick="removeBackground()">ABOUT</a></li>
+            <li class="options"><a href="#contact" onclick="removeBackground()">CONTACT</a></li>
         </ul>
     </div>
 
@@ -67,8 +67,8 @@
     </div>
 
     <div class="footer-social_video">
-        <a href="https://www.facebook.com/people/Akasha-Studio/100071532923033/" target="_blank"><img src="./assets/Facebook_Logo.svg" alt="Facebook"></a>
-        <a href="https://wa.link/vxnjn8" target="_blank"><img src="./assets/WhatsApp_Logo.svg" alt="WhatsApp"></a>
+        <a href="https://www.facebook.com/profile.php?id=100071662985097" target="_blank"><img src="./assets/Facebook_Logo.svg" alt="Facebook"></a>
+        <a href="https://wa.link/ldkua5" target="_blank"><img src="./assets/WhatsApp_Logo.svg" alt="WhatsApp"></a>
         <a href="https://www.instagram.com/akashastudio_tv/" target="_blank"><img src="./assets/Instagram_Logo.svg" alt="Instagram"></a>
         <a href="https://www.linkedin.com/company/akasha-animation-studio" target="_blank"><img src="./assets/LinkedIn_Logo.svg" alt="LinkedIn"></a>
     </div>
@@ -80,11 +80,17 @@
 
     <!-- galery -->
 
-    <div class="galery" id="galery-template">
+    <div class="galery" id="work">
         <img class="fondo1" src="./assets/Galeria/AKASHA_Reel.png" alt="">
         <img class="fondo2" src="" alt="">
         <div class="fondo3"></div>
         
+        <div class="logoVimeo" onmouseover="infoVimeoLogo(1)" onmouseout="infoVimeoLogo(2)">
+            <a id="logo-vimeo" href="https://vimeo.com/user140023398" target="_blank" ><img src="./assets/v_vimeo.svg" alt="vimeo_icon"></a>
+        </div>
+        <div class="info-svg">
+            <img src="./assets/info_vimeo.svg" alt="info-svg">
+        </div>
         <div class="video-titulo">
             <div class="video-galery">
         
@@ -195,7 +201,7 @@
 
 
     <!-- Nosotros -->
-    <div class="container-nosotros">
+    <div class="container-nosotros" id="about-us">
         <div class="fondo-nosotros">
             <!-- <img src="./assets/FondoAboutUs.svg" alt="fondo-nosotros"> -->
             <div class="fondo-nosotros_1">
@@ -215,7 +221,7 @@
             </div>
 
         </div>
-        <div class="content-nosotros" id="cont_nosotros">
+        <div class="content-nosotros">
             <div class="image-nosotros">
                 <div class="graphics">
                     <img src="./assets/2.svg" alt="graphics" onclick="cargarGifs(this)" data-id="1">
@@ -266,13 +272,17 @@
     </div>
 
 
-    <div class="email-section" id="email_section">
+    <div class="email-section" id="contact">
         <div class="fondo-email">
             <img src="./assets/FondoCorreo.svg" alt="FondoCorreo" >
         </div>
         <div class="content-email">
             <div class="icon-email">
-                <img class="fondoEmail" src="./assets/Email.svg" alt="" id="icon-Email">
+                <div class="lines-icon">
+                    <img class="fondoEmail" src="./assets/LinesLetter.svg" alt="" id="lines-Email">
+                    <img class="fondoEmail" src="./assets/Letter.svg" alt="" id="icon-Email">
+                </div>
+                <!-- <img class="fondoEmail" src="./assets/Email.svg" alt="" id="icon-Email"> -->
                 <div class="gif-email">
                     <!-- <img src="./assets/gifs/mail_Anim.gif" alt="mail_Anim"> -->
                 </div>
@@ -295,11 +305,11 @@
                     <div class="email-social_Media_Logos">
                         <div class="email-logos">
                             <a href="https://www.facebook.com/people/Akasha-Studio/100071532923033/" target="_blank"><img src="./assets/FacebookWhite.svg" alt="Facebook"></a>
-                            <a href="https://www.instagram.com/akashastudio_tv/" target="_blank"><img src="./assets/InstagramWhite.svg" alt="Instagram"></a>
                             <a href="https://www.linkedin.com/company/akasha-animation-studio" target="_blank"><img src="./assets/LinkedInWhite.svg" alt="LinkedIn"></a>
+                            <a href="https://www.instagram.com/akashastudio_tv/" target="_blank"><img src="./assets/InstagramWhite.svg" alt="Instagram"></a>
                             <a href="https://wa.link/vxnjn8" target="_blank"><img src="./assets/WhastappWhite.svg" alt="WhatsApp"></a>
                         </div>
-                        <span id="telefono-wap">+(57) 305 373 9927</span>
+                        <a href="tel:+(57) 305 373 9927" id="telefono-wap">+(57) 305 373 9927</a>
                     </div>
                 </form>
                 
@@ -315,7 +325,7 @@
             <div class="footer-description">
                 <p> Bogotá, Colombia</p>
                 <p> Contact</p>
-                <p> +(57) 305 373 9927 </p>
+                <a href="tel:+(57) 305 373 9927" id="telefono-wap-footer">+(57) 305 373 9927</a>
                 <p> hola@akashastudio.tv</p>
             </div>
             <img  class="footer-img" src="./assets/LogoFooter.svg" alt="FooterLogo">
@@ -323,8 +333,8 @@
                 <p> FOLLOW US ON</p>
             
                 <div class="footer-social_Media_Logos">
-                    <a href="https://www.facebook.com/people/Akasha-Studio/100071532923033/" target="_blank"><img src="./assets/Facebook_Logo.svg" alt="Facebook"></a>
-                    <a href="https://wa.link/vxnjn8" target="_blank"><img src="./assets/WhatsApp_Logo.svg" alt="WhatsApp"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100071662985097" target="_blank"><img src="./assets/Facebook_Logo.svg" alt="Facebook"></a>
+                    <a href="https://wa.link/ldkua5" target="_blank"><img src="./assets/WhatsApp_Logo.svg" alt="WhatsApp"></a>
                     <a href="https://www.instagram.com/akashastudio_tv/" target="_blank"><img src="./assets/Instagram_Logo.svg" alt="Instagram"></a>
                     <a href="https://www.linkedin.com/company/akasha-animation-studio" target="_blank"><img src="./assets/LinkedIn_Logo.svg" alt="LinkedIn"></a>
                 </div>
@@ -345,7 +355,9 @@
     </template>
 
     <script src="./js/index.js"></script>
+    <script src="./js/galery.js"></script>
     <script src="./js/nosotros.js"></script>
     <script src="./js/email.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-vimeo/2.0.2/video.js"></script>
 </body>
 </html>

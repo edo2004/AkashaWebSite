@@ -31,15 +31,19 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
     width: 80%;
     padding: 1rem;
     font-size: 2vh;
 }
 .footer-description p{
     padding: 0.2rem;
-    text-align: center;
 }
-
+#telefono-wap-footer{
+    color: white; 
+    font-size: 2vh;
+    text-decoration: none;
+}
 .footer-img{
     margin-top: 2rem;
     width: 20%;
@@ -58,6 +62,7 @@ footer {
     padding: 2rem 0rem;
     font-size: 1.7vh;
 }
+
 .footer-social_Media_Logos{
     width: 60%;
     display: flex;
@@ -91,9 +96,7 @@ footer {
     .footer-description{
         width: 25%;
         transform: translateY(10%);
-    }
-    .footer-description p{
-        text-align: left;
+        align-items: flex-start;
     }
     .footer-img{
         width: 5%;
@@ -116,9 +119,7 @@ footer {
     .footer-description{
         width: 25%;
         transform: translateY(10%);
-    }
-    .footer-description p{
-        text-align: left;
+        align-items: flex-start;
     }
     .footer-img{
         width: 5%;
