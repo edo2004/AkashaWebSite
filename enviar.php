@@ -4,7 +4,7 @@ $mail = $_POST['mail'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
-if($name === '' || $mail=== '' || $phone=== '' || $message=== ''){
+if($name === '' || $mail=== ''){
     echo json_encode('error');
 }else{
     echo json_encode('Correcto: <br>Usuario:'.$name.'<br>Pass:'.$mail);

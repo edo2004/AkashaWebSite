@@ -175,14 +175,14 @@
 }
 .text-gifs h1 {
     transition: 0.5s all ease;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
 }
 .title-gif.visible {
     opacity: 0;
     transform: translateY(-15%);
 }
 .desc-gif{
-    padding-bottom: 3vh;
+    padding-bottom: 1vh;
     transition: 0.5s all ease;
 }
 .desc-gif.visible {
@@ -315,11 +315,20 @@
     }
     .text-description {
         font-size: 2.25vh;
-        padding: 15% 1vh 0 1vh;
+        padding: 12% 1vh 0 1vh;
     }
-    .text-description img{
+    .vin-gifs {
+        margin-bottom: 5vh;
+    }
+    .vin-gifs li {
+        height: 4vh;
+    }
+    .muchmore {
+        padding-top: 2vh;
+    }
+    .gif-image img{
         height: auto;
-        width: 80%;
+        width: 60%;
         max-width: 100%;
     } 
     
@@ -402,12 +411,13 @@
     }
     .text-description {
         font-size: 2.25vh;
-        padding: 12% 1vh 0 1vh;
+        padding: 15% 1vh 0 1vh;
     }
-    .text-description img{
+    .gif-image img{
         height: auto;
         width: 50%;
         max-width: 100%;
+        margin-top: 1vh;
     }  
     
 }

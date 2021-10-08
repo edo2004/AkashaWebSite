@@ -173,20 +173,29 @@ const options = document.querySelectorAll('.options')
 
 
 
-
-
-    function removeBackground() {
-        if(fondo1.width>=640){
-            navegador.style.background = "none"
-        }else{
-            navCheckbox.checked = false
-            navegador.style.background = "none"
-            navMenu.style.opacity = '0'
-            options.forEach(option => {
-                option.style.display = 'none'
-            })
-        }
+window.addEventListener("scroll", () => {
+    if(fondo1.width>=640){
+        console.log(fondo1.width)
+        navegador.style.background = "none"
+        navMenu.style.opacity = '1'
+        options.forEach(option => {
+            option.style.display = 'block'
+        })
     }
+})
+
+function removeBackground() {
+    if(fondo1.width>=640){
+        navegador.style.background = "none"
+    }else{
+        navCheckbox.checked = false
+        navegador.style.background = "none"
+        navMenu.style.opacity = '0'
+        options.forEach(option => {
+            option.style.display = 'none'
+        })
+    }
+}
 
 function gestionarMenu() {
     

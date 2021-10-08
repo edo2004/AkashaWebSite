@@ -73,6 +73,7 @@
     transform: translate(0%,-3.7%);
 }
 .form-email {
+    position: relative;
     width: 100%;
     height: 60%;
     display: flex;
@@ -146,6 +147,8 @@
     font-size: 1.8vh;
     color: #E20870;
     font-family: "Myriad Pro", bold;
+    transition: background 1s;
+
 }
 .form-email form .btn-enviar {
     border: none;
@@ -195,7 +198,46 @@
     font-size: 2.3vh;
     text-decoration: none;
 }
+.alert-inputs {
+    position: absolute;
+    transform: translateY(-3vh);
+    background: rgba(255, 255, 255, 0.9);
+    width: 50%;
+    padding: 3vh;
+    color: #801c9b;
+    font-size: 2.5vh;
+    text-align: center; 
+    font-weight: bold;
+    border-radius: 1vh;
+    -webkit-filter:drop-shadow(10px 4px 6px rgba(0,0,0,0.5));
+    filter:drop-shadow(10px 4px 6px rgba(0,0,0,0.5));  
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: -1;
+}
 
+.alert-inputs.alert-visible {
+    transition: opacity 1s;
+    opacity: 1;
+    z-index: 3;
+}
+.contact-form input {
+    transition: background 1s;
+}
+.contact-form input.background-change {
+    background: #6d3faf;
+    color: #6d3faf;
+    transition: all 2s;
+}
+.contact-form textarea.area-change {
+    padding: 2vh;
+    font-size: 4vh;
+    text-align: center;
+    text-align-last: center;
+    color: white;
+    background: #6d3faf;
+    transition: background 2s;
+}
 
 
 /* responsive */
@@ -243,6 +285,13 @@
     }
     .email-social_Media_Logos span{
         font-size: 2vh;
+    }
+    .alert-inputs {
+        transform: translateY(-2vh);
+        background: rgba(255, 255, 255, 0.9);
+        width: 60%;
+        padding: 3vh 2vh;
+        font-size: 2.3vh;
     }
     
     
@@ -294,5 +343,8 @@
     }
     .email-social_Media_Logos span{
         font-size: 2.3vh;
+    }
+    .contact-form textarea.area-change {
+        padding: 4vh;
     }
 }
