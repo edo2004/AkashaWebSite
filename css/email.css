@@ -13,6 +13,7 @@
     align-items: center;
     overflow: hidden;
     font-family: "Myriad Pro light";
+    background-image: linear-gradient(to right, #F77619 0%, #E8184E 30%, #E60B55 100%);
 }
 .fondo-email {
     position: absolute;
@@ -21,8 +22,8 @@
     /* overflow: hidden; */
 }
 .fondo-email img {
-    min-height: 100vh;
-    min-width: 100%;
+    height: 42vh;
+    width: auto;
     transform: translateX(-15%);
 }
 .content-email {
@@ -242,8 +243,13 @@
 
 /* responsive */
 @media only screen and (min-width:640px ) and (max-width:992px){
+    .email-section {
+        background-image: linear-gradient(to right, #FCEE21 0%, #FFA300 11%, #E8184E 25%, #E60B55 43%, #DE058A 61%, #DE058A 100%);
+    }
     .fondo-email img {
         transform: none;
+        min-width: 100%;
+        height: 40vh;
     }
     .content-email {
         padding-right: 10%;
@@ -297,8 +303,13 @@
     
 }
 @media only screen and (min-width:993px){
+    .email-section {
+        background-image: linear-gradient(to right, #FCEE21 0%, #FFA300 11%, #E8184E 25%, #E60B55 43%, #DE058A 61%, #DE058A 100%);
+    }
     .fondo-email img {
         transform: none;
+        width: 100%;
+        height: auto;
     }
     .content-email {
         padding-right: 10%;
