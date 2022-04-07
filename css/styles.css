@@ -501,13 +501,13 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
 }
 .item-image .play-bottom img {
-  width: 35%;
+  width: 30%;
   height: auto;
   transform: translateX(10%);
 }
 
 .item-image .play-bottom:hover {
-  opacity: 1;
+  opacity: 0.85;
   transition: 500ms opacity
 }
 
