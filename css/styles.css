@@ -508,6 +508,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .item-image .play-bottom:hover {
   opacity: 1;
+  transition: 500ms opacity
 }
 
 
