@@ -4,6 +4,54 @@
     box-sizing: border-box;
 }
 
+
+/* Estilos container Nuevo */
+
+
+
+.grid-about{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background: red;
+}
+
+.items-about{
+    background: green;
+    height: 100%;
+    width: 60%;
+}
+.images-about{
+    width: 40%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* Fin Estilos Container Nuevo */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container-nosotros {
     position: relative;
     width: 100%;
