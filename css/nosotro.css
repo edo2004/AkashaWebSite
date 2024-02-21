@@ -47,11 +47,13 @@ body {
 .images-about-container{
     width: 100%;
     height: 80%;
+    
 }
 .images-about-container img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    background-color: red;
 
 }
 .images-about-text{
@@ -69,7 +71,7 @@ body {
 .images-about-text p{
     font-family: "Futura Light BT";
     font-size: 2.4vh;
-    font-weight: bold;
+    font-weight: lighter;
 }
 .items-about{
 
