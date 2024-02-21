@@ -9,7 +9,7 @@
 .honey {
     width: 100%;
     height: 55vh; 
-    background: rgba(43, 42, 42, 0.5);
+    background: #230020;
     position: absolute;
     bottom: 0;
     overflow-x: scroll;
@@ -30,13 +30,12 @@
 }
 
 .item{
-    background-color: black;
+    background-color:#EDEDED;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     transition: 450ms all;
     grid-column: span 2;
     height: 12vh;
-    position: relative;
-    
+    position: relative;    
 }
 .item:nth-of-type(3) {
     grid-column: 2 / span 2;
@@ -65,57 +64,62 @@
     height: 100%;
     position: absolute;
 }
-.item-transpar {
-    opacity: 0.18;
+.item-normal {
+    opacity: 0.19;
 }
-.item-transpare {
-    opacity: 0.2;
+.item-medium {
+    opacity: 0.31;
 }
 .item-transparen {
     opacity: 0.23;
 }
 .item-transparent {
-    opacity: 0.26;
+    opacity: 0.04;
 }
 .item-image{
-    background: rgb(96, 95, 95);
     cursor: pointer;
     transition: 450ms all;
-
+    opacity: 0.52;
+    font-size: 1.4vh;
+    text-align: center;
+    color: #1B1464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/* .item-image:hover{
-    opacity: 1;
+.item-image:hover{
+    opacity: 0.68;
     z-index: 2;
-} */
+}
 
 /* .honey:hover .item-image{
     opacity: 0.5;
 } */
-/* .honey:hover .item-image:hover{
-    transform: scale(1.1);
+.honey:hover .item-image:hover{
+    transform: scale(1.05);
     opacity: 1;
     filter: contrast(100%) brightness(1.2);
     -webkit-filter:contrast(100%) brightness(1.2);
-} */
+}
 .item-image .play-bottom {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .item-image .play-bottom img {
-  width: 30%;
-  height: auto;
-  transform: translateX(10%);
+    width: 30%;
+    height: auto;
+    transform: translateX(10%);
 }
 
-/* .item-image .play-bottom:hover {
-  opacity: 0.85;
-  transition: 500ms opacity
-} */
+.item-image .play-bottom:hover {
+    opacity: 0.85;
+    transition: 500ms opacity
+}
 
 
 /* responsive */
