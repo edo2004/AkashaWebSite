@@ -27,8 +27,8 @@
     justify-content: center;
     align-items: flex-end;
     grid-template-columns: repeat(5, 3vh);
-    grid-auto-rows: 6.5vh;
-    grid-gap: 0rem 8vh;
+    grid-auto-rows: 7vh;
+    grid-gap: 0rem 9.5vh;
     position: absolute;
     bottom: -5vh; 
 }
@@ -38,7 +38,7 @@
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     transition: 450ms all;
     grid-column: span 2;
-    height: 12vh;
+    height: 13.2vh;
     position: relative;
     font-family: "Futura Heavy BT";
 }
