@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Futura Heavy BT";
+    src: url("./fonts/futura-heavy-bt.ttf");
+}
 /* hexagon */
 
 .honey {
@@ -35,7 +39,8 @@
     transition: 450ms all;
     grid-column: span 2;
     height: 12vh;
-    position: relative;    
+    position: relative;
+    font-family: "Futura Heavy BT";
 }
 .item:nth-of-type(3) {
     grid-column: 2 / span 2;
@@ -80,7 +85,7 @@
     cursor: pointer;
     transition: 450ms all;
     opacity: 0.52;
-    font-size: 1.4vh;
+    font-size: 1.26vh;
     text-align: center;
     color: #1B1464;
     display: flex;
