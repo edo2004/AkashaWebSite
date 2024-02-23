@@ -206,6 +206,8 @@ body {
     opacity: 1;
     filter: contrast(100%) brightness(1.2);
     -webkit-filter:contrast(100%) brightness(1.2);
+
+  
 }
 .item-image .play-bottom {
     width: 100%;
@@ -224,5 +226,13 @@ body {
 
 .item-image .play-bottom:hover {
     opacity: 0.85;
-    transition: 500ms opacity
+    transition: 500ms opacity;
+    
+
+}
+
+@media (min-width:768px) {
+
+    
+    
 }
