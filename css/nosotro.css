@@ -67,6 +67,7 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: 0.5s all ease;
 
 }
 
@@ -108,6 +109,31 @@ body {
 }
 
 
+
+
+.text-gif {
+    transition: 0.5s all ease;
+}
+.title-gif.visible {
+    opacity: 0;
+    transform: translateY(-15%);
+}
+.desc-gif{
+    transition: 0.5s all ease;
+}
+.desc-gif.visible {
+    opacity: 0;
+    transform: translateY(-15%);
+}
+.images-about-container.gif-scale {
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+
+
+
 /* hexagon */
 
 .honey {
@@ -127,10 +153,10 @@ body {
     justify-content: center;
     align-items: flex-end;
     grid-template-columns: repeat(5, 3vh);
-    grid-auto-rows: 7vh;
-    grid-gap: 0rem 9.5vh;
+    grid-auto-rows: 6vh;
+    grid-gap: 0rem 7.5vh;
     position: absolute;
-    bottom: -5vh; 
+    bottom: -4vh; 
 }
 
 .item{
@@ -138,7 +164,7 @@ body {
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     transition: 450ms all;
     grid-column: span 2;
-    height: 13.2vh;
+    height: 11vh;
     position: relative;
     font-family: "Futura Heavy BT";
 }
@@ -185,7 +211,7 @@ body {
     cursor: pointer;
     transition: 450ms all;
     opacity: 0.52;
-    font-size: 1.9vh;
+    font-size: 1.6vh;
     text-align: center;
     color: #1B1464;
     display: flex;
