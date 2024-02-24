@@ -111,7 +111,7 @@ body {
 
 
 
-.text-gif {
+.title-gif {
     transition: 0.5s all ease;
 }
 .title-gif.visible {
@@ -230,10 +230,9 @@ body {
 .honey:hover .item-image:hover{
     transform: scale(1.05);
     opacity: 1;
-    filter: contrast(100%) brightness(1.2);
     -webkit-filter:contrast(100%) brightness(1.2);
+    filter: contrast(100%) brightness(1.2);
 
-  
 }
 .item-image .play-bottom {
     width: 100%;
