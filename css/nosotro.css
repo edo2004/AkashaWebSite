@@ -245,11 +245,10 @@ body {
 .item-image .play-bottom:hover {
     opacity: 0.85;
     transition: 500ms opacity;
-    
 
 }
 
-@media only screen and (min-width:769px ) and (max-width:1024px){
+@media only screen and (min-width:900px ) and (max-width:1440px){
 
     .grid-about{
         flex-direction: row-reverse;
@@ -296,14 +295,23 @@ body {
     }
     .images-about-text{
         position: absolute;
-        padding: 4% 7% 4% 15%;
-        margin-top: 60vh;
+        padding: 4% 7% 18% 15%;
+        margin-top: 40vh;
     }
     .images-about-text h1{
-        font-size: 8vh;
+        font-size: 6vh;
     }
     .images-about-text p{
-        font-size: 4vh;
+        font-size: 3vh;
+    }
+
+    .images-about-container::before{
+        -webkit-box-shadow: inset 0px -1px 22px 18px rgba(88,101,197,1);
+        -moz-box-shadow: inset 0px -1px 22px 18px rgba(88,101,197,1);
+        box-shadow: inset -42px -30px 70px 18px rgba(88,101,197,1); 
+    }
+    .item.item-image h1{
+        font-size: 6vh;
     }
 
 }
