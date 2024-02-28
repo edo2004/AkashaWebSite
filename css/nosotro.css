@@ -315,3 +315,12 @@ body {
     }
 
 }
+
+/* @media (min-height: 1024px){
+
+    .grid-about{
+        flex-direction: column;
+        
+    }
+
+} */
