@@ -266,6 +266,7 @@ body {
     .images-about-container::before {
         -webkit-box-shadow: 0px -4px 36px 39px rgba(35,0,32,0.75) inset;
         -moz-box-shadow: 0px -4px 36px 39px rgba(35,0,32,0.75) inset;
+        background-image: linear-gradient(90deg, rgba(35,0,32,0.75), rgba(88,101,197,0.5));
         box-shadow: 0px -4px 36px 39px rgba(35,0,32,0.75) inset;
          
     }
