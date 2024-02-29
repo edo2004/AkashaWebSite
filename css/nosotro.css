@@ -263,10 +263,12 @@ body {
         
     }
     .images-about-container::before {
-        -webkit-box-shadow: 0px 0px 100px 60px rgba(35,0,32,1) inset;
-        -moz-box-shadow: 0px 0px 100px 60px rgba(35,0,32,1) inset;
-        box-shadow: 0px 0px 100px 60px rgba(35,0,32,1) inset;
-         
+        box-shadow: none;
+        -webkit-box-shadow: 0px 0px 100px 0px rgba(35,0,32,0.8) inset;
+        -moz-box-shadow: 0px 0px 100px 0px rgba(35,0,32,0.8) inset;
+        box-shadow: 0px 0px 100px 0px rgba(35,0,32,0.8) inset;
+        background-image: linear-gradient(circle, rgba(35,0,32,1), transparent 30%, rgba(88,101,197,1));
+        
     }
 
     .title-gif{
