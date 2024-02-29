@@ -187,9 +187,6 @@ body {
 .item-medium {
     opacity: 0.31;
 }
-.item-transparen {
-    opacity: 0.23;
-}
 .item-transparent {
     opacity: 0.04;
 }
@@ -269,27 +266,6 @@ body {
         box-shadow: 0px 0px 100px 60px rgba(35,0,32,1) inset;
          
     }
-    
-    .honey{
-        width: 55%;
-        position: absolute;
-        height: 100%;
-        left: 0;
-    }
-    .content_honey{
-        height: 100%;
-        grid-template-columns: repeat(5, 8vh);
-        grid-auto-rows: 13vh;
-        left: -21vh;
-        grid-gap: 4.5vh 21vh;
-        bottom: -3vh;
-        position: relative;
-        z-index: 300;
-
-    }
-    .item{
-        height: 33vh;
-    }
 
     .title-gif{
         text-align: right;
@@ -314,6 +290,31 @@ body {
     }
     .item.item-image h1{
         font-size: 6vh;
+    }
+
+    .honey{
+        width: 55%;
+        position: absolute;
+        height: 100%;
+        left: 0;
+    }
+    .content_honey{
+        height: 100%;
+        grid-template-columns: repeat(5, 8vh);
+        grid-auto-rows: 13vh;
+        left: -21vh;
+        grid-gap: 4.5vh 21vh;
+        bottom: -2.5vh;
+        position: relative;
+        z-index: 300;
+
+    }
+    .item{
+        height: 33vh;
+    }
+
+    .item-transparent {
+        opacity: 0.1;
     }
 
 }
