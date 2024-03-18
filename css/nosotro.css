@@ -58,6 +58,7 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+
 }
 
 .images-about-container::before {
@@ -90,6 +91,23 @@ body {
     font-size: 2.4vh;
     font-weight: lighter;
 }
+
+.images-about-text li{
+
+    transform: translateX(5%);
+    list-style: none;
+    /* list-style-image: url("../assets/LogoFooter.svg"); */
+}
+
+.images-about-text ul li::before {
+    content: url("../assets/Vineta.svg");  
+    display: inline-block; 
+    padding-right: 20px;
+    font-size: 50px;
+    line-height: 1rem;
+    vertical-align: -1px;
+    width: 2vh;
+}
 /* .items-about{
 
     height: 55%;
@@ -117,7 +135,9 @@ body {
     opacity: 0;
     transform: scale(0);
 }
-
+.images-about-text p{
+    text-align: right;
+}
 
 
 
@@ -239,6 +259,41 @@ body {
     transition: 500ms opacity;
 
 }
+.vin-gifs{
+    display: flex;
+    justify-content: flex-end;
+    /* margin-top: 3rem; */
+    font-size: 3vh;
+    font-family: "Futura Light BT";
+}
+
+/* Estilo para el contenido de <details> */
+details {
+    overflow-y: auto; /* Agrega desplazamiento vertical */
+    /* max-height: calc(100vh - 200px); */
+    position: absolute; /* Posiciona el contenido absolutamente */
+    background-color: transparent; /* Establece el fondo transparente */
+    border:none; /* Borde */
+    z-index: 1000; /* Ajusta el z-index para que esté sobre otros elementos */
+    color: white; /* Color del texto */
+    cursor: pointer;
+  }
+  details[open] {
+    display: flex;
+    width: 55%;
+    overflow-x: hidden;
+
+    }
+  
+  details summary::marker {
+    content: "see more...";
+    color: white;
+    font-size: 2.5vh;
+  }
+
+  .responsive-margin{
+    margin-top: 14vh !important;
+  }
 
 
 /* -----------------RESPONSIVE DESING---------------- */
@@ -283,7 +338,7 @@ body {
     }
     .images-about-text{
         position: absolute;
-        padding: 4% 7% 18% 15%;
+        padding: 4% 10% 28% 31%;
         margin-top: 68vh;
     }
     .images-about-text h1{
@@ -347,6 +402,20 @@ body {
 
 }
 
+@media only screen and (max-width:639px){
+    .img1{
+        content: url('../assets/Nosotros/Celular_Motion-min.png');
+    }
+    .img2{
+        content: url('../assets/Nosotros/Celular_VFX-2-min.png');
+    }
+    .img3{
+        content: url('../assets/Nosotros/Celular_Motion-min.png');
+    }
+    .img4{
+        content: url('../assets/Nosotros/Celular_VFX-min.png');
+    }
+}
 
 /* @media only screen and (min-width:1440){
     .content_honey{
