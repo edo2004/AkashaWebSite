@@ -124,7 +124,7 @@ function cargarGifs(data) {
         gifImage.innerHTML = conten.image
         gifImage.classList.remove("gif-scale")
     },750)
-            
+
 }
 
 
