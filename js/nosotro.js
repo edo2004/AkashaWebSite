@@ -2,8 +2,12 @@ const titleGifs = document.querySelector('.title-gif')
 const textGifs = document.querySelector('.desc-gif')
 const gifImage = document.querySelector('.images-about-container')
 const vinGifs = document.querySelector('.vin-gifs')
-const myDetails = document.querySelector('.myDetails')
+const myDetails = document.querySelectorAll('.myDetails')
 const imagesAboutText = document.querySelector('.images-about-text')
+const defaultItem0 = document.getElementById('default-item-about-btn')
+const defaultItem1 = document.getElementById('default-item-about-btn1')
+const imagesID = document.getElementById('images-id')
+
 
 
 const ContentGifs = [
@@ -15,7 +19,7 @@ const ContentGifs = [
         </p>`,
         items:`
         
-            <details class="myDetails">
+            <details class="myDetails" id="default-item-about-btn1" >
             <summary></summary>
 
                 <ul>
@@ -135,10 +139,53 @@ function cargarGifs(data) {
 
 // Efecto para las viñetas
 
-myDetails.addEventListener('click',function(){
-    imagesAboutText.classList.toggle('responsive-margin');
+
+
+defaultItem0.addEventListener('click',function(){
+
+    handlerShowItems(imagesID);
+})
+
+defaultItem1.addEventListener('click',function(){
+    handlerShowItems(imagesID)
+})
+
+
+
+const handlerShowItems = (item)=>{
+    if(item.classList.contains('responsive-margin')){
+        item.classList.remove('responsive-margin');
+
+    }
+    else{
+        item.classList.toggle('responsive-margin')
+    }
+
+
 }
-)
+
+
+// myDetails.addEventListener('click',function(){
+
+
+
+    
+//     if(imagesAboutText.classList.contains('responsive-margin')){
+//         imagesAboutText.classList.remove('responsive-margin');
+
+//     }
+//     else{   
+//         var elementosResponsive  = document.getElementsByClassName('images-about-text')
+//         for (var i = 0; i < elementosResponsive.length; i++) {
+//             elementosResponsive[i].classList.toggle('responsive-margin');
+//           }
+//     }
+
+
+// }
+// )
+
+
 
 
 
