@@ -4,6 +4,10 @@ const gifImage = document.querySelector('.images-about-container')
 const vinGifs = document.querySelector('.vin-gifs')
 let myDetails = document.querySelector('.myDetails')
 const imagesAboutText = document.querySelector('.images-about-text')
+const defaultItem0 = document.getElementById('default-item-about-btn')
+const defaultItem1 = document.getElementById('default-item-about-btn1')
+const imagesID = document.getElementById('images-id')
+
 
 
 const ContentGifs = [
@@ -15,7 +19,7 @@ const ContentGifs = [
         </p>`,
         items:`
         
-            <details class="myDetails">
+            <details class="myDetails" id="default-item-about-btn1" >
             <summary></summary>
 
                 <ul>
