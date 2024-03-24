@@ -2,7 +2,7 @@ const titleGifs = document.querySelector('.title-gif')
 const textGifs = document.querySelector('.desc-gif')
 const gifImage = document.querySelector('.images-about-container')
 const vinGifs = document.querySelector('.vin-gifs')
-const myDetails = document.querySelector('.myDetails')
+let myDetails = document.querySelector('.myDetails')
 const imagesAboutText = document.querySelector('.images-about-text')
 
 
