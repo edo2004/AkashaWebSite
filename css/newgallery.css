@@ -9,8 +9,7 @@ body {
   display: grid;
   width: 100vw;
   background-repeat: no-repeat;
-  background: rgb(35,0,32);
-  background: linear-gradient(90deg, rgba(35,0,32,1) 38%, rgba(88,101,197,1) 100%);
+  background: linear-gradient(90deg, rgba(35, 0, 32, 0.9) 38%, rgba(88, 101, 197, 0.8) 100%), url('../assets/akasha_soda.png');
   grid-template-columns: repeat(3, 1fr);
 
 }
