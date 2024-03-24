@@ -94,6 +94,8 @@ function cargarGifs(data) {
 
     var idImagen = data.dataset.id
     let conten = ContentGifs[idImagen]
+
+    imagesAboutText.classList.remove('responsive-margin');
     
 
     clearTimeout(set2)
@@ -124,6 +126,10 @@ function cargarGifs(data) {
     set4 = setTimeout(function () {
         vinGifs.innerHTML = conten.items
         vinGifs.classList.remove("visible")
+        myDetails = document.querySelector('.myDetails');
+        myDetails.addEventListener('click',function(){
+            imagesAboutText.classList.toggle('responsive-margin');
+        });
     },750)
     set5 = setTimeout(function () {
         gifImage.innerHTML = conten.image
@@ -137,8 +143,7 @@ function cargarGifs(data) {
 
 myDetails.addEventListener('click',function(){
     imagesAboutText.classList.toggle('responsive-margin');
-}
-)
+});
 
 
 
