@@ -3,12 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+.prueba{
+  width: 100%;
+  height: 700px;
+  background-color: yellow;
+}
 body {
   height: auto;
   display: flex;
   align-content: center;
   overflow-x:hidden ;
+  flex-direction: column;
   }
+
 .gallery-container{
   display: flex;
   flex-direction: column-reverse;
@@ -28,9 +35,27 @@ body {
   grid-column-start:1 ;
   grid-column-end:2 ;
   grid-template-columns:  repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr 1fr 1fr ;
+  grid-template-rows:  repeat(6,minmax(130px, 1fr));
   gap: 1vh 1vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
+
+/* estilos barra scroll grid container */
+/* Estilos para la barra de desplazamiento en WebKit */
+.grid-container::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+.grid-container::-webkit-scrollbar-thumb {
+  background-color: #5058A0; /* Color del "pulgar" de la barra de desplazamiento */
+  border-radius: 5px; /* Borde redondeado */
+}
+
+.grid-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+}
+
 .video-item {
   position: relative; 
   overflow: hidden;
@@ -162,5 +187,9 @@ body {
 }
 
 @media only screen and (max-width:639px){
-
+  
+  .grid-container::-webkit-scrollbar {
+    width: 1.5vw; /* Ancho de la barra de desplazamiento */
+  }
+  
 }
