@@ -102,7 +102,7 @@ body {
   grid-column-start:1 ;
   grid-column-end:2 ;
   grid-template-columns:  repeat(3, 1fr);
-  grid-template-rows:  repeat(6,minmax(130px, 1fr));
+  grid-template-rows:  repeat(8,minmax(130px, 1fr));
   gap: 1vh 1vh;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -111,12 +111,12 @@ body {
 /* estilos barra scroll grid container */
 /* Estilos para la barra de desplazamiento en WebKit */
 .grid-container::-webkit-scrollbar {
-  width: 10px; /* Ancho de la barra de desplazamiento */
+  width: 1vh; /* Ancho de la barra de desplazamiento */
 }
 
 .grid-container::-webkit-scrollbar-thumb {
   background-color: #5058A0; /* Color del "pulgar" de la barra de desplazamiento */
-  border-radius: 5px; /* Borde redondeado */
+  border-radius: 0.5vh; /* Borde redondeado */
 }
 
 .grid-container::-webkit-scrollbar-track {
@@ -212,7 +212,7 @@ body {
   .grid-container{
     width: 90%;
     height: 90%;
-    transform: translateX(2%);
+    transform: translateX(10%);
   }
   .gallery-videos{
     right: 0;
@@ -225,8 +225,9 @@ body {
     height: 100%;
   }
   .video-gallery iframe{
-    width: 90%;
+    width: 80%;
     height: 100%;
+    transform: translateX(2%);
   }
 }
 
