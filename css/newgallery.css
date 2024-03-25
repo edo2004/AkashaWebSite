@@ -96,13 +96,13 @@ body {
 
 }
 .grid-container{
-  width: 90%;
+  width: 100%;
   height: 100%;
   display: grid;
   grid-column-start:1 ;
   grid-column-end:2 ;
   grid-template-columns:  repeat(3, 1fr);
-  grid-template-rows:  repeat(8,minmax(130px, 1fr));
+  grid-template-rows:  repeat(16,minmax(130px, 1fr));
   gap: 1vh 1vh;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -201,6 +201,184 @@ body {
   grid-row-start: 4;
   grid-row-end: 5;
 }
+
+.grid10{
+  background-color: red;
+  grid-column-start: 1;
+  grid-column-end:3 ;
+}
+.grid11{
+  background-color: red;
+  grid-column-start: 3;
+  grid-column-end:4 ;
+}
+.grid12{
+  background-color: green;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.grid13{
+  background-color: black;
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+}
+
+.grid14{
+  background-color: antiquewhite;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start:7 ;
+  grid-row-end: 9;
+  
+}
+.grid15{
+  background-color: yellow;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.grid16{
+  background-color: aqua;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  
+}
+
+.grid17{
+  background-color: blue;
+  grid-column-start: 2;
+  grid-column-end: 3;
+ 
+}
+.grid18{
+  background-color: blueviolet;
+  grid-column-start: 3;
+  grid-column-end: 4;
+ 
+
+}
+
+.grid19{
+  background-color: red;
+  grid-column-start: 1;
+  grid-column-end:3 ;
+}
+.grid20{
+  background-color: green;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.grid21{
+  background-color: black;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+}
+
+.grid22{
+  background-color: antiquewhite;
+  grid-column-start: 2;
+  grid-column-end: 4;
+ 
+  
+}
+.grid23{
+  background-color: yellow;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 11;
+  grid-row-end: 13;
+}
+.grid24{
+  background-color: aqua;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  
+}
+
+.grid25{
+  background-color: blue;
+  grid-column-start: 3;
+  grid-column-end: 4;
+ 
+}
+.grid26{
+  background-color: blueviolet;
+  grid-column-start: 2;
+  grid-column-end: 3;
+ 
+
+}
+
+.grid27{
+  background-color: blue;
+  grid-column-start: 3;
+  grid-column-end: 4;
+ 
+}
+.grid28{
+  background-color: blueviolet;
+  grid-column-start: 1;
+  grid-column-end: 3;
+ 
+
+}
+.grid29{
+  background-color: blue;
+  grid-column-start: 3;
+  grid-column-end: 4;
+ 
+}
+.grid30{
+  background-color: blueviolet;
+  grid-column-start: 1;
+  grid-column-end: 2;
+ 
+
+}
+.grid31{
+  background-color: blue;
+  grid-column-start: 2;
+  grid-column-end: 4;
+ 
+}
+.grid32{
+  background-color: blueviolet;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start:15 ;
+  grid-row-end: 17;
+ 
+
+}
+.grid33{
+  background-color: blue;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  
+ 
+}
+.grid34{
+  background-color: blueviolet;
+  grid-column-start: 3;
+  grid-column-end: 4;
+ 
+ 
+
+}
+.grid35{
+  background-color: blue;
+  grid-column-start: 2;
+  grid-column-end: 3;
+ 
+}
+.grid36{
+  background-color: blue;
+  grid-column-start: 3;
+  grid-column-end: 4;
+ 
+}
+
 
 @media only screen and (min-width:640px ) and (orientation: landscape){
   .mansory-container{

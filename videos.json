@@ -1,8 +1,8 @@
 [
     {
         "id":"1",
-        "image":"./assets/Galeria/AKASHA_Reel.png",
-        "video":"https://player.vimeo.com/video/583627240?autoplay=1"
+        "image":"./assets/Galeria/Fondo/assets/Galeria/Fondo/Akasha-Reel-2023.png",
+        "video":"https://player.vimeo.com/video/824412417?autoplay=1"
     },
     {
         "id":"2",
@@ -11,53 +11,53 @@
     },
     {
         "id":"3",
-        "image":"./assets/Galeria/break_dance.png",
-        "video":"https://player.vimeo.com/video/594309553?autoplay=1"
+        "image":"./assets/Galeria/Fondo/Compsition-reel-2023.png",
+        "video":"https://player.vimeo.com/video/824414035?autoplay=1"
     },
     {
         "id":"4",
-        "image":"./assets/Galeria/melissa_Wild.png",
-        "video":"https://player.vimeo.com/video/599901913?autoplay=1"
+        "image":"./assets/Galeria/Fondo/2D-animation-reel-2023.png",
+        "video":"https://player.vimeo.com/video/824414848?autoplay=1"
     },
     {
         "id":"5",
-        "image":"./assets/Galeria/paso_x_ti.png",
-        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
+        "image":"./assets/Galeria/Fondo/01_Oreo_Fudge_oscuro.webp",
+        "video":"https://player.vimeo.com/video/899534520?autoplay=1"
     },
     {
         "id":"6",
-        "image":"./assets/Galeria/Shinzo_Coffee.png",
-        "video":"https://player.vimeo.com/video/583625565?autoplay=1"
+        "image":"./assets/Galeria/Fondo/03_WPLAY.webp",
+        "video":"https://player.vimeo.com/video/887783366?autoplay=1"
     },
     {
         "id":"7",
-        "image":"./assets/Galeria/akasha_soda.png",
-        "video":"https://player.vimeo.com/video/583625666?autoplay=1"
+        "image":"./assets/Galeria/Fondo/02_Ganafanaticos_OSCURO_FONDO.webp",
+        "video":"https://player.vimeo.com/video/824410229?autoplay=1"
     },
     {
         "id":"8",
-        "image":"./assets/Galeria/cyberpunk_Persecution.png",
-        "video":"https://player.vimeo.com/video/584375334?autoplay=1"
+        "image":"./assets/Galeria/Fondo/wine_composition.png",
+        "video":"https://player.vimeo.com/video/824407813?autoplay=1"
     },
     {
         "id":"9",
-        "image":"./assets/Galeria/candy_ad.png",
-        "video":"https://player.vimeo.com/video/592507386?autoplay=1"
+        "image":"./assets/Galeria/Fondo/04_Reputacion_dudosa.png",
+        "video":"https://player.vimeo.com/video/824452862?autoplay=1"
     },
     {
         "id":"10",
-        "image":"./assets/Galeria/life_Academy.png",
-        "video":"https://player.vimeo.com/video/584591189?autoplay=1"
+        "image":"./assets/Galeria/Fondo/casafanaticos.png",
+        "video":"https://player.vimeo.com/video/824408473?autoplay=1"
     },
     {
         "id":"11",
-        "image":"./assets/Galeria/graffity.png",
-        "video":"https://player.vimeo.com/video/584593557?autoplay=1"
+        "image":"./assets/Galeria/Fondo/akasha_elemental.png",
+        "video":"https://player.vimeo.com/video/824409607?autoplay=1"
     },
     {
         "id":"12",
-        "image":"./assets/Galeria/Baby_dance.png",
-        "video":"https://player.vimeo.com/video/594309665?autoplay=1"
+        "image":"./assets/Galeria/Fondo/bottle_of_watter.png",
+        "video":"https://player.vimeo.com/video/824410052?autoplay=1"
     },
     {
         "id":"13",
@@ -114,6 +114,66 @@
         "id":"23",
         "image":"./assets/Galeria/Inverted Bullet.jpg",
         "video":"https://player.vimeo.com/video/618319022?autoplay=1"
+    },
+    {
+        "id":"24",
+        "image":"./assets/Galeria/Inverted Bullet.jpg",
+        "video":"https://player.vimeo.com/video/583627240?autoplay=1"
+    },
+    {
+        "id":"25",
+        "image":"./assets/Galeria/ShutUp.png",
+        "video":"https://player.vimeo.com/video/584592206?autoplay=1"
+    },
+    {
+        "id":"26",
+        "image":"./assets/Galeria/break_dance.png",
+        "video":"https://player.vimeo.com/video/594309553?autoplay=1"
+    },
+    {
+        "id":"27",
+        "image":"./assets/Galeria/melissa_Wild.png",
+        "video":"https://player.vimeo.com/video/599901913?autoplay=1"
+    },
+    {
+        "id":"28",
+        "image":"./assets/Galeria/paso_x_ti.png",
+        "video":"https://player.vimeo.com/video/593440908?autoplay=1"
+    },
+    {
+        "id":"29",
+        "image":"./assets/Galeria/Shinzo_Coffee.png",
+        "video":"https://player.vimeo.com/video/583625565?autoplay=1"
+    },
+    {
+        "id":"30",
+        "image":"./assets/Galeria/akasha_soda.png",
+        "video":"https://player.vimeo.com/video/583625666?autoplay=1"
+    },
+    {
+        "id":"31",
+        "image":"./assets/Galeria/cyberpunk_Persecution.png",
+        "video":"https://player.vimeo.com/video/584375334?autoplay=1"
+    },
+    {
+        "id":"32",
+        "image":"./assets/Galeria/candy_ad.png",
+        "video":"https://player.vimeo.com/video/592507386?autoplay=1"
+    },
+    {
+        "id":"33",
+        "image":"./assets/Galeria/life_Academy.png",
+        "video":"https://player.vimeo.com/video/584591189?autoplay=1"
+    },
+    {
+        "id":"34",
+        "image":"./assets/Galeria/graffity.png",
+        "video":"https://player.vimeo.com/video/584593557?autoplay=1"
+    },
+    {
+        "id":"35",
+        "image":"./assets/Galeria/Baby_dance.png",
+        "video":"https://player.vimeo.com/video/594309665?autoplay=1"
     }
     
 ]
