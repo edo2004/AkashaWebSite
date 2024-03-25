@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/newgallery.css">
-</head>
-<body>
-  <!-- <div class="fondo">
-    <img src="./assets/Galeria/ShutUp.png" alt="">
-  </div> -->
-  <section class="gallery-container">
-    <section class="grid-container">
-      <div class="video-item grid1" onclick="traerDatos(this)" data-id="1">
-        <img src="./assets/Galeria/graffity.png" alt="AKASHA_Reel">
-      </div>
-      <div class="video-item grid2" onclick="traerDatos(this)" data-id="1">
-        <img src="./assets/Galeria/akasha_soda.png" alt="AKASHA_Reel">
-      </div>
-      <div class="video-item grid3" onclick="traerDatos(this)" data-id="1">
-        <img src="./assets/Galeria/archvizBG.jpg" alt="AKASHA_Reel">
-      </div>
-      <div class="video-item grid4" onclick="traerDatos(this)" data-id="1">
-        <img src="./assets/Galeria/Baby_dance.png" alt="AKASHA_Reel">
-      </div>
-      <div class="video-item grid5" onclick="traerDatos(this)" data-id="1">
-        <img src="./assets/Galeria/break_dance.png" alt="AKASHA_Reel">
-      </div>
-      <div class="video-item grid6" onclick="traerDatos(this)" data-id="1">
-        <img src="./assets/Galeria/candy_ad.png" alt="AKASHA_Reel">
-      </div>
-      <div class="video-item grid7" onclick="traerDatos(this)" data-id="1">
-        <img src="./assets/Galeria/coffee_process.png" alt="AKASHA_Reel">
-      </div>
-      <div class="video-item grid8" onclick="traerDatos(this)" data-id="1">
-        <img src="./assets/Galeria/Corporative_Video.png" alt="AKASHA_Reel">
-      </div>
-      <div class="video-item grid9" onclick="traerDatos(this)" data-id="1">
-        <img src="./assets/Galeria/cyberpunk_Persecution.png" alt="AKASHA_Reel">
-      </div>
-    </section>
-    <section class="gallery-videos">
-      <div class="video-gallery">
-        <img src="./assets/Galeria/Baby_dance.png" alt="">
-      </div>
-    </section>
-  </section>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/newgallery.css">
+  </head>
+  <body>
+    <!-- <div class="fondo">
+      <img src="./assets/Galeria/ShutUp.png" alt="">
+    </div> -->
+    <section class="gallery-container">
+      <img class="fondo1" src="./assets/Galeria/AKASHA_Reel.png" alt="">
+      <img class="fondo2" src="" alt="">
+      <div class="fondo3"></div>
 
-  <!-- Templates -->
-  <template id="template-video">
-    <iframe class="video-galery" src=""  frameborder="0" allow="autoplay"; fullscreen" allowfullscreen></iframe>
-  </template>
+      <section class="mansory-container">
+        <section class="grid-container">
+          <div class="video-item grid1" onclick="traerDatos(this)" data-id="1">
+            <img src="./assets/Galeria/graffity.png" alt="AKASHA_Reel">
+          </div>
+          <div class="video-item grid2" onclick="traerDatos(this)" data-id="2">
+            <img src="./assets/Galeria/akasha_soda.png" alt="AKASHA_Reel">
+          </div>
+          <div class="video-item grid3" onclick="traerDatos(this)" data-id="3">
+            <img src="./assets/Galeria/archvizBG.jpg" alt="AKASHA_Reel">
+          </div>
+          <div class="video-item grid4" onclick="traerDatos(this)" data-id="4">
+            <img src="./assets/Galeria/Baby_dance.png" alt="AKASHA_Reel">
+          </div>
+          <div class="video-item grid5" onclick="traerDatos(this)" data-id="5">
+            <img src="./assets/Galeria/break_dance.png" alt="AKASHA_Reel">
+          </div>
+          <div class="video-item grid6" onclick="traerDatos(this)" data-id="6">
+            <img src="./assets/Galeria/candy_ad.png" alt="AKASHA_Reel">
+          </div>
+          <div class="video-item grid7" onclick="traerDatos(this)" data-id="7">
+            <img src="./assets/Galeria/coffee_process.png" alt="AKASHA_Reel">
+          </div>
+          <div class="video-item grid8" onclick="traerDatos(this)" data-id="8">
+            <img src="./assets/Galeria/Corporative_Video.png" alt="AKASHA_Reel">
+          </div>
+          <div class="video-item grid9" onclick="traerDatos(this)" data-id="9">
+            <img src="./assets/Galeria/cyberpunk_Persecution.png" alt="AKASHA_Reel">
+          </div>
+        </section>
+      </section>
 
-  
-</body>
+      <section class="gallery-videos">
+        <div class="video-gallery">
+        </div>
+      </section>
+    </section>
+
+    <!-- Templates -->
+    <template id="template-video">
+      <iframe class="video-galery" src=""  frameborder="0" allow="autoplay"; fullscreen" allowfullscreen></iframe>
+    </template>
+
+    <script src="./js/newgalery.js"></script>
+
+  </body>
 </html>
