@@ -3,6 +3,7 @@ const textGifs = document.querySelector('.desc-gif')
 const gifImage = document.querySelector('.images-about-container')
 const vinGifs = document.querySelector('.vin-gifs')
 let myDetails = document.querySelector('.myDetails')
+const summaryElement = myDetails.querySelector('summary');
 const imagesAboutText = document.querySelector('.images-about-text')
 const defaultItem0 = document.getElementById('default-item-about-btn')
 const defaultItem1 = document.getElementById('default-item-about-btn1')
@@ -98,8 +99,6 @@ function cargarGifs(data) {
 
     var idImagen = data.dataset.id
     let conten = ContentGifs[idImagen]
-
-    imagesAboutText.classList.remove('responsive-margin');
     
 
     clearTimeout(set2)
@@ -130,9 +129,14 @@ function cargarGifs(data) {
     set4 = setTimeout(function () {
         vinGifs.innerHTML = conten.items
         vinGifs.classList.remove("visible")
-        myDetails = document.querySelector('.myDetails');
-        myDetails.addEventListener('click',function(){
-            imagesAboutText.classList.toggle('responsive-margin');
+        myDetails.addEventListener('toggle',function(){
+            if (myDetails.open) {
+                summaryElement.textContent = 'See less...';
+                vinGifs.style.justifyContent = 'flex-start';
+            } else {
+                summaryElement.textContent = 'See more...';
+                vinGifs.style.justifyContent = 'flex-end';
+            }
         });
     },750)
     set5 = setTimeout(function () {
@@ -145,8 +149,14 @@ function cargarGifs(data) {
 
 // Efecto para las viñetas
 
-myDetails.addEventListener('click',function(){
-    imagesAboutText.classList.toggle('responsive-margin');
+myDetails.addEventListener('toggle',function(){
+    if (myDetails.open) {
+        summaryElement.textContent = 'See less...';
+        vinGifs.style.justifyContent = 'flex-start';
+    } else {
+        summaryElement.textContent = 'See more...';
+        vinGifs.style.justifyContent = 'flex-end';
+    }
 });
 
 

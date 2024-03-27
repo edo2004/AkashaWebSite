@@ -46,7 +46,7 @@ body {
     overflow-y: hidden;
 }
 .images-about-container{
-    position: relative;
+    position: absolute;
     z-index: 10;
     width: 100%;
     height: 80%;
@@ -74,13 +74,15 @@ body {
     box-shadow: inset 0 0 5vh 4vh rgba(88,101,197,1);
 }
 .images-about-text{
-    position: relative;
+    position: absolute;
     z-index: 20;
     width: 100%;
-    height: 20%;
-    padding: 4%;
-    margin-top: -10vh;
+    height: 100%;
     color: white;
+    padding: 2vh 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .images-about-text h1{
     font-family: "Futura Heavy BT";
@@ -88,14 +90,17 @@ body {
 }
 .images-about-text p{
     font-family: "Futura Light BT";
-    font-size: 2.4vh;
+    font-size: 2vh;
     font-weight: lighter;
+    text-shadow: 2px 2px 5px white;
 }
 
 .images-about-text li{
 
     transform: translateX(5%);
     list-style: none;
+    font-size: 2vh;
+    text-shadow: 2px 2px 5px white;
     /* list-style-image: url("../assets/LogoFooter.svg"); */
 }
 
@@ -104,15 +109,52 @@ body {
     display: inline-block; 
     padding-right: 20px;
     font-size: 50px;
-    line-height: 1rem;
+    line-height: 0.6rem;
     vertical-align: -1px;
-    width: 2vh;
+    width: 1.5vh;
 }
 /* .items-about{
 
     height: 55%;
     width: 100%;
 } */
+
+.vin-gifs{
+    display: flex;
+    justify-content: flex-end;
+    /* margin-top: 3rem; */
+    font-size: 3vh;
+    font-family: "Futura Light BT";
+}
+
+/* Estilo para el contenido de <details> */
+details {
+    overflow-y: auto; /* Agrega desplazamiento vertical */
+    /* max-height: calc(100vh - 200px); */
+    background-color: transparent; /* Establece el fondo transparente */
+    border:none; /* Borde */
+    z-index: 100; /* Ajusta el z-index para que esté sobre otros elementos */
+    color: white; /* Color del texto */
+    cursor: pointer;
+  }
+  details[open] {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+
+    }
+  summary{
+    font-size: 2vh;
+  }
+  details summary::marker {
+    content: " ";
+    color: white;
+    font-size: 2vh;
+  }
+
+  .responsive-margin{
+    margin-top: 14vh !important;
+  }
 
 
 
@@ -152,6 +194,9 @@ body {
     bottom: 0;
     overflow-x: hidden;
     overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content_honey {
@@ -163,8 +208,7 @@ body {
     grid-template-columns: repeat(5, 3vh);
     grid-auto-rows: 6vh;
     grid-gap: 0rem 7.5vh;
-    position: absolute;
-    bottom: -4vh; 
+    padding-top: 12vh;
 }
 
 .item{
@@ -259,44 +303,7 @@ body {
     transition: 500ms opacity;
 
 }
-.vin-gifs{
-    display: flex;
-    justify-content: flex-end;
-    /* margin-top: 3rem; */
-    font-size: 3vh;
-    font-family: "Futura Light BT";
-}
 
-/* Estilo para el contenido de <details> */
-details {
-    overflow-y: auto; /* Agrega desplazamiento vertical */
-    /* max-height: calc(100vh - 200px); */
-    position: absolute; /* Posiciona el contenido absolutamente */
-    background-color: transparent; /* Establece el fondo transparente */
-    border:none; /* Borde */
-    z-index: 1000; /* Ajusta el z-index para que esté sobre otros elementos */
-    color: white; /* Color del texto */
-    cursor: pointer;
-    transition: max-height 0.3s ease;
-    overflow: hidden; /* Evita que el contenido extra se muestre parcialmente durante la transición */
-  }
-  details[open] {
-    display: flex;
-    width: 55%;
-    overflow-x: hidden;
-    
-    }
-  
-  details summary::marker {
-    content: "see more...";
-    color: white;
-    font-size: 2.5vh;
-  }
-
-  .responsive-margin{
-    
-    margin-top: 14vh !important;
-  }
 
 
 /* -----------------RESPONSIVE DESING---------------- */
@@ -328,21 +335,17 @@ details {
         background-image: linear-gradient(90deg, rgba(35,0,32,1), transparent 40%, rgba(88,101,197,0.5));
         
     }
-
+    .images-about-container{
+        height: 100%;
+    }
     .title-gif{
         text-align: right;
     }
     .desc-gif{
         text-align: right;
     }
-
-    .images-about-container{
-        height: 100%;
-    }
     .images-about-text{
-        position: absolute;
-        padding: 4% 10% 28% 31%;
-        margin-top: 68vh;
+        padding: 4% 10% 6% 31%;
     }
     .images-about-text h1{
         font-size: 6vh;
@@ -352,6 +355,12 @@ details {
     }
     .item.item-image h1{
         font-size: 6vh;
+    }
+    .images-about-text li{
+        font-size: 3vh;
+    }
+    summary{
+        font-size: 2.5vh;
     }
 
     .honey{
@@ -366,9 +375,8 @@ details {
         grid-auto-rows: 13vh;
         left: -21vh;
         grid-gap: 4.5vh 21vh;
-        bottom: -2.5vh;
-        position: relative;
-        z-index: 300;
+        z-index: 10;
+        padding: 0 35% 5% 0;
 
     }
     .item{
