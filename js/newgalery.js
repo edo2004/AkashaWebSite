@@ -51,6 +51,7 @@ function traerDatos(data) {
     }
 }
 
+
 function transicionImagen(imagen) {
 
     images.push(imagen)
