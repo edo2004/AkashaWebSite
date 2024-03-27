@@ -111,16 +111,16 @@ body {
 /* estilos barra scroll grid container */
 /* Estilos para la barra de desplazamiento en WebKit */
 .grid-container::-webkit-scrollbar {
-  width: 1vh; /* Ancho de la barra de desplazamiento */
+  width: 0.5vh; /* Ancho de la barra de desplazamiento */
 }
 
 .grid-container::-webkit-scrollbar-thumb {
-  background-color: #5058A0; /* Color del "pulgar" de la barra de desplazamiento */
+  background-color: #FFFF; /* Color del "pulgar" de la barra de desplazamiento */
   border-radius: 0.5vh; /* Borde redondeado */
 }
 
 .grid-container::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+  background-color: #585857; /* Color de fondo de la barra de desplazamiento */
 }
 
 .video-item {

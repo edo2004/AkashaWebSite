@@ -66,12 +66,12 @@
     },
     {
         "id":"14",
-        "image":"./assets/Galeria/Corporative_Video.png",
+        "image":"./assets/Galeria/Corporative_Video.webp",
         "video":"https://player.vimeo.com/video/584594504?autoplay=1"
     },
     {
         "id":"15",
-        "image":"./assets/Galeria/Naked_Fruit.png",
+        "image":"./assets/Galeria/Naked_Fruit.webp",
         "video":"https://player.vimeo.com/video/594309475?autoplay=1"
     },
     {
@@ -107,17 +107,17 @@
     },
     {
         "id":"22",
-        "image":"./assets/Galeria/Kill_bill.jpg",
+        "image":"./assets/Galeria/Kill_bill.webp",
         "video":"https://player.vimeo.com/video/620147780?autoplay=1"
     },
     {
         "id":"23",
-        "image":"./assets/Galeria/Inverted Bullet.jpg",
+        "image":"./assets/Galeria/Inverted Bullet.webp",
         "video":"https://player.vimeo.com/video/618319022?autoplay=1"
     },
     {
         "id":"24",
-        "image":"./assets/Galeria/Inverted Bullet.jpg",
+        "image":"./assets/Galeria/AKASHA_Reel.webp",
         "video":"https://player.vimeo.com/video/583627240?autoplay=1"
     },
     {

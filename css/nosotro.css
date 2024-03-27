@@ -277,12 +277,14 @@ details {
     z-index: 1000; /* Ajusta el z-index para que esté sobre otros elementos */
     color: white; /* Color del texto */
     cursor: pointer;
+    transition: max-height 0.3s ease;
+    overflow: hidden; /* Evita que el contenido extra se muestre parcialmente durante la transición */
   }
   details[open] {
     display: flex;
     width: 55%;
     overflow-x: hidden;
-
+    
     }
   
   details summary::marker {
@@ -292,6 +294,7 @@ details {
   }
 
   .responsive-margin{
+    
     margin-top: 14vh !important;
   }
 
