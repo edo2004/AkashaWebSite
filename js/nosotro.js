@@ -55,7 +55,7 @@ const ContentGifs = [
         image:`<img src="./assets/Nosotros/Escritorio_Motion-min.png" alt="Motion-Graphics" class="img3">`
     },
     {
-        title:'ArchViz',
+        title:'2d Animaton',
         description:`
         <p class="hola-mundo">We use pictures and digital animation to portray your real-estate ideas and promote your projects the best way</p>
         `,

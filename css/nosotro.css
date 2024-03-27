@@ -92,7 +92,7 @@ body {
     font-family: "Futura Light BT";
     font-size: 2vh;
     font-weight: lighter;
-    text-shadow: 2px 2px 5px white;
+    text-shadow:2px -1px 6px white;
 }
 
 .images-about-text li{
@@ -100,7 +100,7 @@ body {
     transform: translateX(5%);
     list-style: none;
     font-size: 2vh;
-    text-shadow: 2px 2px 5px white;
+    text-shadow:2px -1px 6px white;
     /* list-style-image: url("../assets/LogoFooter.svg"); */
 }
 
@@ -137,15 +137,30 @@ details {
     color: white; /* Color del texto */
     cursor: pointer;
   }
+
+    /* Definición de la animación */
+@keyframes fade-in {
+    from {
+      opacity: 0; /* Opacidad inicial */
+    }
+    to {
+      opacity: 1; /* Opacidad final */
+    }
+  }
   details[open] {
     display: flex;
     width: 100%;
     overflow-x: hidden;
 
     }
+
+.myDetails[open] ul {
+    animation: fade-in 3s; /* Duración de la animación */
+    }
   summary{
     font-size: 2vh;
   }
+
   details summary::marker {
     content: " ";
     color: white;
