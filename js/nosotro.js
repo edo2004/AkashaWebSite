@@ -3,7 +3,7 @@ const textGifs = document.querySelector('.desc-gif')
 const gifImage = document.querySelector('.images-about-container')
 const vinGifs = document.querySelector('.vin-gifs')
 let myDetails = document.querySelector('.myDetails')
-const summaryElement = myDetails.querySelector('summary');
+let summaryElement = myDetails.querySelector('summary');
 const imagesAboutText = document.querySelector('.images-about-text')
 const defaultItem0 = document.getElementById('default-item-about-btn')
 const defaultItem1 = document.getElementById('default-item-about-btn1')
@@ -21,7 +21,7 @@ const ContentGifs = [
         items:`
         
             <details class="myDetails" id="default-item-about-btn1" >
-            <summary></summary>
+            <summary>See more...</summary>
 
                 <ul>
                     <li>TV & Film</li>
@@ -42,7 +42,7 @@ const ContentGifs = [
         There is not limit to what we can do, motion graphics is the best choice to catch everyone’s attention through: </p>`,
         items:`
         <details class="myDetails">
-        <summary></summary>
+        <summary>See more...</summary>
 
             <ul>
                 <li>Social Media</li>
@@ -61,7 +61,7 @@ const ContentGifs = [
         `,
         items: `
         <details class="myDetails">
-        <summary></summary>
+        <summary>See more...</summary>
         <ul>
                 <li>Pictures </li>
                 <li>Virtual tours</li>
@@ -129,6 +129,8 @@ function cargarGifs(data) {
     set4 = setTimeout(function () {
         vinGifs.innerHTML = conten.items
         vinGifs.classList.remove("visible")
+        myDetails = document.querySelector('.myDetails');
+        summaryElement = myDetails.querySelector('summary');
         myDetails.addEventListener('toggle',function(){
             if (myDetails.open) {
                 summaryElement.textContent = 'See less...';
