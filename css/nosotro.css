@@ -147,16 +147,22 @@ details {
       opacity: 1; /* Opacidad final */
     }
   }
+
+
+  .fade-in{
+    animation: fade-in 3s;
+  }
   details[open] {
     display: flex;
     width: 100%;
     overflow-x: hidden;
 
     }
-
+/* 
 .myDetails[open] ul {
-    animation: fade-in 3s; /* Duración de la animación */
-    }
+    animation: fade-in 3s; 
+    } */
+
   summary{
     font-size: 2vh;
   }
