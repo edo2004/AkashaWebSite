@@ -23,7 +23,7 @@ const ContentGifs = [
             <details class="myDetails" id="default-item-about-btn1" >
             <summary>See more...</summary>
 
-                <ul>
+                <ul class="list-item">
                     <li>TV & Film</li>
                     <li>3D Demos</li>
                     <li>Motion Graphics</li>
@@ -44,7 +44,7 @@ const ContentGifs = [
         <details class="myDetails">
         <summary>See more...</summary>
 
-            <ul>
+            <ul class="list-item">
                 <li>Social Media</li>
                 <li>Ads</li>
                 <li>Infographics</li>
@@ -62,7 +62,7 @@ const ContentGifs = [
         items: `
         <details class="myDetails">
         <summary>See more...</summary>
-        <ul>
+        <ul class="list-item">
                 <li>Pictures </li>
                 <li>Virtual tours</li>
                 <li>360° Panoramics</li>
