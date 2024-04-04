@@ -99,6 +99,12 @@ var set2, set3, set4, set5
 
 function cargarGifs(data) {
 
+    var honeyElements = document.querySelectorAll('.honey .item-image');
+    honeyElements.forEach(function(item) {
+        item.classList.remove('clicked');
+    });
+    data.classList.add('clicked');
+
     var idImagen = data.dataset.id
     let conten = ContentGifs[idImagen]
     
@@ -154,7 +160,7 @@ function cargarGifs(data) {
     set5 = setTimeout(function () {
         gifImage.innerHTML = conten.image
         gifImage.classList.remove("gif-scale")
-    },750)
+    },500)
 
     setTimeout(function() {
         document.querySelector('.images-about-container.gif-scale').classList.add('mostrar');
