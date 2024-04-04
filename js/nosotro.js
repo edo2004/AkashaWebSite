@@ -4,10 +4,12 @@ const gifImage = document.querySelector('.images-about-container')
 const vinGifs = document.querySelector('.vin-gifs')
 let myDetails = document.querySelector('.myDetails')
 let summaryElement = myDetails.querySelector('summary');
+
 const imagesAboutText = document.querySelector('.images-about-text')
 const defaultItem0 = document.getElementById('default-item-about-btn')
 const defaultItem1 = document.getElementById('default-item-about-btn1')
 const imagesID = document.getElementById('images-id')
+
 
 
 
@@ -137,13 +139,17 @@ function cargarGifs(data) {
         vinGifs.classList.remove("visible")
         myDetails = document.querySelector('.myDetails');
         summaryElement = myDetails.querySelector('summary');
+        
         myDetails.addEventListener('toggle',function(){
+            listItem = document.querySelector('.list-item')
             if (myDetails.open) {
                 summaryElement.textContent = 'See less...';
                 vinGifs.style.justifyContent = 'flex-start';
+                listItem.classList.add('fade-in');
             } else {
                 summaryElement.textContent = 'See more...';
                 vinGifs.style.justifyContent = 'flex-end';
+                listItem.classList.remove('fade-in');
             }
         });
     },750)
@@ -158,16 +164,21 @@ function cargarGifs(data) {
 // Efecto para las viñetas
 
 myDetails.addEventListener('toggle',function(){
+    listItem = document.querySelector('.list-item')
     if (myDetails.open) {
         summaryElement.textContent = 'See less...';
         vinGifs.style.justifyContent = 'flex-start';
+        
+            listItem.classList.add('fade-in');
     } else {
         summaryElement.textContent = 'See more...';
         vinGifs.style.justifyContent = 'flex-end';
+        listItem.classList.remove('fade-in');
+
     }
 });
 
-
+// animación para las 
 
 
 // efecto parallax
