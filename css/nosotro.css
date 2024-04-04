@@ -92,7 +92,7 @@ body {
     font-family: "Futura Light BT";
     font-size: 2vh;
     font-weight: lighter;
-    text-shadow:2px -1px 6px white;
+    text-shadow: 2px -1px 6px black;
 }
 
 .images-about-text li{
@@ -100,7 +100,7 @@ body {
     transform: translateX(5%);
     list-style: none;
     font-size: 2vh;
-    text-shadow:2px -1px 6px white;
+    text-shadow: 2px -1px 6px black;
     /* list-style-image: url("../assets/LogoFooter.svg"); */
 }
 
@@ -165,6 +165,7 @@ details {
 
   summary{
     font-size: 2vh;
+    text-shadow: 2px -1px 6px black;
   }
 
   details summary::marker {
@@ -197,7 +198,9 @@ details {
 .images-about-container.gif-scale {
     opacity: 0;
     transform: scale(0);
+    transition: opacity 3s ease;
 }
+
 .images-about-text p{
     text-align: right;
 }
@@ -289,7 +292,8 @@ details {
     align-items: center;
     font-family: "Futura Heavy BT";
 }
-.item-image:hover{
+.item-image:hover,
+.item-image.active {
     opacity: 0.68;
     z-index: 2;
 }

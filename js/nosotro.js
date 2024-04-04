@@ -102,6 +102,7 @@ function cargarGifs(data) {
     var idImagen = data.dataset.id
     let conten = ContentGifs[idImagen]
     
+    
 
     clearTimeout(set2)
     clearTimeout(set3)
@@ -113,11 +114,13 @@ function cargarGifs(data) {
     vinGifs.innerHTML = "";
     gifImage.innerHTML = "";
     
+    
     set1 = setTimeout(function () {
         titleGifs.classList.add("visible")
         vinGifs.classList.add("visible")
         textGifs.classList.add("visible")
         gifImage.classList.add("gif-scale")
+
     },10)
     
     set2 = setTimeout(function () {
@@ -140,6 +143,7 @@ function cargarGifs(data) {
                 summaryElement.textContent = 'See less...';
                 vinGifs.style.justifyContent = 'flex-start';
                 listItem.classList.add('fade-in');
+                
             } else {
                 summaryElement.textContent = 'See more...';
                 vinGifs.style.justifyContent = 'flex-end';
@@ -151,6 +155,10 @@ function cargarGifs(data) {
         gifImage.innerHTML = conten.image
         gifImage.classList.remove("gif-scale")
     },750)
+
+    setTimeout(function() {
+        document.querySelector('.images-about-container.gif-scale').classList.add('mostrar');
+    }, 2000);
 
 }
 
