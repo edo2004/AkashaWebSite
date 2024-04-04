@@ -420,7 +420,7 @@ body {
     flex-direction: row;
   }
   .mansory-container{
-    width: 45%;
+    width: 30%;
     height: 100%;
   }
   .grid-container{
@@ -428,7 +428,7 @@ body {
     height: 90%;
   }
   .video-gallery{
-    width: 45%;
+    width: 50%;
     height: 100%;
   }
   .video-gallery iframe{
