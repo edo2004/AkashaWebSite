@@ -1,7 +1,7 @@
 const titleGifs = document.querySelector('.title-gif')
 const textGifs = document.querySelector('.desc-gif')
-const gifImage = document.querySelector('.images-about-container')
 const vinGifs = document.querySelector('.vin-gifs')
+let image = document.querySelector('.image')
 let myDetails = document.querySelector('.myDetails')
 let summaryElement = myDetails.querySelector('summary');
 
@@ -35,7 +35,7 @@ const ContentGifs = [
 
             </details>
                 `,
-        image:`<img src="./assets/Nosotros/Escritorio_VFX-2-min.png" alt="LogoFooter" class="img2">`
+        image:`./assets/Nosotros/Escritorio_VFX-2-min.png`
     },
     {
         title:'Motion Graphics',
@@ -54,7 +54,7 @@ const ContentGifs = [
                 <li>And much more!</li>
             </ul>
         </details>`,
-        image:`<img src="./assets/Nosotros/Escritorio_Motion-min.png" alt="Motion-Graphics" class="img3">`
+        image:`./assets/Nosotros/Escritorio_Motion-min.png`
     },
     {
         title:'2d Animaton',
@@ -72,28 +72,9 @@ const ContentGifs = [
         </details>
         
         `,
-        image: `<img src="./assets/Nosotros/Escritorio_VFX-min.png" alt="LogoGIF" class="img4">`
+        image: `./assets/Nosotros/Escritorio_VFX-min.png`
     }
 ]
-
-// const ContentGifs = [
-//     {
-//         title:'VFX',
-//         description:`We make your ideas come to life by mixing them with motion graphics and show them in a dynamic, attractive and exciting way.
-//         There is not limit to what we can do, motion graphics is the best choice to catch everyone’s attention through:`,
-//         image:`<img src="./assets/Nosotros/Escritorio_VFX-2-min.png" alt="LogoFooter">`
-//     },
-//     {
-//         title:'Motion Graphics',
-//         description:`You will have a preview draft of your audiovisual idea, so you can offer feedback before it is filmed or animated.`,
-//         image:`<img src="./assets/Nosotros/Escritorio_Motion-min.png" alt="LogoFooter">`
-//     },
-//     {
-//         title:'ArchViz',
-//         description:`We are a Digital Studio that creates audiovisual products which tell stories, resolve problems and help brands position in the market.`,
-//         image: `<img src="./assets/Nosotros/Escritorio_VFX-min.png" alt="LogoGIF">`
-//     }
-// ]
 
 var set2, set3, set4, set5
 
@@ -118,14 +99,15 @@ function cargarGifs(data) {
     titleGifs.innerHTML = "";
     textGifs.innerHTML = "";
     vinGifs.innerHTML = "";
-    gifImage.innerHTML = "";
+    image.innerHTML = "";
     
     
     set1 = setTimeout(function () {
+        image = document.querySelector('.image')
         titleGifs.classList.add("visible")
         vinGifs.classList.add("visible")
         textGifs.classList.add("visible")
-        gifImage.classList.add("gif-scale")
+        image.classList.add("gif-scale")
 
     },10)
     
@@ -158,13 +140,11 @@ function cargarGifs(data) {
         });
     },750)
     set5 = setTimeout(function () {
-        gifImage.innerHTML = conten.image
-        gifImage.classList.remove("gif-scale")
-    },500)
-
-    setTimeout(function() {
-        document.querySelector('.images-about-container.gif-scale').classList.add('mostrar');
-    }, 2000);
+        image.src = conten.image;
+        image.onload = function() {
+            image.classList.remove("gif-scale")
+        }
+    },1000)
 
 }
 
@@ -185,29 +165,3 @@ myDetails.addEventListener('toggle',function(){
 
     }
 });
-
-// animación para las 
-
-
-// efecto parallax
-
-document.addEventListener('mousemove', parallaxNosotros);
-
-function parallaxNosotros(e){
-    this.querySelectorAll('.fondo-item').forEach(button => {
-        const speed = button.getAttribute('data-speed')
-
-
-        const x = (window.innerWidth + e.pageX*speed)/30
-        const y = (window.innerHeight - e.pageY*speed)/40
-
-        window.addEventListener("scroll", () => {
-            if(window.screen.width < 640){
-                button.style.transition = `1s transform`
-            }
-        })
-        button.style.transform = `translateX(${x}px) translateY(${y}px)`
-
-
-    })
-}
