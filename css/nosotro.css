@@ -85,8 +85,8 @@ body {
     justify-content: flex-end;
 }
 .images-about-text h1{
-    font-family: "Futura Heavy BT";
-    font-size: 5vh;
+    font-family: "Orbitron", sans-serif;
+    font-size: 4.5vh;
 }
 .images-about-text p{
     font-family: "Futura Light BT";
@@ -290,13 +290,13 @@ details {
     cursor: pointer;
     transition: 450ms all;
     opacity: 0.52;
-    font-size: 1.4vh;
+    font-size: 1.3vh;
     text-align: center;
     color: #1B1464;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Futura Heavy BT";
+    font-family: "Orbitron", sans-serif;
 }
 .item-image:hover,
 .item-image.active {
@@ -387,7 +387,7 @@ details {
         font-size: 3vh;
     }
     .item.item-image h1{
-        font-size: 6vh;
+        font-size: 5.2vh;
     }
     .images-about-text li{
         font-size: 3vh;

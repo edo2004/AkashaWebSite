@@ -59,15 +59,17 @@ const ContentGifs = [
     {
         title:'2d Animaton',
         description:`
-        <p class="hola-mundo">We use pictures and digital animation to portray your real-estate ideas and promote your projects the best way</p>
+        <p class="hola-mundo">We breathe life into ideas, creating visually engaging narratives with artistic flair. From character animations to dynamic motion graphics, our 2D expertise enhances your content with creativity and impact. Elevate your storytelling with our imaginative touch.</p>
         `,
         items: `
         <details class="myDetails">
         <summary>See more...</summary>
         <ul class="list-item">
-                <li>Pictures </li>
-                <li>Virtual tours</li>
-                <li>360° Panoramics</li>
+                <li>Explainer Videos </li>
+                <li>Ads</li>
+                <li>Digital Content</li>
+                <li>Character animation</li>
+                <li>Text animation</li>
                 </ul>
         </details>
         
