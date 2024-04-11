@@ -1,13 +1,13 @@
 [
     {
         "id":"1",
-        "image":"./assets/Galeria/Fondo/assets/Galeria/Fondo/Akasha-Reel-2023.png",
+        "image":"./assets/Galeria/Fondo/Akasha-Reel-2023.png",
         "video":"https://player.vimeo.com/video/824412417?autoplay=1"
     },
     {
         "id":"2",
-        "image":"./assets/Galeria/ShutUp.png",
-        "video":"https://player.vimeo.com/video/584592206?autoplay=1"
+        "image":"./assets/Galeria/akasha_soda.webp",
+        "video":"https://player.vimeo.com/video/583625666?autoplay=1"
     },
     {
         "id":"3",
