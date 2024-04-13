@@ -61,7 +61,7 @@
     },
     {
         "id":"13",
-        "image":"./assets/Galeria/coffee_process.png",
+        "image":"./assets/Galeria/coffee_process.webp",
         "video":"https://player.vimeo.com/video/583625354?autoplay=1"
     },
     {
@@ -76,33 +76,33 @@
     },
     {
         "id":"16",
-        "image":"./assets/Galeria/Space_Potato.png",
+        "image":"./assets/Galeria/Space_Potato.webp",
         "video":"https://player.vimeo.com/video/592508162?autoplay=1"
     },
     {
         "id":"17",
-        "image":"./assets/Galeria/vacation.png",
+        "image":"./assets/Galeria/vacation.webp",
         "video":"https://player.vimeo.com/video/584593940?autoplay=1"
     },
     {
         "id":"18",
-        "image":"./assets/Galeria/wine_Cup.png",
+        "image":"./assets/Galeria/wine_Cup.webp",
         "video":"https://player.vimeo.com/video/583625757?autoplay=1"
     },
     {
         "id":"19",
-        "image":"./assets/Galeria/fresh_Cheese.png",
+        "image":"./assets/Galeria/fresh_Cheese.webp",
         "video":"https://player.vimeo.com/video/583625304?autoplay=1"
     },
     {
         "id":"20",
-        "image":"./assets/Galeria/archvizBG.jpg",
+        "image":"./assets/Galeria/archvizBG.webp",
         "video":"https://player.vimeo.com/video/611736325?autoplay=1"
     }
     ,
     {
         "id":"21",
-        "image":"./assets/Galeria/Metal Tea.jpg",
+        "image":"./assets/Galeria/Metal Tea.webp",
         "video":"https://player.vimeo.com/video/618315311?autoplay=1"
     },
     {
@@ -122,57 +122,57 @@
     },
     {
         "id":"25",
-        "image":"./assets/Galeria/ShutUp.png",
+        "image":"./assets/Galeria/ShutUp.webp",
         "video":"https://player.vimeo.com/video/584592206?autoplay=1"
     },
     {
         "id":"26",
-        "image":"./assets/Galeria/break_dance.png",
+        "image":"./assets/Galeria/break_dance.webp",
         "video":"https://player.vimeo.com/video/594309553?autoplay=1"
     },
     {
         "id":"27",
-        "image":"./assets/Galeria/melissa_Wild.png",
+        "image":"./assets/Galeria/melissa_Wild.webp",
         "video":"https://player.vimeo.com/video/599901913?autoplay=1"
     },
     {
         "id":"28",
-        "image":"./assets/Galeria/paso_x_ti.png",
+        "image":"./assets/Galeria/paso_x_ti.webp",
         "video":"https://player.vimeo.com/video/593440908?autoplay=1"
     },
     {
         "id":"29",
-        "image":"./assets/Galeria/Shinzo_Coffee.png",
+        "image":"./assets/Galeria/Shinzo_Coffee.webp",
         "video":"https://player.vimeo.com/video/583625565?autoplay=1"
     },
     {
         "id":"30",
-        "image":"./assets/Galeria/akasha_soda.png",
+        "image":"./assets/Galeria/akasha_soda.webp",
         "video":"https://player.vimeo.com/video/583625666?autoplay=1"
     },
     {
         "id":"31",
-        "image":"./assets/Galeria/cyberpunk_Persecution.png",
+        "image":"./assets/Galeria/cyberpunk_Persecution.webp",
         "video":"https://player.vimeo.com/video/584375334?autoplay=1"
     },
     {
         "id":"32",
-        "image":"./assets/Galeria/candy_ad.png",
+        "image":"./assets/Galeria/candy_ad.webp",
         "video":"https://player.vimeo.com/video/592507386?autoplay=1"
     },
     {
         "id":"33",
-        "image":"./assets/Galeria/life_Academy.png",
+        "image":"./assets/Galeria/life_Academy.webp",
         "video":"https://player.vimeo.com/video/584591189?autoplay=1"
     },
     {
         "id":"34",
-        "image":"./assets/Galeria/graffity.png",
+        "image":"./assets/Galeria/graffity.webp",
         "video":"https://player.vimeo.com/video/584593557?autoplay=1"
     },
     {
         "id":"35",
-        "image":"./assets/Galeria/Baby_dance.png",
+        "image":"./assets/Galeria/Baby_dance.webp",
         "video":"https://player.vimeo.com/video/594309665?autoplay=1"
     }
     
