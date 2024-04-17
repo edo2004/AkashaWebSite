@@ -35,7 +35,8 @@ const ContentGifs = [
 
             </details>
                 `,
-        image:`./assets/Nosotros/Escritorio_VFX-2-min.png`
+        image:`./assets/Nosotros/Escritorio_VFX-min.png`,
+        image1:`./assets/Nosotros/Celular_VFX-min.png`
     },
     {
         title:'Motion Graphics',
@@ -54,7 +55,8 @@ const ContentGifs = [
                 <li>And much more!</li>
             </ul>
         </details>`,
-        image:`./assets/Nosotros/Escritorio_Motion-min.png`
+        image:`./assets/Nosotros/Escritorio_Motion-min.png`,
+        image1:`./assets/Nosotros/Celular_Motion-min.png`
     },
     {
         title:'2d Animaton',
@@ -74,7 +76,8 @@ const ContentGifs = [
         </details>
         
         `,
-        image: `./assets/Nosotros/Escritorio_VFX-min.png`
+        image: `./assets/Nosotros/Escritorio_VFX-2-min.png`,
+        image1: `./assets/Nosotros/Celular_VFX-2-min.png`
     }
 ]
 
@@ -142,7 +145,11 @@ function cargarGifs(data) {
         });
     },750)
     set5 = setTimeout(function () {
-        image.src = conten.image;
+        if (window.innerWidth <= 768) { 
+            image.src = conten.image1;
+        } else {
+            image.src = conten.image;
+        }
         image.onload = function() {
             image.classList.remove("gif-scale")
         }

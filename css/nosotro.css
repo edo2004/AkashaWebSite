@@ -48,7 +48,7 @@ body {
 }
 .images-about-container{
     position: absolute;
-    z-index: 10;
+    z-index: 3;
     width: 100%;
     height: 80%;
 }
@@ -75,7 +75,7 @@ body {
 }
 .images-about-text{
     position: absolute;
-    z-index: 20;
+    z-index: 6;
     width: 100%;
     height: 100%;
     color: white;
@@ -135,7 +135,7 @@ details {
     /* max-height: calc(100vh - 200px); */
     background-color: transparent; /* Establece el fondo transparente */
     border:none; /* Borde */
-    z-index: 100; /* Ajusta el z-index para que esté sobre otros elementos */
+    z-index: 6; /* Ajusta el z-index para que esté sobre otros elementos */
     color: white; /* Color del texto */
     cursor: pointer;
   }
@@ -408,7 +408,7 @@ details {
         grid-auto-rows: 13vh;
         left: -21vh;
         grid-gap: 4.5vh 21vh;
-        z-index: 10;
+        z-index: 3;
         padding: 0 35% 5% 0;
         transform: none;
 
@@ -452,20 +452,6 @@ details {
 
 }
 
-@media only screen and (max-width:639px){
-    .img1{
-        content: url('../assets/Nosotros/Celular_Motion-min.png');
-    }
-    .img2{
-        content: url('../assets/Nosotros/Celular_VFX-2-min.png');
-    }
-    .img3{
-        content: url('../assets/Nosotros/Celular_Motion-min.png');
-    }
-    .img4{
-        content: url('../assets/Nosotros/Celular_VFX-min.png');
-    }
-}
 
 /* @media only screen and (min-width:1440){
     .content_honey{

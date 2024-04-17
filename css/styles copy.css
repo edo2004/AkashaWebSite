@@ -116,7 +116,7 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
     width: 40%;
     height: 5vh;
-    z-index: 7;
+    z-index: 4;
 }
 .footer-social_video.inactive {
     pointer-events: auto;
@@ -275,6 +275,243 @@ body::-webkit-scrollbar-thumb:hover {
     color: white;
 }
 
+/* Galery */
+
+.galery {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+/* .galery > img{
+	object-fit: cover;
+} */
+.fondo1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.fondo2 {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(1.3);
+    transition: 2s;
+    object-fit: cover;
+}
+
+.fondo3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255,0.2);
+}
+
+.fondo1.scaleFondo {
+    transform: scale(1.3);
+    transition: 2s;
+}
+.fondo2.traslate {
+    transform: scale(1);
+    transition: all 2s linear;
+}
+.fondo2.reduce {
+    width: 0;
+}
+
+/* titulo y video*/
+
+.video-titulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.video-galery {
+    max-width: 95%;
+    width: 110vh;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-1%, 5%);
+}
+.video-galery iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* logo vimeo */
+
+.logoVimeo {
+    position: absolute;
+    top: 4vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 10vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.logoVimeo a {
+    width: 100%;
+    height: 100%;
+    background: #44BAFE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+    -webkit-filter: drop-shadow(0.8vh 0.4vh 0.6vh rgba(0,0,0,0.4));
+    filter:drop-shadow(0.8vh 0.4vh 0.6vh rgba(0,0,0,0.4))
+    
+}
+.logoVimeo a:hover {
+    background: #674ab8;
+    transform: scale(1.2);
+}
+.logoVimeo img {
+    width: 60%;
+    height: 60%;
+}
+
+.info-svg {
+    position: absolute;
+    top: 4.5vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 9vh;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: all 0.2s;
+}
+.info-svg.act-visible {
+    transform: scale(2.2) translateX(6vh);
+    transition: all 0.3s;
+}
+
+/* hexagon */
+
+.honey{
+    width: 100%;
+    height: 33vh;
+    /* background: rgba(43, 42, 42,0.5); */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.content_honey{
+    width: 100%;
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: repeat(20, 4vh);
+    grid-auto-rows: 8.5vh;
+    grid-gap: 0rem 11vh;
+    position: absolute;
+
+}
+.item{
+    background-color: black;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transition: 450ms all;
+    grid-column: span 2;
+    height: 16vh;
+    position: relative;
+    
+}
+.item:nth-of-type(11) {
+    grid-column: 2 / span 2;
+}
+.item:nth-of-type(20) {
+    grid-column: 1 / span 2;
+}
+.item:nth-of-type(30) {
+    grid-column: 2 / span 2;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.item-transpar {
+    opacity: 0.18;
+}
+.item-transpare {
+    opacity: 0.2;
+}
+.item-transparen {
+    opacity: 0.23;
+}
+.item-transparent {
+    opacity: 0.26;
+}
+.item-image{
+    background: rgb(96, 95, 95);
+    cursor: pointer;
+    transition: 450ms all;
+
+}
+.item-image:hover{
+    opacity: 1;
+    z-index: 2;
+}
+
+.honey:hover .item-image{
+    opacity: 0.5;
+}
+.honey:hover .item-image:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    filter: contrast(100%) brightness(1.2);
+    -webkit-filter:contrast(100%) brightness(1.2);
+    /* -webkit-filter: contrast(300%) hue-rotate(90deg)  brightness(2.4); */
+}
+.item-image .play-bottom {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-image .play-bottom img {
+  width: 30%;
+  height: auto;
+  transform: translateX(10%);
+}
+
+.item-image .play-bottom:hover {
+  opacity: 0.85;
+  transition: 500ms opacity
+}
+
+
 /* responsive */
 
 @media only screen and (min-width:640px ) and (max-width:1024px){
@@ -325,7 +562,20 @@ body::-webkit-scrollbar-thumb:hover {
     .footer-social_video img{
         width: 80%;
         
-    }    
+    }
+    .video-galery {
+        max-width: 85%;
+    }
+    .logoVimeo {
+        top: 4vh;
+        left: 4vh;
+        margin: 0;
+    }
+    .info-svg {
+        left: 4.5vh;
+        margin: 0;
+    }
+    
 }
 @media only screen and (min-width:1024px){
     .nav__toggle {
@@ -373,6 +623,26 @@ body::-webkit-scrollbar-thumb:hover {
     .footer-social_video img{
         width: 80%;
     }
+    .video-galery {
+        height: 60vh;
+    }
+    .honey {
+        overflow-x: hidden;
+    }
+    .video-galery {
+        max-width: 85%;
+    }
+    .logoVimeo {
+        top: 4vh;
+        left: 4vh;
+        margin: 0%;
+        
+    }
+    .info-svg {
+        left: 4.5vh;
+        margin: 0;
+    }
+    
 }
 
 @media only screen and (min-width:1400px){
