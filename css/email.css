@@ -95,7 +95,7 @@
     color: white;
     font-size: 5vh;
     padding: 1vh;
-    font-family: "Myriad Pro", bold;
+    font-family: "Orbitron", sans-serif;
     -webkit-filter:drop-shadow(1vh 0.5vh 0.5vh rgba(0,0,0,0.5));
     filter:drop-shadow(1vhx 0.5vh 0.5vh rgba(0,0,0,0.5))
 }

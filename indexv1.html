@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="/assets/LogoGIF.svg" />
+
+
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+
+    <!-- iconos -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/nosotros.css">
+    <link rel="stylesheet" href="./css/email.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <title>Akasha</title>
+</head>
+<body>
+
+
+    <header class="header" id="home">
+        <div class="header-franja">
+            <img id="franja" src="./assets/Franja.svg" alt="Franja">
+            <img id="logo" src="./assets/logo.svg" alt="Logo">
+        </div>
+        
+
+        <div class="header-video">
+            <video playsinline autoplay muted loop id="bgvid">
+                <source src="assets/akasha_home_2.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+    </header>
+
+    <div class="header-nav">
+        <input type="checkbox" id="nav_checkbox" class="nav_checkbox" onclick="gestionarMenu()">
+        <label for="nav_checkbox" class="nav__toggle">
+            <i class="fas fa-bars fa-3x menu" id="menu" ></i>
+            <i class="fas fa-times fa-3x close" ></i>
+            
+        </label>
+        
+        <ul class="nav__menu">
+            <li class="options"><a href="#home" onclick="removeBackground()">HOME</a></li>
+            <li class="options"><a href="#work" onclick="removeBackground()">WORK</a></li>
+            <li class="options"><a href="#about-us" onclick="removeBackground()">ABOUT</a></li>
+            <li class="options"><a href="#contact" onclick="removeBackground()">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <div class="franja-derecha">
+        <img src="./assets/FranjaVertical.svg" alt="franja-vertical">
+    </div>
+
+    <div class="footer-social_video">
+        <a href="https://www.facebook.com/profile.php?id=100071662985097" target="_blank"><img src="./assets/Facebook_Logo.svg" alt="Facebook"></a>
+        <a href="https://wa.link/ldkua5" target="_blank"><img src="./assets/WhatsApp_Logo.svg" alt="WhatsApp"></a>
+        <a href="https://www.instagram.com/akashastudio_tv/" target="_blank"><img src="./assets/Instagram_Logo.svg" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/company/akasha-animation-studio" target="_blank"><img src="./assets/LinkedIn_Logo.svg" alt="LinkedIn"></a>
+    </div>
+    
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+
+    <!-- galery -->
+
+    <div class="galery" id="work">
+        <img class="fondo1" src="./assets/Galeria/AKASHA_Reel.png" alt="">
+        <img class="fondo2" src="" alt="">
+        <div class="fondo3"></div>
+        
+        <div class="logoVimeo" onmouseover="infoVimeoLogo(1)" onmouseout="infoVimeoLogo(2)">
+            <a id="logo-vimeo" href="https://vimeo.com/user140023398" target="_blank" ><img src="./assets/v_vimeo.svg" alt="vimeo_icon"></a>
+        </div>
+        <div class="info-svg">
+            <img src="./assets/info_vimeo.svg" alt="info-svg">
+        </div>
+        <div class="video-titulo">
+            <div class="video-galery">
+        
+            </div>
+        </div>
+
+        <!-- hexagonos -->
+
+        <div class="honey">
+            <!-- col div-->
+            <div class="content_honey">
+                <div class="item item-image" onclick="traerDatos(this)" data-id="1" data-speed="4">
+                <img src="./assets/Galeria_hex/AKASHA_Reel.png" alt="AKASHA_Reel">
+                <div class="play-bottom">
+                  <img src="./assets/Galeria/play_botom.png" alt="">
+                </div>
+                </div>
+                
+                <div class="item item-image" onclick="traerDatos(this)" data-id="6" data-speed="4">
+                    <img src="./assets/Galeria_hex/Shinzo_Coffee.png" alt="Shinzo_Coffee">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="2" data-speed="4">
+                <img src="./assets/Galeria_hex/ShutUp.png" alt="silence">
+                <div class="play-bottom">
+                  <img src="./assets/Galeria/play_botom.png" alt="">
+                </div>
+              </div>
+                <div class="item item-transpar" data-id="1" data-speed="4"></div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="3" data-speed="4">
+                    <img src="./assets/Galeria_hex/break_dance.png" alt="break_dance">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                  </div>
+                <div class="item item-transpare" data-speed="4"></div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="4" data-speed="4">
+                    <img src="./assets/Galeria_hex/melissa_Wild.png" alt="melissa_Wild">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="20" data-speed="4">
+                    <img src="./assets/Galeria/archvizBG.jpg" alt="fresh_Cheese">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div> 
+                
+                <div class="item item-image" onclick="traerDatos(this)" data-id="7" data-speed="4">
+                    <img src="./assets/Galeria_hex/akasha_soda.png" alt="akasha_soda">   
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>                 
+                </div>
+                <div class="item item-transparen" data-id="1" data-speed="4"></div>                        
+                <div class="item item-image" onclick="traerDatos(this)" data-id="8" data-speed="4">
+                    <img src="./assets/Galeria_hex/cyberpunk_Persecution.png" alt="">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div>
+                <div class="item item-transparent" data-speed="4"></div>
+                
+                <div class="item item-image" onclick="traerDatos(this)" data-id="9" data-speed="4">
+                  <img src="./assets/Galeria_hex/candy_ad.png" alt="">
+                  <div class="play-bottom">
+                    <img src="./assets/Galeria/play_botom.png" alt="">
+                  </div>
+                </div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="10" data-speed="4">
+                    <img src="./assets/Galeria_hex/life_Academy.png" alt="life_Academy">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="item item-image" onclick="traerDatos(this)" data-id="11" data-speed="4">
+                    <img src="./assets/Galeria_hex/graffity.png" alt="graffity">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="item item-image" onclick="traerDatos(this)" data-id="12" data-speed="4">
+                    <img src="./assets/Galeria_hex/Baby_dance.png" alt="Baby_dance">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div>
+                <div class="item item-transpar" data-speed="4"></div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="13" data-speed="4">
+                    <img src="./assets/Galeria_hex/coffee_process.png" alt="coffee_process">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="14" data-speed="4">
+                    <img src="./assets/Galeria_hex/Corporative_Video.png" alt="Corporative_Video">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="15" data-speed="4">
+                    <img src="./assets/Galeria_hex/Naked_Fruit.png" alt="Naked_Fruit">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="16" data-speed="4">
+                    <img src="./assets/Galeria_hex/Space_Potato.png" alt="Space_Potato">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="17" data-speed="4">
+                    <img src="./assets/Galeria_hex/vacation.png" alt="vacation">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="item item-image" onclick="traerDatos(this)" data-id="18" data-speed="4">
+                    <img src="./assets/Galeria_hex/wine_Cup.png" alt="wine_Cup">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="item item-image" onclick="traerDatos(this)" data-id="19" data-speed="4">
+                    <img src="./assets/Galeria_hex/fresh_Cheese.png" alt="fresh_Cheese">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div>
+                <div class="item item-image" onclick="traerDatos(this)" data-id="5" data-speed="4">
+                    <img src="./assets/Galeria_hex/paso_x_ti.png" alt="paso_x_ti">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                  </div>
+                
+                <div class="item item-image" onclick="traerDatos(this)" data-id="21" data-speed="4">
+                    <img src="./assets/Galeria_hex/metal_tea_Hexagono.PNG" alt="wine_Cup">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="item item-image" onclick="traerDatos(this)" data-id="22" data-speed="4">
+                    <img src="./assets/Galeria_hex/Kill_bill_Hexagono.PNG" alt="fresh_Cheese">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="item item-image" onclick="traerDatos(this)" data-id="23" data-speed="4">
+                    <img src="./assets/Galeria_hex/Inverted_Bullet_Hexagono.PNG" alt="paso_x_ti">
+                    <div class="play-bottom">
+                      <img src="./assets/Galeria/play_botom.png" alt="">
+                    </div>
+                </div>
+                <div class="item item-transpare" data-speed="4"></div>
+                <div class="item item-transparen" data-speed="4"></div>
+                <div class="item item-transparent" data-speed="4"></div>
+                <div class="item item-transpar" data-speed="4"></div>
+                <div class="item item-transpare" data-speed="4"></div>
+                <div class="item item-transparen" data-speed="4"></div>
+                <div class="item item-transpar" data-speed="4"></div>
+                <div class="item item-transparent" data-speed="4"></div>
+                <div class="item item-transpare" data-speed="4"></div>
+                <div class="item item-transparen" data-speed="4"></div>
+                
+                
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Nosotros -->
+    <div class="container-nosotros" id="about-us">
+        <div class="fondo-nosotros">
+            <!-- <img src="./assets/FondoAboutUs.svg" alt="fondo-nosotros"> -->
+            <div class="fondo-nosotros_1">
+                <div class="fondo-item" data-speed="-4"><img src="./assets/S1.svg" alt=""></div>
+                <div class="fondo-item" data-speed="-6"><img src="./assets/S3.svg" alt="" ></div>
+                <div class="fondo-item" data-speed="-7"><img src="./assets/S2.svg" alt="" ></div>
+                <div class="fondo-item" data-speed="-8"><img src="./assets/S2.svg" alt="" ></div>
+                <div class="fondo-item" data-speed="5"><img src="./assets/S1.svg" alt="" ></div>
+                <div class="fondo-item" data-speed="4"><img src="./assets/S3.svg" alt="" ></div>
+                <div class="fondo-item" data-speed="3"><img src="./assets/S1.svg" alt="" ></div>
+                <div class="fondo-item" data-speed="7"><img src="./assets/S3.svg" alt="" ></div>
+                <div class="fondo-item" data-speed="1"><img src="./assets/S1.svg" alt="" ></div>
+                <div class="fondo-item" data-speed="-1"><img src="./assets/S3.svg" alt="" ></div>
+                <div class="fondo-item" data-speed="3"><img src="./assets/S1.svg" alt="" ></div>
+                <div class="fondo-item" data-speed="-1"><img src="./assets/S2.svg" alt="" ></div>
+                <div class="fondo-item" data-speed="2"><img src="./assets/S3.svg" alt="" ></div>
+            </div>
+
+        </div>
+        <div class="content-nosotros">
+            <div class="image-nosotros">
+                <div class="graphics">
+                    <img src="./assets/2.svg" alt="graphics" onclick="cargarGifs(this)" data-id="1">
+                </div>
+                <div class="cinematics-home">
+                    <div class="cinematics">
+                        <img src="./assets/1.svg" alt="cinematics" onclick="cargarGifs(this)" data-id="2">
+                    </div>
+                    <div class="home-item">
+                        <img src="./assets/3.svg" alt="home-item" onclick="cargarGifs(this)" data-id="3">
+                    </div>
+                    <div class="arquitect">
+                        <img src="./assets/6.svg" alt="home-item" onclick="cargarGifs(this)" data-id="4">
+                    </div>
+
+                </div>
+                <div class="animation-2d-3d">
+                    <div class="animation-2d">
+                        <img src="./assets/5.svg" alt="animation-2d" onclick="cargarGifs(this)" data-id="5">
+                    </div>
+                    <div class="animation-3d">
+                        <img src="./assets/4.svg" alt="animation-3d" onclick="cargarGifs(this)" data-id="6">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="text-nosotros">
+                <div class="text-description">
+                    <div class="text-gifs">
+                        <h1 class="title-gif">About Us</h1>
+                        <div class="desc-gif">
+                            <p class="hola-mundo">We are a Digital Studio that creates audiovisual products which tell stories, resolve problems and help brands position in the market.</p>
+                            <p class="hola-mundo">We always find a way to help your ideas come true, new ways to surprise, make people have fun and generate emotions. We are exploring the animation universe to fill a gap in the market.</p>
+                        </div>
+                        <div class="vin-gifs">
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="gif-image">
+                        <img src="./assets/LogoGIF.svg" alt="LogoFooter">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="email-section" id="contact">
+        <div class="fondo-email">
+            <img src="./assets/FondoCorreo.svg" alt="FondoCorreo" >
+        </div>
+        <div class="content-email">
+            <div class="icon-email">
+                <div class="lines-icon">
+                    <img class="fondoEmail" src="./assets/LinesLetter.svg" alt="" id="lines-Email">
+                    <img class="fondoEmail" src="./assets/Letter.svg" alt="" id="icon-Email">
+                </div>
+                <!-- <img class="fondoEmail" src="./assets/Email.svg" alt="" id="icon-Email"> -->
+                <div class="gif-email">
+                    <!-- <img src="./assets/gifs/mail_Anim.gif" alt="mail_Anim"> -->
+                </div>
+            </div>
+            
+            <div class="form-email">
+                <div class="info-email">
+                    <h1>Contact Us</h1>
+                    <p>Do you have any questions? Send us a message and we ́ll respond as soon as possible.</p>
+                </div>
+                <form class="contact-form">
+                    <div class="datos-personales-form">
+                        <input type="text" name="name" id="name" class="name" placeholder="Name/Company" autocomplete="off" >
+                        <input type="number" name="phone" id="subject" class="subject" placeholder="Telephone" autocomplete="off">
+                    </div>
+                    <input type="text" name="mail" id="mail" class="email" placeholder="Email address" autocomplete="off" >
+                    <textarea name="message" class="message" placeholder="Message" id="message" ></textarea>
+                    <div class="clear"></div>
+                    <button type="submit" class="btn-enviar">SEND </button>
+                    <div class="email-social_Media_Logos">
+                        <div class="email-logos">
+                            <a href="https://www.facebook.com/profile.php?id=100071662985097" target="_blank"><img src="./assets/FacebookWhite.svg" alt="Facebook"></a>
+                            <a href="https://www.linkedin.com/company/akasha-animation-studio" target="_blank"><img src="./assets/LinkedInWhite.svg" alt="LinkedIn"></a>
+                            <a href="https://www.instagram.com/akashastudio_tv/" target="_blank"><img src="./assets/InstagramWhite.svg" alt="Instagram"></a>
+                            <a href="https://wa.link/ldkua5" target="_blank"><img src="./assets/WhastappWhite.svg" alt="WhatsApp"></a>
+                        </div>
+                        <a href="tel:+(57) 305 373 9927" id="telefono-wap">+(57) 320 466 1853</a>
+                    </div>
+                </form>
+                <div class="alert-inputs">
+                    <P class="dato-alert">Please, introduce your valid Email address to contact you.</P>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <template id="gif-revelde">
+        <img src="" alt="mail_Anim">
+    </template>
+
+
+<!-- Seccion de nosotros Nueva -->
+
+<section class="grid-about">
+    <div class="items-about">
+
+        
+
+    </div>
+    <div class="images-about"></div>
+</section>
+
+
+
+
+<!-- Fin sección Nosotros nueva -->
+
+
+
+
+<!-- Footer -->
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-description">
+                <p> Bogotá, Colombia</p>
+                <p> Contact</p>
+                <a href="tel:+(57) 305 373 9927" id="telefono-wap-footer">+(57) 320 466 1853</a>
+                <p> hola@akashastudio.tv</p>
+            </div>
+            <img  class="footer-img" src="./assets/LogoFooter.svg" alt="FooterLogo">
+            <div class="footer-Socia-Media">
+                <p> FOLLOW US ON</p>
+            
+                <div class="footer-social_Media_Logos">
+                    <a href="https://www.facebook.com/profile.php?id=100071662985097" target="_blank"><img src="./assets/Facebook_Logo.svg" alt="Facebook"></a>
+                    <a href="https://wa.link/ldkua5" target="_blank"><img src="./assets/WhatsApp_Logo.svg" alt="WhatsApp"></a>
+                    <a href="https://www.instagram.com/akashastudio_tv/" target="_blank"><img src="./assets/Instagram_Logo.svg" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/company/akasha-animation-studio" target="_blank"><img src="./assets/LinkedIn_Logo.svg" alt="LinkedIn"></a>
+                </div>
+            </div>
+    
+        </div>
+        
+        <div class="footer-copyright">
+            <p> 2021 Copyright Akasha Studio TV S.A.S. NIT 901.574.411-5. All rigths  reserved</p>
+        </div>
+
+    </footer>
+
+
+    <!-- Templates -->
+    <template id="template-video">
+        <iframe class="video-galery" src=""  frameborder="0" allow="autoplay"; fullscreen" allowfullscreen></iframe>
+    </template>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/galery.js"></script>
+    <script src="./js/nosotros.js"></script>
+    <script src="./js/email.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-vimeo/2.0.2/video.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

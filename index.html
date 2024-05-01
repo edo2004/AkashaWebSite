@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
 
     <!-- iconos -->
@@ -22,7 +22,8 @@
 
     <!-- Estilos -->
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/nosotros.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="./css/nosotro.css">
     <link rel="stylesheet" href="./css/email.css">
     <link rel="stylesheet" href="./css/footer.css">
 
@@ -80,272 +81,195 @@
 
     <!-- galery -->
 
-    <div class="galery" id="work">
-        <img class="fondo1" src="./assets/Galeria/AKASHA_Reel.png" alt="">
+    <section class="gallery-container" id="work">
+        <img class="fondo1" src="./assets/Galeria/AKASHA_Reel.webp" alt="">
         <img class="fondo2" src="" alt="">
         <div class="fondo3"></div>
-        
-        <div class="logoVimeo" onmouseover="infoVimeoLogo(1)" onmouseout="infoVimeoLogo(2)">
-            <a id="logo-vimeo" href="https://vimeo.com/user140023398" target="_blank" ><img src="./assets/v_vimeo.svg" alt="vimeo_icon"></a>
+  
+        <div class="title">
+          <h1 class="title-work">WORK</h1>
         </div>
-        <div class="info-svg">
-            <img src="./assets/info_vimeo.svg" alt="info-svg">
-        </div>
-        <div class="video-titulo">
-            <div class="video-galery">
-        
-            </div>
-        </div>
-
-        <!-- hexagonos -->
-
-        <div class="honey">
-            <!-- col div-->
-            <div class="content_honey">
-                <div class="item item-image" onclick="traerDatos(this)" data-id="1" data-speed="4">
-                <img src="./assets/Galeria_hex/AKASHA_Reel.png" alt="AKASHA_Reel">
-                <div class="play-bottom">
-                  <img src="./assets/Galeria/play_botom.png" alt="">
-                </div>
-                </div>
-                
-                <div class="item item-image" onclick="traerDatos(this)" data-id="6" data-speed="4">
-                    <img src="./assets/Galeria_hex/Shinzo_Coffee.png" alt="Shinzo_Coffee">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="2" data-speed="4">
-                <img src="./assets/Galeria_hex/ShutUp.png" alt="silence">
-                <div class="play-bottom">
-                  <img src="./assets/Galeria/play_botom.png" alt="">
-                </div>
+  
+        <div class="container-content">
+          <section class="mansory-container">
+            <section class="grid-container">
+              <div class="video-item grid1" onclick="traerDatos(this)" data-id="1">
+                <img src="./assets/Galeria_hex/HEXAGONO_AKASHA_Reel.webp" alt="AKASHA_Reel">
               </div>
-                <div class="item item-transpar" data-id="1" data-speed="4"></div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="3" data-speed="4">
-                    <img src="./assets/Galeria_hex/break_dance.png" alt="break_dance">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                  </div>
-                <div class="item item-transpare" data-speed="4"></div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="4" data-speed="4">
-                    <img src="./assets/Galeria_hex/melissa_Wild.png" alt="melissa_Wild">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="20" data-speed="4">
-                    <img src="./assets/Galeria/archvizBG.jpg" alt="fresh_Cheese">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div> 
-                
-                <div class="item item-image" onclick="traerDatos(this)" data-id="7" data-speed="4">
-                    <img src="./assets/Galeria_hex/akasha_soda.png" alt="akasha_soda">   
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>                 
-                </div>
-                <div class="item item-transparen" data-id="1" data-speed="4"></div>                        
-                <div class="item item-image" onclick="traerDatos(this)" data-id="8" data-speed="4">
-                    <img src="./assets/Galeria_hex/cyberpunk_Persecution.png" alt="">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div>
-                <div class="item item-transparent" data-speed="4"></div>
-                
-                <div class="item item-image" onclick="traerDatos(this)" data-id="9" data-speed="4">
-                  <img src="./assets/Galeria_hex/candy_ad.png" alt="">
-                  <div class="play-bottom">
-                    <img src="./assets/Galeria/play_botom.png" alt="">
-                  </div>
-                </div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="10" data-speed="4">
-                    <img src="./assets/Galeria_hex/life_Academy.png" alt="life_Academy">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div>
-                
-                <div class="item item-image" onclick="traerDatos(this)" data-id="11" data-speed="4">
-                    <img src="./assets/Galeria_hex/graffity.png" alt="graffity">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div>
-                
-                <div class="item item-image" onclick="traerDatos(this)" data-id="12" data-speed="4">
-                    <img src="./assets/Galeria_hex/Baby_dance.png" alt="Baby_dance">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div>
-                <div class="item item-transpar" data-speed="4"></div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="13" data-speed="4">
-                    <img src="./assets/Galeria_hex/coffee_process.png" alt="coffee_process">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="14" data-speed="4">
-                    <img src="./assets/Galeria_hex/Corporative_Video.png" alt="Corporative_Video">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="15" data-speed="4">
-                    <img src="./assets/Galeria_hex/Naked_Fruit.png" alt="Naked_Fruit">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="16" data-speed="4">
-                    <img src="./assets/Galeria_hex/Space_Potato.png" alt="Space_Potato">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="17" data-speed="4">
-                    <img src="./assets/Galeria_hex/vacation.png" alt="vacation">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div>
-                
-                <div class="item item-image" onclick="traerDatos(this)" data-id="18" data-speed="4">
-                    <img src="./assets/Galeria_hex/wine_Cup.png" alt="wine_Cup">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div>
-                
-                <div class="item item-image" onclick="traerDatos(this)" data-id="19" data-speed="4">
-                    <img src="./assets/Galeria_hex/fresh_Cheese.png" alt="fresh_Cheese">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div>
-                <div class="item item-image" onclick="traerDatos(this)" data-id="5" data-speed="4">
-                    <img src="./assets/Galeria_hex/paso_x_ti.png" alt="paso_x_ti">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                  </div>
-                
-                <div class="item item-image" onclick="traerDatos(this)" data-id="21" data-speed="4">
-                    <img src="./assets/Galeria_hex/metal_tea_Hexagono.PNG" alt="wine_Cup">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div>
-                
-                <div class="item item-image" onclick="traerDatos(this)" data-id="22" data-speed="4">
-                    <img src="./assets/Galeria_hex/Kill_bill_Hexagono.PNG" alt="fresh_Cheese">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div>
-                
-                <div class="item item-image" onclick="traerDatos(this)" data-id="23" data-speed="4">
-                    <img src="./assets/Galeria_hex/Inverted_Bullet_Hexagono.PNG" alt="paso_x_ti">
-                    <div class="play-bottom">
-                      <img src="./assets/Galeria/play_botom.png" alt="">
-                    </div>
-                </div>
-                <div class="item item-transpare" data-speed="4"></div>
-                <div class="item item-transparen" data-speed="4"></div>
-                <div class="item item-transparent" data-speed="4"></div>
-                <div class="item item-transpar" data-speed="4"></div>
-                <div class="item item-transpare" data-speed="4"></div>
-                <div class="item item-transparen" data-speed="4"></div>
-                <div class="item item-transpar" data-speed="4"></div>
-                <div class="item item-transparent" data-speed="4"></div>
-                <div class="item item-transpare" data-speed="4"></div>
-                <div class="item item-transparen" data-speed="4"></div>
-                
-                
-            </div>
-
+              <div class="video-item grid2" onclick="traerDatos(this)" data-id="2">
+                <img src="./assets/Galeria_hex/akasha_soda.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid3" onclick="traerDatos(this)" data-id="3">
+                <img src="./assets/Galeria_hex/HEXAGONO_Composition_reel.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid4" onclick="traerDatos(this)" data-id="4">
+                <img src="./assets/Galeria_hex/HEXAGONO_2d_animation.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid5" onclick="traerDatos(this)" data-id="5">
+                <img src="./assets/Galeria/Fondo/01_Oreo_Fudge_oscuro.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid6" onclick="traerDatos(this)" data-id="6">
+                <img src="./assets/Galeria/Fondo/03_WPLAY.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid7" onclick="traerDatos(this)" data-id="7">
+                <img src="./assets/Galeria_hex/HEXAGONO_Ganafanaticos.png" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid8" onclick="traerDatos(this)" data-id="8">
+                <img src="./assets/Galeria_hex/HEXAGONO_Wine_composition.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid9" onclick="traerDatos(this)" data-id="9">
+                <img src="./assets/Galeria_hex/HEXAGONO_Reputacion_dudosa.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid10" onclick="traerDatos(this)" data-id="10">
+                <img src="./assets/Galeria_hex/HEXAGONO_casafanaticos.png" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid11" onclick="traerDatos(this)" data-id="11">
+                <img src="./assets/Galeria_hex/HEXAGONO_Akasha_elemental.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid12" onclick="traerDatos(this)" data-id="12">
+                <img src="./assets/Galeria_hex/HEXAGONO_Bottle_of_Water.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid13" onclick="traerDatos(this)" data-id="13">
+                <img src="./assets/Galeria_hex/coffee_process.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid14" onclick="traerDatos(this)" data-id="14">
+                <img src="./assets/Galeria_hex/Corporative_Video.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid15" onclick="traerDatos(this)" data-id="15">
+                <img src="./assets/Galeria_hex/Naked_Fruit.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid16" onclick="traerDatos(this)" data-id="16">
+                <img src="./assets/Galeria_hex/Space_Potato.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid17" onclick="traerDatos(this)" data-id="17">
+                <img src="./assets/Galeria_hex/vacation.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid18" onclick="traerDatos(this)" data-id="18">
+                <img src="./assets/Galeria_hex/wine_Cup.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid19" onclick="traerDatos(this)" data-id="19">
+                <img src="./assets/Galeria_hex/fresh_Cheese.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid20" onclick="traerDatos(this)" data-id="20">
+                <img src="./assets/Galeria/archvizBG.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid21" onclick="traerDatos(this)" data-id="21">
+                <img src="./assets/Galeria_hex/metal_tea_Hexagono.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid22" onclick="traerDatos(this)" data-id="22">
+                <img src="./assets/Galeria_hex/Kill_bill_Hexagono.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid23" onclick="traerDatos(this)" data-id="23">
+                <img src="./assets/Galeria_hex/Inverted_Bullet_Hexagono.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid24" onclick="traerDatos(this)" data-id="24">
+                <img src="./assets/Galeria_hex/AKASHA_Reel.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid25" onclick="traerDatos(this)" data-id="25">
+                <img src="./assets/Galeria_hex/ShutUp.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid26" onclick="traerDatos(this)" data-id="26">
+                <img src="./assets/Galeria_hex/break_dance.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid27" onclick="traerDatos(this)" data-id="27">
+                <img src="./assets/Galeria_hex/melissa_Wild.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid28" onclick="traerDatos(this)" data-id="28">
+                <img src="./assets/Galeria_hex/paso_x_ti.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid29" onclick="traerDatos(this)" data-id="29">
+                <img src="./assets/Galeria_hex/Shinzo_Coffee.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid30" onclick="traerDatos(this)" data-id="30">
+                <img src="./assets/Galeria_hex/akasha_soda.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid31" onclick="traerDatos(this)" data-id="31">
+                <img src="./assets/Galeria_hex/cyberpunk_Persecution.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid32" onclick="traerDatos(this)" data-id="32">
+                <img src="./assets/Galeria_hex/candy_ad.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid33" onclick="traerDatos(this)" data-id="33">
+                <img src="./assets/Galeria_hex/life_Academy.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid34" onclick="traerDatos(this)" data-id="34">
+                <img src="./assets/Galeria_hex/graffity.webp" alt="AKASHA_Reel">
+              </div>
+              <div class="video-item grid35" onclick="traerDatos(this)" data-id="35">
+                <img src="./assets/Galeria_hex/Baby_dance.webp" alt="AKASHA_Reel">
+              </div>
+            </section>
+          </section>
+    
+          <section class="video-gallery">
+          </section>
         </div>
-
-    </div>
+      </section>
 
 
     <!-- Nosotros -->
-    <div class="container-nosotros" id="about-us">
-        <div class="fondo-nosotros">
-            <!-- <img src="./assets/FondoAboutUs.svg" alt="fondo-nosotros"> -->
-            <div class="fondo-nosotros_1">
-                <div class="fondo-item" data-speed="-4"><img src="./assets/S1.svg" alt=""></div>
-                <div class="fondo-item" data-speed="-6"><img src="./assets/S3.svg" alt="" ></div>
-                <div class="fondo-item" data-speed="-7"><img src="./assets/S2.svg" alt="" ></div>
-                <div class="fondo-item" data-speed="-8"><img src="./assets/S2.svg" alt="" ></div>
-                <div class="fondo-item" data-speed="5"><img src="./assets/S1.svg" alt="" ></div>
-                <div class="fondo-item" data-speed="4"><img src="./assets/S3.svg" alt="" ></div>
-                <div class="fondo-item" data-speed="3"><img src="./assets/S1.svg" alt="" ></div>
-                <div class="fondo-item" data-speed="7"><img src="./assets/S3.svg" alt="" ></div>
-                <div class="fondo-item" data-speed="1"><img src="./assets/S1.svg" alt="" ></div>
-                <div class="fondo-item" data-speed="-1"><img src="./assets/S3.svg" alt="" ></div>
-                <div class="fondo-item" data-speed="3"><img src="./assets/S1.svg" alt="" ></div>
-                <div class="fondo-item" data-speed="-1"><img src="./assets/S2.svg" alt="" ></div>
-                <div class="fondo-item" data-speed="2"><img src="./assets/S3.svg" alt="" ></div>
-            </div>
 
+    <section class="grid-about" id="about-us">
+        <div class="images-about">
+            <div class="images-about-container">
+                <img class="image" src="./assets/Nosotros/Escritorio_Motion-min.png" alt="Motion" class="img1">
+            </div>
+            <div class="images-about-text" id="images-id">
+                <h1 class="title-gif">Motion Graphics</h1>
+                <p class="desc-gif">We make your ideas come to life by mixing them with motion graphics and show them in a dynamic, attractive and exciting way.
+                There is not limit to what we can do, motion graphics is the best choice to catch everyone’s attention through: </p>
+                <div class="vin-gifs">
+                    <details  class="myDetails" id="default-item-about-btn">
+                        <summary>See more...</summary>
+                
+                            <ul class="list-item">
+                                <li>Social Media</li>
+                                <li>Ads</li>
+                                <li>Infographics</li>
+                                <li>Institutional & E-learning videos</li>
+                                <li>And much more!</li>
+                            </ul>
+                    </details>
+                </div>
+            </div>
+    
         </div>
-        <div class="content-nosotros">
-            <div class="image-nosotros">
-                <div class="graphics">
-                    <img src="./assets/2.svg" alt="graphics" onclick="cargarGifs(this)" data-id="1">
+    
+        <!-- Hexagon Honey -->
+    
+        <div class="honey">
+            <!-- col div-->
+            <div class="content_honey">
+                <div class="item item-normal"></div>
+                <div class="item item-normal"></div>
+                <div class="item item-medium"></div>
+                <div class="item item-transparent"></div>
+                <div class="item item-normal"></div>
+                <div class="item item-image" onclick="cargarGifs(this)" data-id="0">
+                  <h1>VFX</h1>
                 </div>
-                <div class="cinematics-home">
-                    <div class="cinematics">
-                        <img src="./assets/1.svg" alt="cinematics" onclick="cargarGifs(this)" data-id="2">
-                    </div>
-                    <div class="home-item">
-                        <img src="./assets/3.svg" alt="home-item" onclick="cargarGifs(this)" data-id="3">
-                    </div>
-                    <div class="arquitect">
-                        <img src="./assets/6.svg" alt="home-item" onclick="cargarGifs(this)" data-id="4">
-                    </div>
-
+                <div class="item item-image" onclick="cargarGifs(this)" data-id="1">
+                  <h1>Motion Graphics</h1>
                 </div>
-                <div class="animation-2d-3d">
-                    <div class="animation-2d">
-                        <img src="./assets/5.svg" alt="animation-2d" onclick="cargarGifs(this)" data-id="5">
-                    </div>
-                    <div class="animation-3d">
-                        <img src="./assets/4.svg" alt="animation-3d" onclick="cargarGifs(this)" data-id="6">
-                    </div>
-                    
+                <div class="item item-transparent"></div> 
+                
+                <div class="item item-normal"></div>
+                <div class="item item-image" onclick="cargarGifs(this)" data-id="2">
+                  <h1>2d Animation</h1>
                 </div>
+                <div class="item item-medium"></div>
+                <div class="item item-transparent"></div>
+                <div class="item item-normal"></div>
+                <div class="item item-normal"></div>
+        
             </div>
-            <div class="text-nosotros">
-                <div class="text-description">
-                    <div class="text-gifs">
-                        <h1 class="title-gif">About Us</h1>
-                        <div class="desc-gif">
-                            <p class="hola-mundo">We are a Digital Studio that creates audiovisual products which tell stories, resolve problems and help brands position in the market.</p>
-                            <p class="hola-mundo">We always find a way to help your ideas come true, new ways to surprise, make people have fun and generate emotions. We are exploring the animation universe to fill a gap in the market.</p>
-                        </div>
-                        <div class="vin-gifs">
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="gif-image">
-                        <img src="./assets/LogoGIF.svg" alt="LogoFooter">
-                    </div>
-                    
-                </div>
-            </div>
+        
         </div>
+        
+    </section>
 
-    </div>
 
-
+    <!-- Email -->
     <div class="email-section" id="contact">
         <div class="fondo-email">
             <img src="./assets/FondoCorreo.svg" alt="FondoCorreo" >
@@ -400,25 +324,6 @@
     </template>
 
 
-<!-- Seccion de nosotros Nueva -->
-
-<section class="grid-about">
-    <div class="items-about">
-
-        
-
-    </div>
-    <div class="images-about"></div>
-</section>
-
-
-
-
-<!-- Fin sección Nosotros nueva -->
-
-
-
-
 <!-- Footer -->
 
 
@@ -450,15 +355,14 @@
 
     </footer>
 
-
     <!-- Templates -->
     <template id="template-video">
         <iframe class="video-galery" src=""  frameborder="0" allow="autoplay"; fullscreen" allowfullscreen></iframe>
     </template>
 
     <script src="./js/index.js"></script>
-    <script src="./js/galery.js"></script>
-    <script src="./js/nosotros.js"></script>
+    <script src="./js/gallery.js"></script>
+    <script src="./js/nosotro.js"></script>
     <script src="./js/email.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-vimeo/2.0.2/video.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
