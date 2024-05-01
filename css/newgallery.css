@@ -438,10 +438,6 @@ body {
   }
 }
 
-@media only screen and (min-width:1024px){
-
-}
-
 
 
 @media only screen and (min-width:1024px ) and (max-width:1440px) and (min-height:768px) and (orientation: landscape){
