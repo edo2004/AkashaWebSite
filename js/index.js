@@ -6,6 +6,8 @@ const franjaDerecha = document.querySelector('.franja-derecha')
 const topTop = document.querySelector(".to-top");
 const socialMediaVideo = document.querySelector(".footer-social_video")
 
+
+
 function redesHiddenMobile(alto,ancho){
     if(window.pageYOffset < (alto+(ancho/1.185185))){
         socialMediaVideo.classList.remove("inactive");
@@ -108,3 +110,5 @@ function gestionarMenu() {
         })
     }
 }
+
+
