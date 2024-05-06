@@ -76,8 +76,8 @@ const ContentGifs = [
         </details>
         
         `,
-        image: `./assets/Nosotros/Escritorio_VFX-2-min.png`,
-        image1: `./assets/Nosotros/Celular_VFX-2-min.png`
+        image: `./assets/Nosotros/Escritorio_2d_animation.webp`,
+        image1: `./assets/Nosotros/Celular_2d_animation.webp`
     }
 ]
 
