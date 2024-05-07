@@ -3,7 +3,7 @@ const items = document.querySelector('.honey')
 const navegador = document.querySelector('.header-nav')
 const videoHeader = document.querySelector('#bgvid')
 const franjaDerecha = document.querySelector('.franja-derecha')
-const topTop = document.querySelector(".to-top");
+// const topTop = document.querySelector(".to-top");
 const socialMediaVideo = document.querySelector(".footer-social_video")
 
 
@@ -47,13 +47,13 @@ window.addEventListener("scroll", (e) => {
 })
 
 
-window.addEventListener("scroll", () => {
-    if(window.pageYOffset > 100){
-        topTop.classList.add("active");
-    }else{
-        topTop.classList.remove("active");
-    }
-})
+// window.addEventListener("scroll", () => {
+//     if(window.pageYOffset > 100){
+//         topTop.classList.add("active");
+//     }else{
+//         topTop.classList.remove("active");
+//     }
+// })
 
 
 // Fondo menú navegacion
